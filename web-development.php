@@ -5606,18 +5606,18 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <b>Step 2: Create Sitemap</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            Homepage (index.html)<br/>
-            ├── About (about.html)<br/>
-            ├── Portfolio/Work (portfolio.html)<br/>
-            │   ├── Project 1 (project1.html)<br/>
-            │   ├── Project 2 (project2.html)<br/>
-            │   └── Project 3 (project3.html)<br/>
-            ├── Services (services.html) - OR - Blog (blog.html)<br/>
-            ├── Contact (contact.html)<br/>
-            └── 404 Page (404.html)<br/>
-            <br/>
-            <b>Navigation Structure:</b><br/>
-            Header: Home | About | Portfolio | Services | Contact<br/>
+            Homepage (index.html)
+            ├── About (about.html)
+            ├── Portfolio/Work (portfolio.html)
+            │   ├── Project 1 (project1.html)
+            │   ├── Project 2 (project2.html)
+            │   └── Project 3 (project3.html)
+            ├── Services (services.html) - OR - Blog (blog.html)
+            ├── Contact (contact.html)
+            └── 404 Page (404.html)
+            
+            <b>Navigation Structure:</b>
+            Header: Home | About | Portfolio | Services | Contact
             Footer: Repeat navigation + social links + copyright
         </pre>
     </div>
@@ -5722,27 +5722,27 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <h3>Project Folder Structure:</h3>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            my-portfolio/<br/>
-            ├── index.html<br/>
-            ├── about.html<br/>
-            ├── portfolio.html<br/>
-            ├── project1.html<br/>
-            ├── project2.html<br/>
-            ├── contact.html<br/>
-            ├── 404.html<br/>
-            ├── assets/<br/>
-            │   ├── css/<br/>
-            │   │   ├── style.css<br/>
-            │   │   ├── responsive.css<br/>
-            │   │   └── variables.css<br/>
-            │   ├── js/<br/>
-            │   │   └── main.js<br/>
-            │   ├── images/<br/>
-            │   │   ├── hero-bg.jpg<br/>
-            │   │   ├── project1.jpg<br/>
-            │   │   └── avatar.png<br/>
-            │   └── icons/<br/>
-            │       └── sprite.svg<br/>
+            my-portfolio/
+            ├── index.html
+            ├── about.html
+            ├── portfolio.html
+            ├── project1.html
+            ├── project2.html
+            ├── contact.html
+            ├── 404.html
+            ├── assets/
+            │   ├── css/
+            │   │   ├── style.css
+            │   │   ├── responsive.css
+            │   │   └── variables.css
+            │   ├── js/
+            │   │   └── main.js
+            │   ├── images/
+            │   │   ├── hero-bg.jpg
+            │   │   ├── project1.jpg
+            │   │   └── avatar.png
+            │   └── icons/
+            │       └── sprite.svg
             └── README.md
         </pre>
     </div>
@@ -5773,35 +5773,35 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <b>Step 1: Create Base Template</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            &lt;!DOCTYPE html&gt;<br/>
-            &lt;html lang="en"&gt;<br/>
-            &lt;head&gt;<br/>
-            &nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br/>
-            &nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br/>
-            &nbsp;&nbsp;&lt;title&gt;Your Name | Portfolio&lt;/title&gt;<br/>
-            &nbsp;&nbsp;&lt;meta name="description" content="Professional portfolio showcasing web development projects"&gt;<br/>
-            &nbsp;&nbsp;<br/>
-            &nbsp;&nbsp;&lt;!-- Open Graph / Facebook --&gt;<br/>
-            &nbsp;&nbsp;&lt;meta property="og:type" content="website"&gt;<br/>
-            &nbsp;&nbsp;&lt;meta property="og:title" content="Your Name | Portfolio"&gt;<br/>
-            &nbsp;&nbsp;&lt;meta property="og:description" content="Professional portfolio showcasing web development projects"&gt;<br/>
-            &nbsp;&nbsp;&lt;meta property="og:image" content="/assets/images/og-image.jpg"&gt;<br/>
-            <br/>
-            &nbsp;&nbsp;&lt;!-- Twitter --&gt;<br/>
-            &nbsp;&nbsp;&lt;meta name="twitter:card" content="summary_large_image"&gt;<br/>
-            <br/>
-            &nbsp;&nbsp;&lt;!-- Favicon --&gt;<br/>
-            &nbsp;&nbsp;&lt;link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico"&gt;<br/>
-            <br/>
-            &nbsp;&nbsp;&lt;!-- CSS --&gt;<br/>
-            &nbsp;&nbsp;&lt;link rel="stylesheet" href="/assets/css/variables.css"&gt;<br/>
-            &nbsp;&nbsp;&lt;link rel="stylesheet" href="/assets/css/style.css"&gt;<br/>
-            &nbsp;&nbsp;&lt;link rel="stylesheet" href="/assets/css/responsive.css" media="screen and (max-width: 768px)"&gt;<br/>
-            <br/>
-            &nbsp;&nbsp;&lt;!-- Google Fonts --&gt;<br/>
-            &nbsp;&nbsp;&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;<br/>
-            &nbsp;&nbsp;&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;<br/>
-            &nbsp;&nbsp;&lt;link href="https://fonts.googleapis.com/css2?family=Family+Name:wght@400;700&display=swap" rel="stylesheet"&gt;<br/>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title&gt;Your Name | Portfolio&lt;/title&gt;
+                &lt;meta name="description" content="Professional portfolio showcasing web development projects"&gt;
+                
+                &lt;!-- Open Graph / Facebook --&gt;
+                &lt;meta property="og:type" content="website"&gt;
+                &lt;meta property="og:title" content="Your Name | Portfolio"&gt;
+                &lt;meta property="og:description" content="Professional portfolio showcasing web development projects"&gt;
+                &lt;meta property="og:image" content="/assets/images/og-image.jpg"&gt;
+            
+                &lt;!-- Twitter --&gt;
+                &lt;meta name="twitter:card" content="summary_large_image"&gt;
+            
+                &lt;!-- Favicon --&gt;
+                &lt;link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico"&gt;
+            
+                &lt;!-- CSS --&gt;
+                &lt;link rel="stylesheet" href="/assets/css/variables.css"&gt;
+                &lt;link rel="stylesheet" href="/assets/css/style.css"&gt;
+                &lt;link rel="stylesheet" href="/assets/css/responsive.css" media="screen and (max-width: 768px)"&gt;
+            
+                &lt;!-- Google Fonts --&gt;
+                &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+                &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+                &lt;link href="https://fonts.googleapis.com/css2?family=Family+Name:wght@400;700&display=swap" rel="stylesheet"&gt;
             &lt;/head&gt;
         </pre>
     </div>
@@ -5809,31 +5809,31 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <b>Step 2: Build Accessible Navigation</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            &lt;body&gt;<br/>
-            &nbsp;&nbsp;&lt;!-- Skip to main content --&gt;<br/>
-            &nbsp;&nbsp;&lt;a href="#main-content" class="skip-link"&gt;Skip to main content&lt;/a&gt;<br/>
-            <br/>
-            &nbsp;&nbsp;&lt;header class="header" role="banner"&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="/" class="logo" aria-label="Homepage"&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Logo image or text --&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Name<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br/>
-            <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="hamburger"&gt;&lt;/span&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/button&gt;<br/>
-            <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;nav class="nav" role="navigation" aria-label="Main navigation"&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class="nav-list"&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="/" class="nav-link"&gt;Home&lt;/a&gt;&lt;/li&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="/about.html" class="nav-link"&gt;About&lt;/a&gt;&lt;/li&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="/portfolio.html" class="nav-link"&gt;Portfolio&lt;/a&gt;&lt;/li&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="/contact.html" class="nav-link"&gt;Contact&lt;/a&gt;&lt;/li&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/nav&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
-            &nbsp;&nbsp;&lt;/header&gt;
+            &lt;body&gt;
+                &lt;!-- Skip to main content --&gt;
+                &lt;a href="#main-content" class="skip-link"&gt;Skip to main content&lt;/a&gt;
+            
+                &lt;header class="header" role="banner"&gt;
+                    &lt;div class="container"&gt;
+                        &lt;a href="/" class="logo" aria-label="Homepage"&gt;
+                            &lt;!-- Logo image or text --&gt;
+                            Your Name
+                        &lt;/a&gt;
+            
+                        &lt;button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"&gt;
+                            &lt;span class="hamburger"&gt;&lt;/span&gt;
+                        &lt;/button&gt;
+            
+                        &lt;nav class="nav" role="navigation" aria-label="Main navigation"&gt;
+                            &lt;ul class="nav-list"&gt;
+                                &lt;li&gt;&lt;a href="/" class="nav-link"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="/about.html" class="nav-link"&gt;About&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="/portfolio.html" class="nav-link"&gt;Portfolio&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="/contact.html" class="nav-link"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/nav&gt;
+                    &lt;/div&gt;
+                &lt;/header&gt;
         </pre>
     </div>
     
@@ -5843,21 +5843,21 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <div style="background-color: #f0f8ff; padding: 15px; border-radius: 5px;">
             <b>Homepage Structure:</b><br/>
             <pre>
-                &lt;main id="main-content" role="main"&gt;<br/>
-                &nbsp;&nbsp;&lt;section class="hero" aria-labelledby="hero-heading"&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 id="hero-heading"&gt;Welcome&lt;/h1&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Introduction text&lt;/p&gt;<br/>
-                &nbsp;&nbsp;&lt;/section&gt;<br/>
-                <br/>
-                &nbsp;&nbsp;&lt;section class="featured-work" aria-labelledby="featured-heading"&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;h2 id="featured-heading"&gt;Featured Work&lt;/h2&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Project cards --&gt;<br/>
-                &nbsp;&nbsp;&lt;/section&gt;<br/>
-                <br/>
-                &nbsp;&nbsp;&lt;section class="skills" aria-labelledby="skills-heading"&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;h2 id="skills-heading"&gt;Skills&lt;/h2&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Skills list --&gt;<br/>
-                &nbsp;&nbsp;&lt;/section&gt;<br/>
+                &lt;main id="main-content" role="main"&gt;
+                    &lt;section class="hero" aria-labelledby="hero-heading"&gt;
+                        &lt;h1 id="hero-heading"&gt;Welcome&lt;/h1&gt;
+                        &lt;p&gt;Introduction text&lt;/p&gt;
+                    &lt;/section&gt;
+                
+                    &lt;section class="featured-work" aria-labelledby="featured-heading"&gt;
+                        &lt;h2 id="featured-heading"&gt;Featured Work&lt;/h2&gt;
+                        &lt;!-- Project cards --&gt;
+                    &lt;/section&gt;
+                
+                    &lt;section class="skills" aria-labelledby="skills-heading"&gt;
+                        &lt;h2 id="skills-heading"&gt;Skills&lt;/h2&gt;
+                        &lt;!-- Skills list --&gt;
+                    &lt;/section&gt;
                 &lt;/main&gt;
             </pre>
         </div>
@@ -5865,24 +5865,24 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <div style="background-color: #fff0f0; padding: 15px; border-radius: 5px;">
             <b>Contact Page Structure:</b><br/>
             <pre>
-                &lt;main id="main-content" role="main"&gt;<br/>
-                &nbsp;&nbsp;&lt;h1&gt;Contact Me&lt;/h1&gt;<br/>
-                <br/>
-                &nbsp;&nbsp;&lt;div class="contact-grid"&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;section class="contact-form" aria-labelledby="form-heading"&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2 id="form-heading"&gt;Send a Message&lt;/h2&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Form fields --&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br/>
-                <br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;section class="contact-info" aria-labelledby="info-heading"&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2 id="info-heading"&gt;Contact Information&lt;/h2&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;address&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Address, phone, email --&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/address&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br/>
-                &nbsp;&nbsp;&lt;/div&gt;<br/>
+                &lt;main id="main-content" role="main"&gt;
+                    &lt;h1&gt;Contact Me&lt;/h1&gt;
+                
+                    &lt;div class="contact-grid"&gt;
+                        &lt;section class="contact-form" aria-labelledby="form-heading"&gt;
+                            &lt;h2 id="form-heading"&gt;Send a Message&lt;/h2&gt;
+                            &lt;form&gt;
+                                &lt;!-- Form fields --&gt;
+                            &lt;/form&gt;
+                        &lt;/section&gt;
+                
+                        &lt;section class="contact-info" aria-labelledby="info-heading"&gt;
+                            &lt;h2 id="info-heading"&gt;Contact Information&lt;/h2&gt;
+                            &lt;address&gt;
+                                &lt;!-- Address, phone, email --&gt;
+                            &lt;/address&gt;
+                        &lt;/section&gt;
+                    &lt;/div&gt;
                 &lt;/main&gt;
             </pre>
         </div>
@@ -5974,44 +5974,44 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <pre>
             /* variables.css */<br/>
             :root {<br/>
-            &nbsp;&nbsp;/* Color System */<br/>
-            &nbsp;&nbsp;--primary-color: #007bff;<br/>
-            &nbsp;&nbsp;--secondary-color: #6c757d;<br/>
-            &nbsp;&nbsp;--background-color: #ffffff;<br/>
-            &nbsp;&nbsp;--text-color: #212529;<br/>
-            &nbsp;&nbsp;<br/>
-            &nbsp;&nbsp;/* Typography */<br/>
-            &nbsp;&nbsp;--font-primary: 'Inter', sans-serif;<br/>
-            &nbsp;&nbsp;--font-secondary: 'Georgia', serif;<br/>
-            &nbsp;&nbsp;--font-size-base: 16px;<br/>
-            &nbsp;&nbsp;--line-height-base: 1.6;<br/>
-            &nbsp;&nbsp;<br/>
-            &nbsp;&nbsp;/* Spacing */<br/>
-            &nbsp;&nbsp;--spacing-unit: 1rem;<br/>
-            &nbsp;&nbsp;--spacing-xs: calc(var(--spacing-unit) * 0.25);<br/>
-            &nbsp;&nbsp;--spacing-sm: calc(var(--spacing-unit) * 0.5);<br/>
-            &nbsp;&nbsp;--spacing-md: var(--spacing-unit);<br/>
-            &nbsp;&nbsp;--spacing-lg: calc(var(--spacing-unit) * 2);<br/>
-            &nbsp;&nbsp;--spacing-xl: calc(var(--spacing-unit) * 4);<br/>
-            &nbsp;&nbsp;<br/>
-            &nbsp;&nbsp;/* Breakpoints */<br/>
-            &nbsp;&nbsp;--breakpoint-mobile: 576px;<br/>
-            &nbsp;&nbsp;--breakpoint-tablet: 768px;<br/>
-            &nbsp;&nbsp;--breakpoint-desktop: 992px;<br/>
-            &nbsp;&nbsp;--breakpoint-wide: 1200px;<br/>
-            }<br/>
-            <br/>
-            /* style.css */<br/>
-            /* Base styles, components, utilities */<br/>
-            <br/>
-            /* responsive.css */<br/>
+                /* Color System */
+                --primary-color: #007bff;
+                --secondary-color: #6c757d;
+                --background-color: #ffffff;
+                --text-color: #212529;
+                
+                /* Typography */
+                --font-primary: 'Inter', sans-serif;
+                --font-secondary: 'Georgia', serif;
+                --font-size-base: 16px;
+                --line-height-base: 1.6;
+                
+                /* Spacing */
+                --spacing-unit: 1rem;
+                --spacing-xs: calc(var(--spacing-unit) * 0.25);
+                --spacing-sm: calc(var(--spacing-unit) * 0.5);
+                --spacing-md: var(--spacing-unit);
+                --spacing-lg: calc(var(--spacing-unit) * 2);
+                --spacing-xl: calc(var(--spacing-unit) * 4);
+                
+                /* Breakpoints */
+                --breakpoint-mobile: 576px;
+                --breakpoint-tablet: 768px;
+                --breakpoint-desktop: 992px;
+                --breakpoint-wide: 1200px;
+            }
+            
+            /* style.css */
+            /* Base styles, components, utilities */
+            
+            /* responsive.css */
             /* Media queries and responsive adjustments */
         </pre>
     </div>
     
     <h3>Responsive Design Strategy:</h3>
     <div style="background-color: #f0f8ff; padding: 15px; margin: 10px 0; border-radius: 5px;">
-        <b>Mobile-First Approach:</b><br/>
+        <b>Mobile-First Approach:</b><br />
         1. Start with mobile styles (default)<br/>
         2. Add tablet styles with min-width media queries<br/>
         3. Add desktop styles with larger breakpoints<br/>
@@ -6035,30 +6035,30 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <b>Step 1: Reset and Base Styles</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            /* Reset and base styles */<br/>
-            *, *::before, *::after {<br/>
-            &nbsp;&nbsp;box-sizing: border-box;<br/>
-            &nbsp;&nbsp;margin: 0;<br/>
-            &nbsp;&nbsp;padding: 0;<br/>
-            }<br/>
-            <br/>
-            html {<br/>
-            &nbsp;&nbsp;font-size: var(--font-size-base);<br/>
-            &nbsp;&nbsp;scroll-behavior: smooth;<br/>
-            }<br/>
-            <br/>
-            body {<br/>
-            &nbsp;&nbsp;font-family: var(--font-primary);<br/>
-            &nbsp;&nbsp;line-height: var(--line-height-base);<br/>
-            &nbsp;&nbsp;color: var(--text-color);<br/>
-            &nbsp;&nbsp;background-color: var(--background-color);<br/>
-            &nbsp;&nbsp;overflow-x: hidden;<br/>
-            }<br/>
-            <br/>
-            img {<br/>
-            &nbsp;&nbsp;max-width: 100%;<br/>
-            &nbsp;&nbsp;height: auto;<br/>
-            &nbsp;&nbsp;display: block;<br/>
+            /* Reset and base styles */
+            *, *::before, *::after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            
+            html {
+                font-size: var(--font-size-base);
+                scroll-behavior: smooth;
+            }
+            
+            body {
+                font-family: var(--font-primary);
+                line-height: var(--line-height-base);
+                color: var(--text-color);
+                background-color: var(--background-color);
+                overflow-x: hidden;
+            }
+            
+            img {
+                max-width: 100%;
+                height: auto;
+                display: block;
             }
         </pre>
     </div>
@@ -6066,28 +6066,28 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <b>Step 2: Responsive Grid System</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            /* Container */<br/>
-            .container {<br/>
-            &nbsp;&nbsp;width: 100%;<br/>
-            &nbsp;&nbsp;max-width: 1200px;<br/>
-            &nbsp;&nbsp;margin: 0 auto;<br/>
-            &nbsp;&nbsp;padding: 0 var(--spacing-md);<br/>
-            }<br/>
-            <br/>
-            /* Grid System */<br/>
-            .grid {<br/>
-            &nbsp;&nbsp;display: grid;<br/>
-            &nbsp;&nbsp;gap: var(--spacing-md);<br/>
-            }<br/>
-            <br/>
-            /* Responsive columns */<br/>
-            @media (min-width: 576px) {<br/>
-            &nbsp;&nbsp;.grid-2 { grid-template-columns: repeat(2, 1fr); }<br/>
-            &nbsp;&nbsp;.grid-3 { grid-template-columns: repeat(3, 1fr); }<br/>
-            }<br/>
-            <br/>
-            @media (min-width: 992px) {<br/>
-            &nbsp;&nbsp;.grid-4 { grid-template-columns: repeat(4, 1fr); }<br/>
+            /* Container */
+            .container {
+                width: 100%;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 var(--spacing-md);
+            }
+            
+            /* Grid System */
+            .grid {
+                display: grid;
+                gap: var(--spacing-md);
+            }
+            
+            /* Responsive columns */
+            @media (min-width: 576px) {
+                .grid-2 { grid-template-columns: repeat(2, 1fr); }
+                .grid-3 { grid-template-columns: repeat(3, 1fr); }
+            }
+            
+            @media (min-width: 992px) {
+                .grid-4 { grid-template-columns: repeat(4, 1fr); }
             }
         </pre>
     </div>
@@ -6098,41 +6098,41 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <div style="background-color: #f0f8ff; padding: 15px; border-radius: 5px;">
             <b>Navigation Component:</b><br/>
             <pre>
-                /* Mobile navigation */<br/>
-                .nav-toggle {<br/>
-                &nbsp;&nbsp;display: block;<br/>
-                &nbsp;&nbsp;background: none;<br/>
-                &nbsp;&nbsp;border: none;<br/>
-                &nbsp;&nbsp;cursor: pointer;<br/>
-                }<br/>
-                <br/>
-                .nav {<br/>
-                &nbsp;&nbsp;position: fixed;<br/>
-                &nbsp;&nbsp;top: 0;<br/>
-                &nbsp;&nbsp;right: -100%;<br/>
-                &nbsp;&nbsp;width: 80%;<br/>
-                &nbsp;&nbsp;height: 100vh;<br/>
-                &nbsp;&nbsp;background: var(--background-color);<br/>
-                &nbsp;&nbsp;transition: right 0.3s ease;<br/>
-                }<br/>
-                <br/>
-                .nav.active {<br/>
-                &nbsp;&nbsp;right: 0;<br/>
-                }<br/>
-                <br/>
-                /* Desktop navigation */<br/>
-                @media (min-width: 768px) {<br/>
-                &nbsp;&nbsp;.nav-toggle { display: none; }<br/>
-                &nbsp;&nbsp;.nav {<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;position: static;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;width: auto;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;height: auto;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;background: none;<br/>
-                &nbsp;&nbsp;}<br/>
-                &nbsp;&nbsp;.nav-list {<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;gap: var(--spacing-lg);<br/>
-                &nbsp;&nbsp;}<br/>
+                /* Mobile navigation */
+                .nav-toggle {
+                    display: block;
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                }
+                
+                .nav {
+                    position: fixed;
+                    top: 0;
+                    right: -100%;
+                    width: 80%;
+                    height: 100vh;
+                    background: var(--background-color);
+                    transition: right 0.3s ease;
+                }
+                
+                .nav.active {
+                    right: 0;
+                }
+                
+                /* Desktop navigation */
+                @media (min-width: 768px) {
+                    .nav-toggle { display: none; }
+                    .nav {
+                        position: static;
+                        width: auto;
+                        height: auto;
+                        background: none;
+                    }
+                    .nav-list {
+                        display: flex;
+                        gap: var(--spacing-lg);
+                    }
                 }
             </pre>
         </div>
@@ -6140,44 +6140,44 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <div style="background-color: #fff0f0; padding: 15px; border-radius: 5px;">
             <b>Project Card Component:</b><br/>
             <pre>
-                .project-card {<br/>
-                &nbsp;&nbsp;background: white;<br/>
-                &nbsp;&nbsp;border-radius: 8px;<br/>
-                &nbsp;&nbsp;overflow: hidden;<br/>
-                &nbsp;&nbsp;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);<br/>
-                &nbsp;&nbsp;transition: transform 0.3s ease, box-shadow 0.3s ease;<br/>
-                }<br/>
-                <br/>
-                .project-card:hover {<br/>
-                &nbsp;&nbsp;transform: translateY(-4px);<br/>
-                &nbsp;&nbsp;box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);<br/>
-                }<br/>
-                <br/>
-                .project-image {<br/>
-                &nbsp;&nbsp;aspect-ratio: 16/9;<br/>
-                &nbsp;&nbsp;object-fit: cover;<br/>
-                }<br/>
-                <br/>
-                .project-content {<br/>
-                &nbsp;&nbsp;padding: var(--spacing-md);<br/>
-                }<br/>
-                <br/>
-                /* Responsive grid for project cards */<br/>
-                .projects-grid {<br/>
-                &nbsp;&nbsp;display: grid;<br/>
-                &nbsp;&nbsp;gap: var(--spacing-lg);<br/>
-                }<br/>
-                <br/>
-                @media (min-width: 576px) {<br/>
-                &nbsp;&nbsp;.projects-grid {<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: repeat(2, 1fr);<br/>
-                &nbsp;&nbsp;}<br/>
-                }<br/>
-                <br/>
-                @media (min-width: 992px) {<br/>
-                &nbsp;&nbsp;.projects-grid {<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: repeat(3, 1fr);<br/>
-                &nbsp;&nbsp;}<br/>
+                .project-card {
+                    background: white;
+                    border-radius: 8px;
+                    overflow: hidden;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+                
+                .project-card:hover {
+                    transform: translateY(-4px);
+                    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+                }
+                
+                .project-image {
+                    aspect-ratio: 16/9;
+                    object-fit: cover;
+                }
+                
+                .project-content {
+                    padding: var(--spacing-md);
+                }
+                
+                /* Responsive grid for project cards */
+                .projects-grid {
+                    display: grid;
+                    gap: var(--spacing-lg);
+                }
+                
+                @media (min-width: 576px) {
+                    .projects-grid {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                }
+                
+                @media (min-width: 992px) {
+                    .projects-grid {
+                        grid-template-columns: repeat(3, 1fr);
+                    }
                 }
             </pre>
         </div>
@@ -6302,44 +6302,44 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <b>Step 1: Accessibility Audit</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            /* Accessibility Improvements */<br/>
-            <br/>
-            /* Skip link */<br/>
-            .skip-link {<br/>
-            &nbsp;&nbsp;position: absolute;<br/>
-            &nbsp;&nbsp;top: -40px;<br/>
-            &nbsp;&nbsp;left: 0;<br/>
-            &nbsp;&nbsp;background: #000;<br/>
-            &nbsp;&nbsp;color: white;<br/>
-            &nbsp;&nbsp;padding: 8px;<br/>
-            &nbsp;&nbsp;z-index: 100;<br/>
-            }<br/>
-            <br/>
-            .skip-link:focus {<br/>
-            &nbsp;&nbsp;top: 0;<br/>
-            }<br/>
-            <br/>
-            /* Focus styles */<br/>
-            :focus {<br/>
-            &nbsp;&nbsp;outline: 3px solid var(--primary-color);<br/>
-            &nbsp;&nbsp;outline-offset: 2px;<br/>
-            }<br/>
-            <br/>
-            /* Reduced motion */<br/>
-            @media (prefers-reduced-motion: reduce) {<br/>
-            &nbsp;&nbsp;*, *::before, *::after {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 0.01ms !important;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;animation-iteration-count: 1 !important;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;transition-duration: 0.01ms !important;<br/>
-            &nbsp;&nbsp;}<br/>
-            }<br/>
-            <br/>
-            /* High contrast mode */<br/>
-            @media (prefers-contrast: high) {<br/>
-            &nbsp;&nbsp;body {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;--text-color: #000000;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;--background-color: #ffffff;<br/>
-            &nbsp;&nbsp;}<br/>
+            /* Accessibility Improvements */
+            
+            /* Skip link */
+            .skip-link {
+                position: absolute;
+                top: -40px;
+                left: 0;
+                background: #000;
+                color: white;
+                padding: 8px;
+                z-index: 100;
+            }
+            
+            .skip-link:focus {
+                top: 0;
+            }
+            
+            /* Focus styles */
+            :focus {
+                outline: 3px solid var(--primary-color);
+                outline-offset: 2px;
+            }
+            
+            /* Reduced motion */
+            @media (prefers-reduced-motion: reduce) {
+                *, *::before, *::after {
+                    animation-duration: 0.01ms !important;
+                    animation-iteration-count: 1 !important;
+                    transition-duration: 0.01ms !important;
+                }
+            }
+            
+            /* High contrast mode */
+            @media (prefers-contrast: high) {
+                body {
+                    --text-color: #000000;
+                    --background-color: #ffffff;
+                }
             }
         </pre>
     </div>
@@ -6347,32 +6347,32 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <b>Step 2: Performance Optimization</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            /* Image optimization in HTML */<br/>
-            &lt;picture&gt;<br/>
-            &nbsp;&nbsp;&lt;source srcset="image.webp" type="image/webp"&gt;<br/>
-            &nbsp;&nbsp;&lt;img src="image.jpg" alt="Description" loading="lazy" width="800" height="600"&gt;<br/>
-            &lt;/picture&gt;<br/>
-            <br/>
-            /* Font loading optimization */<br/>
-            &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;<br/>
-            &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;<br/>
-            &lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"&gt;<br/>
-            <br/>
-            /* Critical CSS (inlined in head) */<br/>
-            &lt;style&gt;<br/>
-            &nbsp;&nbsp;/* Above-the-fold styles only */<br/>
-            &nbsp;&nbsp;.hero, .header, .nav { opacity: 0; }<br/>
-            &nbsp;&nbsp;.fonts-loaded .hero, .fonts-loaded .header, .fonts-loaded .nav {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;opacity: 1;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;transition: opacity 0.3s ease;<br/>
-            &nbsp;&nbsp;}<br/>
-            &lt;/style&gt;<br/>
-            <br/>
-            /* JavaScript for font loading */<br/>
-            &lt;script&gt;<br/>
-            &nbsp;&nbsp;document.fonts.ready.then(() => {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;document.documentElement.classList.add('fonts-loaded');<br/>
-            &nbsp;&nbsp;});<br/>
+            /* Image optimization in HTML */
+            &lt;picture&gt;
+                &lt;source srcset="image.webp" type="image/webp"&gt;
+                &lt;img src="image.jpg" alt="Description" loading="lazy" width="800" height="600"&gt;
+            &lt;/picture&gt;
+            
+            /* Font loading optimization */
+            &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+            &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+            &lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"&gt;
+            
+            /* Critical CSS (inlined in head) */
+            &lt;style&gt;
+                /* Above-the-fold styles only */
+                .hero, .header, .nav { opacity: 0; }
+                .fonts-loaded .hero, .fonts-loaded .header, .fonts-loaded .nav {
+                    opacity: 1;
+                    transition: opacity 0.3s ease;
+                }
+            &lt;/style&gt;
+            
+            /* JavaScript for font loading */
+            &lt;script&gt;
+                document.fonts.ready.then(() => {
+                    document.documentElement.classList.add('fonts-loaded');
+                });
             &lt;/script&gt;
         </pre>
     </div>
@@ -6380,38 +6380,38 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <b>Step 3: SEO Implementation</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            &lt;!-- Basic SEO --&gt;<br/>
-            &lt;title&gt;Your Name | Web Developer Portfolio&lt;/title&gt;<br/>
-            &lt;meta name="description" content="Professional web developer specializing in front-end development. View my portfolio of responsive, accessible websites."&gt;<br/>
-            &lt;meta name="keywords" content="web developer, portfolio, front-end, HTML, CSS, JavaScript"&gt;<br/>
-            &lt;meta name="author" content="Your Name"&gt;<br/>
-            <br/>
-            &lt;!-- Open Graph --&gt;<br/>
-            &lt;meta property="og:title" content="Your Name | Web Developer Portfolio"&gt;<br/>
-            &lt;meta property="og:description" content="Professional web developer portfolio"&gt;<br/>
-            &lt;meta property="og:image" content="https://yourdomain.com/og-image.jpg"&gt;<br/>
-            &lt;meta property="og:url" content="https://yourdomain.com"&gt;<br/>
-            &lt;meta property="og:type" content="website"&gt;<br/>
-            <br/>
-            &lt;!-- Twitter Cards --&gt;<br/>
-            &lt;meta name="twitter:card" content="summary_large_image"&gt;<br/>
-            &lt;meta name="twitter:title" content="Your Name | Web Developer Portfolio"&gt;<br/>
-            &lt;meta name="twitter:description" content="Professional web developer portfolio"&gt;<br/>
-            &lt;meta name="twitter:image" content="https://yourdomain.com/twitter-image.jpg"&gt;<br/>
-            <br/>
-            &lt;!-- JSON-LD Structured Data --&gt;<br/>
-            &lt;script type="application/ld+json"&gt;<br/>
-            {<br/>
-            &nbsp;&nbsp;"@context": "https://schema.org",<br/>
-            &nbsp;&nbsp;"@type": "Person",<br/>
-            &nbsp;&nbsp;"name": "Your Name",<br/>
-            &nbsp;&nbsp;"url": "https://yourdomain.com",<br/>
-            &nbsp;&nbsp;"jobTitle": "Web Developer",<br/>
-            &nbsp;&nbsp;"worksFor": {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;"@type": "Organization",<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;"name": "Your Company/Freelance"<br/>
-            &nbsp;&nbsp;}<br/>
-            }<br/>
+            &lt;!-- Basic SEO --&gt;
+            &lt;title&gt;Your Name | Web Developer Portfolio&lt;/title&gt;
+            &lt;meta name="description" content="Professional web developer specializing in front-end development. View my portfolio of responsive, accessible websites."&gt;
+            &lt;meta name="keywords" content="web developer, portfolio, front-end, HTML, CSS, JavaScript"&gt;
+            &lt;meta name="author" content="Your Name"&gt;
+            
+            &lt;!-- Open Graph --&gt;
+            &lt;meta property="og:title" content="Your Name | Web Developer Portfolio"&gt;
+            &lt;meta property="og:description" content="Professional web developer portfolio"&gt;
+            &lt;meta property="og:image" content="https://yourdomain.com/og-image.jpg"&gt;
+            &lt;meta property="og:url" content="https://yourdomain.com"&gt;
+            &lt;meta property="og:type" content="website"&gt;
+            
+            &lt;!-- Twitter Cards --&gt;
+            &lt;meta name="twitter:card" content="summary_large_image"&gt;
+            &lt;meta name="twitter:title" content="Your Name | Web Developer Portfolio"&gt;
+            &lt;meta name="twitter:description" content="Professional web developer portfolio"&gt;
+            &lt;meta name="twitter:image" content="https://yourdomain.com/twitter-image.jpg"&gt;
+            
+            &lt;!-- JSON-LD Structured Data --&gt;
+            &lt;script type="application/ld+json"&gt;
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Your Name",
+                "url": "https://yourdomain.com",
+                "jobTitle": "Web Developer",
+                "worksFor": {
+                    "@type": "Organization",
+                    "name": "Your Company/Freelance"
+                }
+            }
             &lt;/script&gt;
         </pre>
     </div>
@@ -6419,7 +6419,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <h3>Deployment Options:</h3>
     <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin: 20px 0;">
         <div style="background-color: #f0f8ff; padding: 15px; border-radius: 5px;">
-            <b>GitHub Pages (Free)</b><br/>
+            <b>GitHub Pages (Free)</b><br />
             • Free hosting for static sites<br/>
             • Integrated with GitHub<br/>
             • Custom domain support<br/>
@@ -9118,11 +9118,11 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <div class="analogy-box">
         <b>Analogy: Learning a New Language 📝</b><br/>
         
-        Variables</pre>: Labeled boxes storing your stuff<br/>
-        Data Types</pre>: Different kinds of stuff (books, photos, clothes)<br/>
-        Operators</pre>: Tools to work with your stuff (+, -, =)<br/>
-        console.log()</pre>: Writing notes to yourself about your stuff<br/>
-        Comments</pre>: Sticky notes explaining your organization system
+        Variables: Labeled boxes storing your stuff<br/>
+        Data Types: Different kinds of stuff (books, photos, clothes)<br/>
+        Operators: Tools to work with your stuff (+, -, =)<br/>
+        console.log(): Writing notes to yourself about your stuff<br/>
+        Comments: Sticky notes explaining your organization system
     </div>
 
     <h3>Key Topics</h3>
@@ -9141,58 +9141,58 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <b>Variable Declaration:</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            // Three ways to declare variables:<br/>
-            <br/>
-            // 1. let - can be reassigned<br/>
-            let userName = "John";<br/>
-            userName = "Jane";  // ✅ This works!<br/>
-            <br/>
-            // 2. const - cannot be reassigned<br/>
-            const birthYear = 1990;<br/>
-            // birthYear = 1991;  // ❌ Error! Cannot reassign const<br/>
-            <br/>
-            // 3. var - old way (avoid for now)<br/>
-            var oldVariable = "Avoid me";<br/>
-            <br/>
-            // Naming conventions:<br/>
-            let camelCase = "correct";    // ✅ Use camelCase for variables<br/>
-            let snake_case = "not common";<br/>
-            let PascalCase = "for classes";<br/>
-            let $special = "allowed";<br/>
+            // Three ways to declare variables:
+            
+            // 1. let - can be reassigned
+            let userName = "John";
+            userName = "Jane";  // ✅ This works!
+            
+            // 2. const - cannot be reassigned
+            const birthYear = 1990;
+            // birthYear = 1991;  // ❌ Error! Cannot reassign const
+            
+            // 3. var - old way (avoid for now)
+            var oldVariable = "Avoid me";
+            
+            // Naming conventions:
+            let camelCase = "correct";    // ✅ Use camelCase for variables
+            let snake_case = "not common";
+            let PascalCase = "for classes";
+            let $special = "allowed";
             let _private = "convention";
         </pre>
     </div>
     
-    <b>b. Data Types: Different Kinds of Data</b><br/>
+    <b>b. Data Types: Different Kinds of Data</b><br />
     
     <b>Primitive Data Types:</b>
     <div style="background-color: #f0f8ff; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            // 1. String - Text<br/>
-            let name = "Alice";<br/>
-            let greeting = 'Hello';<br/>
-            let message = \`Hi \${name}\`;  // Template literal<br/>
-            <br/>
-            // 2. Number - Integer or decimal<br/>
-            let age = 25;<br/>
-            let price = 19.99;<br/>
-            let temperature = -5;<br/>
-            <br/>
-            // 3. Boolean - true/false<br/>
-            let isLoggedIn = true;<br/>
-            let hasPermission = false;<br/>
-            <br/>
-            // 4. Undefined - declared but not assigned<br/>
-            let unknownValue;<br/>
-            console.log(unknownValue);  // undefined<br/>
-            <br/>
-            // 5. Null - intentionally empty<br/>
-            let emptyValue = null;<br/>
-            <br/>
-            // Check type with typeof operator:<br/>
-            console.log(typeof name);        // "string"<br/>
-            console.log(typeof age);         // "number"<br/>
-            console.log(typeof isLoggedIn);  // "boolean"<br/>
+            // 1. String - Tex
+            let name = "Alice"
+            let greeting = 'Hello'
+            let message = \`Hi \${name}\`;  // Template litera
+        
+            // 2. Number - Integer or decima
+            let age = 25
+            let price = 19.99
+            let temperature = -5
+        
+            // 3. Boolean - true/fals
+            let isLoggedIn = true
+            let hasPermission = false
+        
+            // 4. Undefined - declared but not assigne
+            let unknownValue
+            console.log(unknownValue);  // undefine
+        
+            // 5. Null - intentionally empt
+            let emptyValue = null
+        
+            // Check type with typeof operator
+            console.log(typeof name);        // "string
+            console.log(typeof age);         // "number
+            console.log(typeof isLoggedIn);  // "boolean
             console.log(typeof unknownValue);// "undefined"
         </pre>
     </div>
