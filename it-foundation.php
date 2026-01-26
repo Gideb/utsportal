@@ -107,13 +107,13 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <div class="analogy-box">
         <b>Analogy: Your Digital Office 🏢</b><br/>
         
-        <pre>Desktop</pre>: Your physical desk workspace<br/>
-        <pre>Taskbar</pre>: Tray of tools you use every 5 minutes<br/>
-        <pre>File Explorer</pre>: Filing cabinets of your computer<br/>
-        <pre>Icons</pre>: Visual shortcuts to your tools<br/>
-        <pre>Folders</pre>: Drawers to organize your files<br/>
-        <pre>Shortcuts</pre>: Post-it notes that point to tools<br/>
-        <pre>Recycle Bin</pre>: Trash can for deleted files
+        Desktop: Your physical desk workspace<br/>
+        Taskbar: Tray of tools you use every 5 minutes<br/>
+        File Explorer: Filing cabinets of your computer<br/>
+        Icons: Visual shortcuts to your tools<br/>
+        Folders: Drawers to organize your files<br/>
+        Shortcuts: Post-it notes that point to tools<br/>
+        Recycle Bin: Trash can for deleted files
     </div>
 
     <h3>Key Topics</h3>
@@ -500,14 +500,14 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <div class="analogy-box">
         <b>Analogy: The Computer as a Restaurant Kitchen 🍳</b><br/>
         
-        <pre>CPU</pre>: Head Chef (processes all instructions)<br/>
-        <pre>RAM</pre>: Kitchen Counter Space (temporary work area)<br/>
-        <pre>Storage (HDD/SSD)</pre>: Pantry/Freezer (permanent storage)<br/>
-        <pre>Motherboard</pre>: Restaurant Floor Plan (connects everything)<br/>
-        <pre>Power Supply</pre>: Electrical System (powers all equipment)<br/>
-        <pre>GPU</pre>: Specialty Chef (handles graphics)<br/>
-        <pre>Cooling System</pre>: Air Conditioning (prevents overheating)<br/>
-        <pre>Peripherals</pre>: Waitstaff (input/output devices)
+        CPU: Head Chef (processes all instructions)<br/>
+        RAM: Kitchen Counter Space (temporary work area)<br/>
+        Storage (HDD/SSD): Pantry/Freezer (permanent storage)<br/>
+        Motherboard: Restaurant Floor Plan (connects everything)<br/>
+        Power Supply: Electrical System (powers all equipment)<br/>
+        GPU: Specialty Chef (handles graphics)<br/>
+        Cooling System: Air Conditioning (prevents overheating)<br/>
+        Peripherals: Waitstaff (input/output devices)
     </div>
 
     <h3>Key Topics</h3>
@@ -988,14 +988,14 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <div class="analogy-box">
         <b>Analogy: The OS as a Government & Files as Citizens 🏛️</b><br/>
         
-        <pre>Operating System</pre>: Government that manages resources<br/>
-        <pre>Applications</pre>: Businesses that need resources<br/>
-        <pre>File Extensions</pre>: Citizens' ID cards (tell what they do)<br/>
-        <pre>Folders</pre>: Neighborhoods organizing citizens<br/>
-        <pre>Permissions</pre>: Security clearance levels<br/>
-        <pre>File System</pre>: City planning and infrastructure<br/>
-        <pre>Users</pre>: Residents with different access rights<br/>
-        <pre>Administrator</pre>: Mayor with full control
+        Operating System: Government that manages resources<br/>
+        Applications: Businesses that need resources<br/>
+        File Extensions: Citizens' ID cards (tell what they do)<br/>
+        Folders: Neighborhoods organizing citizens<br/>
+        Permissions: Security clearance levels<br/>
+        File System: City planning and infrastructure<br/>
+        Users: Residents with different access rights<br/>
+        Administrator: Mayor with full control
     </div>
 
     <h3>Key Topics</h3>
@@ -1593,14 +1593,14 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <div class="analogy-box">
         <b>Analogy: The Command Line as Direct Kitchen Access 🍽️</b><br/>
         
-        <pre>GUI (Graphical Interface)</pre>: Pointing at menu items<br/>
-        <pre>CLI (Command Line)</pre>: Speaking directly to the chef<br/>
-        <pre>Commands</pre>: Specific kitchen instructions<br/>
-        <pre>Arguments</pre>: Details for the instructions<br/>
-        <pre>Path</pre>: Directions to specific kitchen stations<br/>
-        <pre>Syntax</pre>: Proper grammar for kitchen commands<br/>
-        <pre>Batch Files</pre>: Recipe books with step-by-step instructions<br/>
-        <pre>Output</pre>: The finished dish served back
+        GUI (Graphical Interface): Pointing at menu items<br/>
+        CLI (Command Line): Speaking directly to the chef<br/>
+        Commands: Specific kitchen instructions<br/>
+        Arguments: Details for the instructions<br/>
+        Path: Directions to specific kitchen stations<br/>
+        Syntax: Proper grammar for kitchen commands<br/>
+        Batch Files: Recipe books with step-by-step instructions<br/>
+        Output: The finished dish served back
     </div>
 
     <h3>Key Topics</h3>
@@ -2353,14 +2353,14 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 <div class="analogy-box">
     <b>Analogy: The Network as a Postal System 📮</b><br/>
     
-    <pre>Data Packets</pre>: Letters/envelopes with information<br/>
-    <pre>IP Address</pre>: Your home address (unique location)<br/>
-    <pre>Router</pre>: Local post office (directs traffic)<br/>
-    <pre>Switch</pre>: Mail sorter in post office<br/>
-    <pre>Modem</pre>: Bridge between local and national postal systems<br/>
-    <pre>DNS</pre>: Phonebook (translates names to addresses)<br/>
-    <pre>ISP</pre>: National postal service<br/>
-    <pre>Firewall</pre>: Security checkpoint
+    Data Packets: Letters/envelopes with information<br/>
+    IP Address: Your home address (unique location)<br/>
+    Router: Local post office (directs traffic)<br/>
+    Switch: Mail sorter in post office<br/>
+    Modem: Bridge between local and national postal systems<br/>
+    DNS: Phonebook (translates names to addresses)<br/>
+    ISP: National postal service<br/>
+    Firewall: Security checkpoint
 </div>
 
 <h3>Key Topics</h3>
@@ -2930,14 +2930,14 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 <div class="analogy-box">
     <b>Analogy: Binary as Light Switches, ASCII as Code Book 💡</b><br/>
     
-    <pre>Binary System</pre>: Row of light switches (ON/OFF)<br/>
-    <pre>Bit</pre>: Single light switch (0 or 1)<br/>
-    <pre>Byte</pre>: 8 light switches together<br/>
-    <pre>ASCII Table</pre>: Code book showing which pattern = which letter<br/>
-    <pre>Character Encoding</pre>: Agreed-upon rules for the code book<br/>
-    <pre>Decimal System</pre>: Normal counting (0-9)<br/>
-    <pre>Hexadecimal</pre>: Shorthand for binary (0-9, A-F)<br/>
-    <pre>Unicode</pre>: Expanded global code book
+    Binary System: Row of light switches (ON/OFF)<br/>
+    Bit: Single light switch (0 or 1)<br/>
+    Byte: 8 light switches together<br/>
+    ASCII Table: Code book showing which pattern = which letter<br/>
+    Character Encoding: Agreed-upon rules for the code book<br/>
+    Decimal System: Normal counting (0-9)<br/>
+    Hexadecimal: Shorthand for binary (0-9, A-F)<br/>
+    Unicode: Expanded global code book
 </div>
 
 <h3>Key Topics</h3>
@@ -3703,14 +3703,14 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 <div class="analogy-box">
     <b>Analogy: Character Encoding as International Shipping 🌍</b><br/>
     
-    <pre>ASCII</pre>: Domestic shipping labels (English only)<br/>
-    <pre>Unicode</pre>: International shipping labels (all languages)<br/>
-    <pre>UTF-8</pre>: Smart packaging that adapts to content<br/>
-    <pre>Character Set</pre>: Available alphabet for labels<br/>
-    <pre>Encoding</pre>: Rules for creating labels<br/>
-    <pre>Byte Order Mark (BOM)</pre>: "This Way Up" sticker on package<br/>
-    <pre>Code Point</pre>: Unique ID for each character<br/>
-    <pre>Glyph</pre>: Visual appearance of the character
+    ASCII: Domestic shipping labels (English only)<br/>
+    Unicode: International shipping labels (all languages)<br/>
+    UTF-8: Smart packaging that adapts to content<br/>
+    Character Set: Available alphabet for labels<br/>
+    Encoding: Rules for creating labels<br/>
+    Byte Order Mark (BOM): "This Way Up" sticker on package<br/>
+    Code Point: Unique ID for each character<br/>
+    Glyph: Visual appearance of the character
 </div>
 
 <h3>Key Topics</h3>
@@ -4377,13 +4377,13 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 <div class="analogy-box">
     <b>Analogy: The Complete Computer Foundation 🏗️</b><br/>
     
-    <pre>Hardware</pre>: Building structure and utilities<br/>
-    <pre>Operating System</pre>: Building management and rules<br/>
-    <pre>File System</pre>: Rooms and organization system<br/>
-    <pre>Command Line</pre>: Direct communication with building systems<br/>
-    <pre>Networking</pre>: Roads and communication lines<br/>
-    <pre>Data Encoding</pre>: Language and alphabet for messages<br/>
-    <pre>Module 1</pre>: Learning to build and maintain the foundation
+    Hardware: Building structure and utilities<br/>
+    Operating System: Building management and rules<br/>
+    File System: Rooms and organization system<br/>
+    Command Line: Direct communication with building systems<br/>
+    Networking: Roads and communication lines<br/>
+    Data Encoding: Language and alphabet for messages<br/>
+    Module 1: Learning to build and maintain the foundation
 </div>
 
 <h3>Today's Schedule</h3>
@@ -5122,14 +5122,14 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 <div class="analogy-box">
     <b>Analogy: Microsoft Word as a Professional Kitchen 🍳</b><br/>
     
-    <pre>Ribbon</pre>: Your organized tool drawers<br/>
-    <pre>Document</pre>: Your cooking workspace<br/>
-    <pre>Styles</pre>: Pre-made recipe templates<br/>
-    <pre>Quick Access Toolbar</pre>: Most-used tools on counter<br/>
-    <pre>Ruler</pre>: Measuring tape for precision<br/>
-    <pre>Status Bar</pre>: Kitchen timer and thermometer<br/>
-    <pre>View Modes</pre>: Different kitchen layouts<br/>
-    <pre>Templates</pre>: Complete meal kits with instructions
+    Ribbon: Your organized tool drawers<br/>
+    Document: Your cooking workspace<br/>
+    Styles: Pre-made recipe templates<br/>
+    Quick Access Toolbar: Most-used tools on counter<br/>
+    Ruler: Measuring tape for precision<br/>
+    Status Bar: Kitchen timer and thermometer<br/>
+    View Modes: Different kitchen layouts<br/>
+    Templates: Complete meal kits with instructions
 </div>
 
 <h3>Key Topics</h3>
@@ -5708,14 +5708,14 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 <div class="analogy-box">
     <b>Analogy: Document Formatting as Building Design 🏗️</b><br/>
     
-    <pre>Direct Formatting</pre>: Painting each wall individually<br/>
-    <pre>Styles</pre>: Using pre-designed room templates<br/>
-    <pre>Format Painter</pre>: Color sample tool<br/>
-    <pre>Heading Styles</pre>: Building structural elements<br/>
-    <pre>Normal Style</pre>: Default wall finish<br/>
-    <pre>Style Sets</pre>: Complete design themes<br/>
-    <pre>Style Inspector</pre>: Blueprint analysis tool<br/>
-    <pre>Clear Formatting</pre>: Reset to bare walls
+    Direct Formatting: Painting each wall individually<br/>
+    Styles: Using pre-designed room templates<br/>
+    Format Painter: Color sample tool<br/>
+    Heading Styles: Building structural elements<br/>
+    Normal Style: Default wall finish<br/>
+    Style Sets: Complete design themes<br/>
+    Style Inspector: Blueprint analysis tool<br/>
+    Clear Formatting: Reset to bare walls
 </div>
 
 <h3>Key Topics</h3>
@@ -6378,14 +6378,14 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 <div class="analogy-box">
     <b>Analogy: Tables as Spreadsheets, Images as Art 🎨</b><br/>
     
-    <pre>Table Cells</pre>: Individual spreadsheet cells<br/>
-    <pre>Table Borders</pre>: Grid lines (can be visible or invisible)<br/>
-    <pre>Image Wrap</pre>: How text flows around a picture<br/>
-    <pre>Image Compression</pre>: Making digital photos smaller<br/>
-    <pre>SmartArt</pre>: Pre-designed diagram templates<br/>
-    <pre>Shapes</pre>: Vector graphics (scale without quality loss)<br/>
-    <pre>Icons</pre>: Modern, scalable symbols<br/>
-    <pre>Charts</pre>: Visual representations of data
+    Table Cells: Individual spreadsheet cells<br/>
+    Table Borders: Grid lines (can be visible or invisible)<br/>
+    Image Wrap: How text flows around a picture<br/>
+    Image Compression: Making digital photos smaller<br/>
+    SmartArt: Pre-designed diagram templates<br/>
+    Shapes: Vector graphics (scale without quality loss)<br/>
+    Icons: Modern, scalable symbols<br/>
+    Charts: Visual representations of data
 </div>
 
 <h3>Key Topics</h3>
@@ -7095,14 +7095,14 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 <div class="analogy-box">
     <b>Analogy: Document as a Book, Pages as Chapters 📚</b><br/>
     
-    <pre>Margins</pre>: Page borders/frames<br/>
-    <pre>Headers/Footers</pre>: Running titles at top/bottom of pages<br/>
-    <pre>Page Numbers</pre>: Chapter/page indicators<br/>
-    <pre>Section Breaks</pre>: Chapter dividers<br/>
-    <pre>Orientation</pre>: Portrait (vertical) vs Landscape (horizontal)<br/>
-    <pre>Columns</pre>: Newspaper-style text flow<br/>
-    <pre>Watermarks</pre>: Background impressions<br/>
-    <pre>Page Borders</pre>: Decorative edges
+    Margins: Page borders/frames<br/>
+    Headers/Footers: Running titles at top/bottom of pages<br/>
+    Page Numbers: Chapter/page indicators<br/>
+    Section Breaks: Chapter dividers<br/>
+    Orientation: Portrait (vertical) vs Landscape (horizontal)<br/>
+    Columns: Newspaper-style text flow<br/>
+    Watermarks: Background impressions<br/>
+    Page Borders: Decorative edges
 </div>
 
 <h3>Key Topics</h3>
@@ -7824,13 +7824,13 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     
     <div class="analogy-box">
         <b>Analogy: The Digital Post Office 📬</b><br/>
-        <pre>Mail Merge</pre>: Like printing address labels for hundreds of envelopes<br/>
-        <pre>Data Source</pre>: Your address book (Excel or Contacts)<br/>
-        <pre>Main Document</pre>: The envelope template<br/>
-        <pre>Merge Fields</pre>: Placeholders like &lt;&lt;FirstName&gt;&gt; that get replaced<br/>
-        <pre>Table of Contents (TOC)</pre>: Like a book's index – automatically generated<br/>
-        <pre>Styles</pre>: The secret ingredient that makes TOC work automatically<br/>
-        <pre>Hyperlinks</pre>: Clickable links in your TOC that jump to sections<br/>
+        Mail Merge: Like printing address labels for hundreds of envelopes<br/>
+        Data Source: Your address book (Excel or Contacts)<br/>
+        Main Document: The envelope template<br/>
+        Merge Fields: Placeholders like &lt;&lt;FirstName&gt;&gt; that get replaced<br/>
+        Table of Contents (TOC): Like a book's index – automatically generated<br/>
+        Styles: The secret ingredient that makes TOC work automatically<br/>
+        Hyperlinks: Clickable links in your TOC that jump to sections<br/>
     </div>
 
     <h3>Key Topics</h3>
@@ -8196,13 +8196,13 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 
 <div class="analogy-box">
     <b>Analogy: The Research Library 📚</b><br/>
-    <pre>Footnotes</pre>: Like tiny sticky notes at the bottom of a page<br/>
-    <pre>Endnotes</pre>: All your notes collected at the end of the book<br/>
-    <pre>Citations</pre>: Giving credit to other authors (academic honesty)<br/>
-    <pre>Bibliography</pre>: The "References" section listing all sources<br/>
-    <pre>Captions</pre>: Labels under images/tables that auto-number<br/>
-    <pre>Cross-references</pre>: "See Figure 3 on page 12" - updates automatically<br/>
-    <pre>Bookmarks</pre>: Digital sticky notes you can jump to instantly<br/>
+    Footnotes: Like tiny sticky notes at the bottom of a page<br/>
+    Endnotes: All your notes collected at the end of the book<br/>
+    Citations: Giving credit to other authors (academic honesty)<br/>
+    Bibliography: The "References" section listing all sources<br/>
+    Captions: Labels under images/tables that auto-number<br/>
+    Cross-references: "See Figure 3 on page 12" - updates automatically<br/>
+    Bookmarks: Digital sticky notes you can jump to instantly<br/>
 </div>
 
 <h3>Key Topics</h3>
@@ -8652,13 +8652,13 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 
 <div class="analogy-box">
     <b>Analogy: The Digital Workshop 🛠️</b><br/>
-    <pre>Track Changes</pre>: Like seeing everyone's pencil marks on a shared blueprint<br/>
-    <pre>Comments</pre>: Sticky notes with questions or suggestions<br/>
-    <pre>Reviewing Pane</pre>: A summary board showing all feedback<br/>
-    <pre>Compare Documents</pre>: Spot-the-difference for two document versions<br/>
-    <pre>Protect Document</pre>: Locking certain parts so only specific people can edit<br/>
-    <pre>Version History</pre>: Time machine to see earlier drafts<br/>
-    <pre>@Mentions</pre>: Tagging colleagues to get their attention<br/>
+    Track Changes: Like seeing everyone's pencil marks on a shared blueprint<br/>
+    Comments: Sticky notes with questions or suggestions<br/>
+    Reviewing Pane: A summary board showing all feedback<br/>
+    Compare Documents: Spot-the-difference for two document versions<br/>
+    Protect Document: Locking certain parts so only specific people can edit<br/>
+    Version History: Time machine to see earlier drafts<br/>
+    @Mentions: Tagging colleagues to get their attention<br/>
 </div>
 
 <h3>Key Topics</h3>
@@ -9172,13 +9172,13 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 
 <div class="analogy-box">
     <b>Analogy: The Architectural Blueprint 🏢</b><br/>
-    <pre>Document Structure</pre>: The foundation and framework<br/>
-    <pre>Styles & Formatting</pre>: Interior design and aesthetics<br/>
-    <pre>Tables & Graphics</pre>: Functional furniture and decorations<br/>
-    <pre>References & Automation</pre>: Electrical wiring and plumbing<br/>
-    <pre>Collaboration Features</pre>: Communication systems<br/>
-    <pre>Final Polish</pre>: Quality inspection before handing over keys<br/>
-    <pre>Portfolio Piece</pre>: Your showroom display for potential clients<br/>
+    Document Structure: The foundation and framework<br/>
+    Styles & Formatting: Interior design and aesthetics<br/>
+    Tables & Graphics: Functional furniture and decorations<br/>
+    References & Automation: Electrical wiring and plumbing<br/>
+    Collaboration Features: Communication systems<br/>
+    Final Polish: Quality inspection before handing over keys<br/>
+    Portfolio Piece: Your showroom display for potential clients<br/>
 </div>
 
 <h3>Project Overview</h3>
@@ -9673,14 +9673,14 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     
     <div class="analogy-box">
         <b>Analogy: The Digital Warehouse 📦</b><br/>
-        <pre>Workbook</pre>: The entire warehouse building<br/>
-        <pre>Worksheet</pre>: One floor of the warehouse<br/>
-        <pre>Cells</pre>: Individual storage boxes<br/>
-        <pre>Columns</pre>: Aisles (vertical) labeled A, B, C...<br/>
-        <pre>Rows</pre>: Shelves (horizontal) labeled 1, 2, 3...<br/>
-        <pre>Cell Address</pre>: The exact location (Aisle B, Shelf 3 = B3)<br/>
-        <pre>Range</pre>: A group of boxes (A1:B5 = boxes from A1 to B5)<br/>
-        <pre>Formula Bar</pre>: The label maker that shows what's inside each box
+        Workbook: The entire warehouse building<br/>
+        Worksheet: One floor of the warehouse<br/>
+        Cells: Individual storage boxes<br/>
+        Columns: Aisles (vertical) labeled A, B, C...<br/>
+        Rows: Shelves (horizontal) labeled 1, 2, 3...<br/>
+        Cell Address: The exact location (Aisle B, Shelf 3 = B3)<br/>
+        Range: A group of boxes (A1:B5 = boxes from A1 to B5)<br/>
+        Formula Bar: The label maker that shows what's inside each box
     </div>
 
     <h3>Key Topics</h3>
@@ -10101,15 +10101,15 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     
     <div class="analogy-box">
         <b>Analogy: The Math Assistant Robot 🤖</b><br/>
-        <pre>= sign</pre>: The "Wake up!" command to Excel's brain<br/>
-        <pre>SUM()</pre>: The adding machine (total everything up)<br/>
-        <pre>AVERAGE()</pre>: The grade calculator (find the middle)<br/>
-        <pre>COUNT()</pre>: The inventory counter (how many items?)<br/>
-        <pre>MIN()</pre>: The pessimist (find the smallest)<br/>
-        <pre>MAX()</pre>: The optimist (find the largest)<br/>
-        <pre>Function Arguments</pre>: What you feed the robot to process<br/>
-        <pre>AutoSum</pre>: Excel guessing what you want to calculate<br/>
-        <pre>Formula Bar Editing</pre>: Adjusting the robot's instructions
+        = sign: The "Wake up!" command to Excel's brain<br/>
+        SUM(): The adding machine (total everything up)<br/>
+        AVERAGE(): The grade calculator (find the middle)<br/>
+        COUNT(): The inventory counter (how many items?)<br/>
+        MIN(): The pessimist (find the smallest)<br/>
+        MAX(): The optimist (find the largest)<br/>
+        Function Arguments: What you feed the robot to process<br/>
+        AutoSum: Excel guessing what you want to calculate<br/>
+        Formula Bar Editing: Adjusting the robot's instructions
     </div>
 
     <h3>Key Topics</h3>
@@ -10611,18 +10611,16 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     
     <div class="analogy-box">
         <b>Analogy: The Address System 🏠</b><br/>
-        <pre>Relative Reference (A1)</pre>: "Two houses to the left" - changes when you move<br/>
-        <pre>Absolute Reference ($A$1)</pre>: "123 Main Street" - never changes<br/>
-        <pre>Mixed Reference ($A1 or A$1)</pre>: "Same row, different column" or vice versa<br/>
-        <pre>F4 Key</pre>: The reference type switcher (cycle through options)<br/>
-        <pre>Copy/Paste Formulas</pre>: Moving instructions to new locations<br/>
-        <pre>Fill Handle</pre>: The formula duplicator (small square at cell corner)<br/>
-        <pre>Circular Reference</pre>: Telling someone to ask yourself (creates loop)
+        Relative Reference (A1): "Two houses to the left" - changes when you move<br/>
+        Absolute Reference ($A$1): "123 Main Street" - never changes<br/>
+        Mixed Reference ($A1 or A$1): "Same row, different column" or vice versa<br/>
+        F4 Key: The reference type switcher (cycle through options)<br/>
+        Copy/Paste Formulas: Moving instructions to new locations<br/>
+        Fill Handle: The formula duplicator (small square at cell corner)<br/>
+        Circular Reference: Telling someone to ask yourself (creates loop)
     </div>
-
-    <h3>Key Topics</h3>
-    <ul>
-        <li>Understanding relative references (default behavior)</li>
+       <h3>Key Topics</h3>
+    <ul>    <li>Understanding relative references (default behavior)</li>
         <li>Using absolute references with $ signs</li>
         <li>Mixed references for flexible formulas</li>
         <li>The F4 key reference cycling trick</li>
@@ -11159,17 +11157,16 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     
     <div class="analogy-box">
         <b>Analogy: The Data Translator 📊</b><br/>
-        <pre>Data Series</pre>: The characters in your story (what you're plotting)<br/>
-        <pre>Chart Type</pre>: The genre of your story (bar, line, pie, etc.)<br/>
-        <pre>Axes</pre>: The stage where characters perform (X and Y dimensions)<br/>
-        <pre>Legend</pre>: The program explaining who's who<br/>
-        <pre>Chart Elements</pre>: Props and scenery (titles, labels, gridlines)<br/>
-        <pre>Chart Styles</pre>: The costume and set design<br/>
-        <pre>Sparklines</pre>: Mini-stories inside cells<br/>
-        <pre>Dynamic Charts</pre>: Stories that update automatically
+        Data Series: The characters in your story (what you're plotting)<br/>
+        Chart Type: The genre of your story (bar, line, pie, etc.)<br/>
+        Axes: The stage where characters perform (X and Y dimensions)<br/>
+        Legend: The program explaining who's who<br/>
+        Chart Elements: Props and scenery (titles, labels, gridlines)<br/>
+        Chart Styles: The costume and set design<br/>
+        Sparklines: Mini-stories inside cells<br/>
+        Dynamic Charts: Stories that update automatically
     </div>
-
-    <h3>Key Topics</h3>
+       <h3>Key Topics</h3>
     <ul>
         <li>Choosing the right chart type for your data</li>
         <li>Creating and customizing basic charts</li>
@@ -11783,18 +11780,17 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     
     <div class="analogy-box">
         <b>Analogy: The Digital Decision Maker 🤔</b><br/>
-        <pre>IF function</pre>: The fork in the road (if this, then that)<br/>
-        <pre>Logical test</pre>: The question being asked (is it true or false?)<br/>
-        <pre>TRUE result</pre>: The path taken if answer is YES<br/>
-        <pre>FALSE result</pre>: The path taken if answer is NO<br/>
-        <pre>Comparison operators</pre>: The question words (> greater than, < less than, = equal to)<br/>
-        <pre>Nested IF</pre>: Multiple decisions in sequence (if this, then if that, then...)<br/>
-        <pre>AND/OR functions</pre>: Complex conditions (both must be true, or either can be true)
+        IF function: The fork in the road (if this, then that)<br/>
+        Logical test: The question being asked (is it true or false?)<br/>
+        TRUE result: The path taken if answer is YES<br/>
+        FALSE result: The path taken if answer is NO<br/>
+        Comparison operators: The question words (> greater than, < less than, = equal to)<br/>
+        Nested IF: Multiple decisions in sequence (if this, then if that, then...)<br/>
+        AND/OR functions: Complex conditions (both must be true, or either can be true)
     </div>
-
+    
     <h3>Key Topics</h3>
-    <ul>
-        <li>Understanding IF function syntax and structure</li>
+    <ul>    <li>Understanding IF function syntax and structure</li>
         <li>Using comparison operators (>, <, =, >=, <=, <>)</li>
         <li>Creating simple conditional formulas</li>
         <li>Nesting multiple IF functions</li>
@@ -12378,16 +12374,16 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     
     <div class="analogy-box">
         <b>Analogy: The Library & The Gatekeeper 📚</b><br/>
-        <pre>VLOOKUP</pre>: The librarian finding books by their ID number<br/>
-        <pre>Lookup value</pre>: The book ID you're searching for<br/>
-        <pre>Table array</pre>: The library shelves with all books<br/>
-        <pre>Column index</pre>: Which shelf to look on (1st, 2nd, 3rd shelf)<br/>
-        <pre>Range lookup</pre>: Exact match or closest match?<br/>
-        <pre>Data Validation</pre>: The library rules (no food, quiet please)<br/>
-        <pre>Drop-down lists</pre>: The pre-approved book categories<br/>
-        <pre>Error alerts</pre>: The librarian saying "That's not allowed here"
+        VLOOKUP: The librarian finding books by their ID number<br/>
+        Lookup value: The book ID you're searching for<br/>
+        Table array: The library shelves with all books<br/>
+        Column index: Which shelf to look on (1st, 2nd, 3rd shelf)<br/>
+        Range lookup: Exact match or closest match?<br/>
+        Data Validation: The library rules (no food, quiet please)<br/>
+        Drop-down lists: The pre-approved book categories<br/>
+        Error alerts: The librarian saying "That's not allowed here"
     </div>
-
+    
     <h3>Key Topics</h3>
     <ul>
         <li>Understanding VLOOKUP syntax and parameters</li>
@@ -13028,14 +13024,14 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     
     <div class="analogy-box">
         <b>Analogy: The Data Detective & The Summarizer 🕵️♂️</b><br/>
-        <pre>Sorting</pre>: Alphabetizing files or arranging by date<br/>
-        <pre>Filtering</pre>: Hiding irrelevant files to focus on what matters<br/>
-        <pre>Pivot Table</pre>: The summary report that answers specific questions<br/>
-        <pre>Fields</pre>: The categories you can analyze (like report columns)<br/>
-        <pre>Values</pre>: The numbers you want to summarize (totals, averages)<br/>
-        <pre>Slicers</pre>: Interactive buttons to filter data visually<br/>
-        <pre>Pivot Chart</pre>: The visual story of your summarized data<br/>
-        <pre>GETPIVOTDATA</pre>: Extracting specific numbers from your summary
+        Sorting: Alphabetizing files or arranging by date<br/>
+        Filtering: Hiding irrelevant files to focus on what matters<br/>
+        Pivot Table: The summary report that answers specific questions<br/>
+        Fields: The categories you can analyze (like report columns)<br/>
+        Values: The numbers you want to summarize (totals, averages)<br/>
+        Slicers: Interactive buttons to filter data visually<br/>
+        Pivot Chart: The visual story of your summarized data<br/>
+        GETPIVOTDATA: Extracting specific numbers from your summary
     </div>
 
     <h3>Key Topics</h3>
@@ -13743,13 +13739,13 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     
     <div class="analogy-box">
         <b>Analogy: The Corporate Control Center 🏢</b><br/>
-        <pre>Data Structure</pre>: The building foundation and framework<br/>
-        <pre>Formulas & Functions</pre>: The electrical wiring and plumbing<br/>
-        <pre>VLOOKUP & Validation</pre>: The security and access systems<br/>
-        <pre>Pivot Tables & Charts</pre>: The executive dashboards and monitors<br/>
-        <pre>Sorting & Filtering</pre>: The filing and organization systems<br/>
-        <pre>Final Dashboard</pre>: The command center with all controls<br/>
-        <pre>Portfolio Piece</pre>: Your professional showcase for potential employers
+        Data Structure: The building foundation and framework<br/>
+        Formulas & Functions: The electrical wiring and plumbing<br/>
+        VLOOKUP & Validation: The security and access systems<br/>
+        Pivot Tables & Charts: The executive dashboards and monitors<br/>
+        Sorting & Filtering: The filing and organization systems<br/>
+        Final Dashboard: The command center with all controls<br/>
+        Portfolio Piece: Your professional showcase for potential employers
     </div>
 
     <h3>Project Overview</h3>
@@ -14340,14 +14336,14 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     
     <div class="analogy-box">
         <b>Analogy: The Digital Storyteller 🎬</b><br/>
-        <pre>Presentation</pre>: Your complete movie or book<br/>
-        <pre>Slides</pre>: Individual scenes or pages<br/>
-        <pre>Slide Master</pre>: The director's style guide for the whole film<br/>
-        <pre>Layouts</pre>: Different scene templates (title scene, dialogue scene, action scene)<br/>
-        <pre>Themes</pre>: The visual style (color palette, costumes, set design)<br/>
-        <pre>Placeholders</pre>: Marked spots where actors (content) should stand<br/>
-        <pre>Notes</pre>: The director's notes for each scene<br/>
-        <pre>Presenter View</pre>: The director's monitor showing what's next
+            Presentation: Your complete movie or book<br/>
+            Slides: Individual scenes or pages<br/>
+            Slide Master: The director's style guide for the whole film<br/>
+            Layouts: Different scene templates (title scene, dialogue scene, action scene)<br/>
+            Themes: The visual style (color palette, costumes, set design)<br/>
+            Placeholders: Marked spots where actors (content) should stand<br/>
+            Notes: The director's notes for each scene<br/>
+            Presenter View: The director's monitor showing what's next
     </div>
 
     <h3>Key Topics</h3>
@@ -14934,13 +14930,13 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <div class="analogy-box">
             <b>Analogy: The Theater Director 🎭</b><br/>
             
-            <pre>Transitions</pre>: The curtains between scenes - they should be smooth, not jarring<br/>
-            <pre>Animations</pre>: The actors' movements on stage - purposeful and timed<br/>
-            <pre>Entrance Effects</pre>: How characters enter the scene<br/>
-            <pre>Emphasis Effects</pre>: Highlighting important characters<br/>
-            <pre>Exit Effects</pre>: How characters leave the scene<br/>
-            <pre>Timing</pre>: The director's timing for when things happen<br/>
-            <pre>Multimedia</pre>: Adding music and video to enhance the story
+            Transitions: The curtains between scenes - they should be smooth, not jarring<br/>
+            Animations: The actors' movements on stage - purposeful and timed<br/>
+            Entrance Effects: How characters enter the scene<br/>
+            Emphasis Effects: Highlighting important characters<br/>
+            Exit Effects: How characters leave the scene<br/>
+            Timing: The director's timing for when things happen<br/>
+            Multimedia: Adding music and video to enhance the story
         </div>
 
         <h3>Key Topics</h3>
@@ -15370,14 +15366,14 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
                 <div class="analogy-box">
                     <b>Analogy: The Global Postal System 📮</b><br/>
                     
-                    <pre>The Internet</pre>: The entire global network of roads, planes, and ships<br/>
-                    <pre>World Wide Web</pre>: The letters, packages, and magazines being delivered<br/>
-                    <pre>Browser</pre>: Your local post office that prepares and receives mail<br/>
-                    <pre>DNS</pre>: The phonebook that converts names to addresses<br/>
-                    <pre>IP Address</pre>: Your home's exact street address<br/>
-                    <pre>Router</pre>: The local mail sorting facility<br/>
-                    <pre>ISP</pre>: The national postal service (like FedEx or UPS)<br/>
-                    <pre>Server</pre>: A giant warehouse sending out packages
+                    The Internet: The entire global network of roads, planes, and ships<br/>
+                    World Wide Web: The letters, packages, and magazines being delivered<br/>
+                    Browser: Your local post office that prepares and receives mail<br/>
+                    DNS: The phonebook that converts names to addresses<br/>
+                    IP Address: Your home's exact street address<br/>
+                    Router: The local mail sorting facility<br/>
+                    ISP: The national postal service (like FedEx or UPS)<br/>
+                    Server: A giant warehouse sending out packages
                 </div>
 
                 <h3>Key Topics</h3>
@@ -15909,14 +15905,14 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
                 <div class="analogy-box">
                     <b>Analogy: The Digital Handshake & Paper Trail 🤝📄</b><br/>
                     
-                    <pre>Email Subject</pre>: The headline of a newspaper article<br/>
-                    <pre>Email Body</pre>: A formal business letter<br/>
-                    <pre>Signature</pre>: Your digital business card<br/>
-                    <pre>CC</pre>: Putting someone in the meeting room<br/>
-                    <pre>BCC</pre>: The one-way mirror - they see you, you don't see them<br/>
-                    <pre>Attachment</pre>: Handing someone a document at a meeting<br/>
-                    <pre>Reply All</pre>: Shouting in a crowded room<br/>
-                    <pre>Forward</pre>: Passing along a memo with your notes
+                    Email Subject: The headline of a newspaper article<br/>
+                    Email Body: A formal business letter<br/>
+                    Signature: Your digital business card<br/>
+                    CC: Putting someone in the meeting room<br/>
+                    BCC: The one-way mirror - they see you, you don't see them<br/>
+                    Attachment: Handing someone a document at a meeting<br/>
+                    Reply All: Shouting in a crowded room<br/>
+                    Forward: Passing along a memo with your notes
                 </div>
 
                 <h3>Key Topics</h3>
@@ -16642,14 +16638,14 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <div class="analogy-box">
         <b>Analogy: Building a Recipe vs Following a Recipe 🍳</b><br/>
         
-        <pre>Algorithm</pre>: A recipe for solving a problem<br/>
-        <pre>Flowchart</pre>: A map of your recipe's steps<br/>
-        <pre>If/Then Logic</pre>: Decision points in your recipe ("If oven hot, then bake")<br/>
-        <pre>Variables</pre>: Ingredients you can change<br/>
-        <pre>Loops</pre>: Repeating steps ("Stir every 5 minutes")<br/>
-        <pre>Functions</pre>: Sub-recipes within your main recipe<br/>
-        <pre>Debugging</pre>: Tasting and adjusting your dish<br/>
-        <pre>Pseudo-code</pre>: Writing the recipe in plain English first
+        Algorithm: A recipe for solving a problem<br/>
+        Flowchart: A map of your recipe's steps<br/>
+        If/Then Logic: Decision points in your recipe ("If oven hot, then bake")<br/>
+        Variables: Ingredients you can change<br/>
+        Loops: Repeating steps ("Stir every 5 minutes")<br/>
+        Functions: Sub-recipes within your main recipe<br/>
+        Debugging: Tasting and adjusting your dish<br/>
+        Pseudo-code: Writing the recipe in plain English first
     </div>
 
     <h3>Key Topics</h3>
@@ -17331,14 +17327,14 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
                 <div class="analogy-box">
                     <b>Analogy: Your Digital Home & Neighborhood 🏡🔒</b><br/>
                     
-                    <pre>Passwords</pre>: The keys to your digital house<br/>
-                    <pre>2FA</pre>: A security guard who checks your ID after you use your key<br/>
-                    <pre>Encryption</pre>: Writing letters in secret code that only you and recipient understand<br/>
-                    <pre>Firewall</pre>: A fence around your digital property<br/>
-                    <pre>Antivirus</pre>: A guard dog that sniffs out and chases away intruders<br/>
-                    <pre>VPN</pre>: A private tunnel between your house and destination<br/>
-                    <pre>Digital Footprint</pre>: The trail of footprints you leave as you walk through the digital world<br/>
-                    <pre>Phishing</pre>: A con artist pretending to be your bank to steal your keys
+                    Passwords: The keys to your digital house<br/>
+                    2FA: A security guard who checks your ID after you use your key<br/>
+                    Encryption: Writing letters in secret code that only you and recipient understand<br/>
+                    Firewall: A fence around your digital property<br/>
+                    Antivirus: A guard dog that sniffs out and chases away intruders<br/>
+                    VPN: A private tunnel between your house and destination<br/>
+                    Digital Footprint: The trail of footprints you leave as you walk through the digital world<br/>
+                    Phishing: A con artist pretending to be your bank to steal your keys
                 </div>
 
                 <h3>Key Topics</h3>
@@ -18095,14 +18091,14 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
                 <div class="analogy-box">
                     <b>Analogy: Your Computer as a Car 🚗🔧</b><br/>
                     
-                    <pre>Task Manager</pre>: The car dashboard showing what's running<br/>
-                    <pre>Startup Programs</pre>: Passengers who automatically get in when you start the car<br/>
-                    <pre>Disk Cleanup</pre>: Cleaning out the trash from your car<br/>
-                    <pre>Defragmentation</pre>: Rearranging items in your trunk for easier access<br/>
-                    <pre>Backup</b>: A spare key and insurance for your car<br/>
-                    <pre>Updates</pre>: Regular oil changes and maintenance<br/>
-                    <pre>BSOD</pre>: The check engine light coming on<br/>
-                    <pre>Restart</pre>: Turning the car off and on again to fix issues
+                    Task Manager: The car dashboard showing what's running<br/>
+                    Startup Programs: Passengers who automatically get in when you start the car<br/>
+                    Disk Cleanup: Cleaning out the trash from your car<br/>
+                    Defragmentation: Rearranging items in your trunk for easier access<br/>
+                    Backup</b>: A spare key and insurance for your car<br/>
+                    Updates: Regular oil changes and maintenance<br/>
+                    BSOD: The check engine light coming on<br/>
+                    Restart: Turning the car off and on again to fix issues
                 </div>
 
                 <h3>Key Topics</h3>
@@ -19062,6 +19058,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <div style="background-color: #f0f0f0; border: 3px solid #000;">
             <b>Module 1: The Machine & The Interface (Weeks 1–2)</b><br />
             <br />
+            
             1. Which keyboard shortcut shows the desktop instantly?<br />
             a) Win + E<br />
             b) Win + D<br />

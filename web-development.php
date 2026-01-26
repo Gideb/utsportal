@@ -331,8 +331,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
                 4. Ordered list for steps <br />
                 5. Links to: <br />
                      &nbsp; &nbsp; &nbsp; - Similar recipe (external, opens in new tab) <br />
-                      &nbsp;&nbsp; &nbsp;- Jump from top to "Notes" section (internal link) <br />
-                     &nbsp;&nbsp; &nbsp; - Email link for questions
+                         &nbsp;- Jump from top to "Notes" section (internal link) <br />
+                         &nbsp; - Email link for questions
             </div>
           
             <h3> Accessibility Tip </h3>
@@ -472,7 +472,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
                 2. One image with proper alt text and figcaption <br />
                 3. One embedded YouTube video using &lt;iframe&gt; <br />
                 4. A table with: <br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;- Caption <br />
+                            - Caption <br />
                     &nbsp;&nbsp;&nbsp;&nbsp;- Thead, tbody <br />
                     &nbsp;&nbsp;&nbsp;&nbsp;- Proper scope attributes <br />
                     &nbsp;&nbsp;&nbsp;&nbsp;- At least 3 rows of data
@@ -2299,15 +2299,15 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
             <small><b>Media Queries:</b> <pre>min-width</pre></small><br/>
             <small><b>Philosophy:</b> Progressive enhancement</small><br/><br/>
             <pre>
-                /* Mobile styles (default) */<br/>
-                .container { padding: 1rem; }<br/><br/>
-                /* Tablet */<br/>
-                @media (min-width: 768px) {<br/>
-                &nbsp;&nbsp;.container { padding: 2rem; }<br/>
-                }<br/><br/>
-                /* Desktop */<br/>
-                @media (min-width: 1024px) {<br/>
-                &nbsp;&nbsp;.container { padding: 3rem; }<br/>
+                /* Mobile styles (default) */
+                .container { padding: 1rem; }
+                /* Tablet */
+                @media (min-width: 768px) {
+                    .container { padding: 2rem; }
+                }
+                /* Desktop */
+                @media (min-width: 1024px) {
+                    .container { padding: 3rem; }
                 }
             </pre>
         </div>
@@ -2318,15 +2318,15 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
             <small><b>Media Queries:</b> <pre>max-width</pre></small><br/>
             <small><b>Philosophy:</b> Graceful degradation</small><br/><br/>
             <pre>
-                /* Desktop styles (default) */<br/>
-                .container { padding: 3rem; }<br/><br/>
-                /* Tablet */<br/>
-                @media (max-width: 1023px) {<br/>
-                &nbsp;&nbsp;.container { padding: 2rem; }<br/>
-                }<br/><br/>
-                /* Mobile */<br/>
-                @media (max-width: 767px) {<br/>
-                &nbsp;&nbsp;.container { padding: 1rem; }<br/>
+                /* Desktop styles (default) */
+                .container { padding: 3rem; }
+                /* Tablet */
+                @media (max-width: 1023px) {
+                    .container { padding: 2rem; }
+                }
+                /* Mobile */
+                @media (max-width: 767px) {
+                    .container { padding: 1rem; }
                 }
             </pre>
         </div>
@@ -2349,14 +2349,14 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <b>Basic Media Query Structure:</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            @media media-type and (media-feature) {<br/>
-            &nbsp;&nbsp;/* CSS rules here */<br/>
-            }<br/><br/>
-            /* Example: */<br/>
-            @media screen and (min-width: 768px) {<br/>
-            &nbsp;&nbsp;.container {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;max-width: 1200px;<br/>
-            &nbsp;&nbsp;}<br/>
+            @media media-type and (media-feature) { 
+                /* CSS rules here */    
+            }     
+            /* Example: */  
+            @media screen and (min-width: 768px) {  
+                .container {    
+                    max-width: 1200px;  
+                }   
             }
         </pre>
     </div>
@@ -2422,27 +2422,27 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <b>Common Breakpoints (Mobile-First):</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            /* Small phones: < 576px (no media query needed - mobile-first!) */<br/>
-            /* Base styles work for all mobile */<br/><br/>
-            /* Small tablets and large phones */<br/>
-            @media (min-width: 576px) {<br/>
-            &nbsp;&nbsp;/* CSS for ≥576px */<br/>
-            }<br/><br/>
-            /* Tablets */<br/>
-            @media (min-width: 768px) {<br/>
-            &nbsp;&nbsp;/* CSS for ≥768px */<br/>
-            }<br/><br/>
-            /* Small desktops */<br/>
-            @media (min-width: 992px) {<br/>
-            &nbsp;&nbsp;/* CSS for ≥992px */<br/>
-            }<br/><br/>
-            /* Large desktops */<br/>
-            @media (min-width: 1200px) {<br/>
-            &nbsp;&nbsp;/* CSS for ≥1200px */<br/>
-            }<br/><br/>
-            /* Extra large */<br/>
-            @media (min-width: 1400px) {<br/>
-            &nbsp;&nbsp;/* CSS for ≥1400px */<br/>
+            /* Small phones: < 576px (no media query needed - mobile-first!) */ 
+            /* Base styles work for all mobile */     
+            /* Small tablets and large phones */    
+            @media (min-width: 576px) { 
+                /* CSS for ≥576px */    
+            }     
+            /* Tablets */   
+            @media (min-width: 768px) { 
+                /* CSS for ≥768px */    
+            }     
+            /* Small desktops */    
+            @media (min-width: 992px) { 
+                /* CSS for ≥992px */    
+            }     
+            /* Large desktops */    
+            @media (min-width: 1200px) {    
+                /* CSS for ≥1200px */   
+            }     
+            /* Extra large */   
+            @media (min-width: 1400px) {    
+                /* CSS for ≥1400px */   
             }
         </pre>
     </div>
@@ -2450,17 +2450,17 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <b>Logical Operators (and, or, not):</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            /* AND - both conditions must be true */<br/>
-            @media screen and (min-width: 768px) and (max-width: 1023px) {<br/>
-            &nbsp;&nbsp;/* Tablet only */<br/>
-            }<br/><br/>
-            /* OR - use comma to separate queries */<br/>
-            @media (min-width: 1200px), (orientation: landscape) {<br/>
-            &nbsp;&nbsp;/* Large screens OR landscape */<br/>
-            }<br/><br/>
-            /* NOT - invert the condition */<br/>
-            @media not screen and (color) {<br/>
-            &nbsp;&nbsp;/* Not a color screen */<br/>
+            /* AND - both conditions must be true */    
+            @media screen and (min-width: 768px) and (max-width: 1023px) {  
+                /* Tablet only */   
+            }     
+            /* OR - use comma to separate queries */    
+            @media (min-width: 1200px), (orientation: landscape) {  
+                /* Large screens OR landscape */    
+            }     
+            /* NOT - invert the condition */    
+            @media not screen and (color) { 
+                /* Not a color screen */    
             }
         </pre>
     </div>
@@ -2472,12 +2472,12 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <b>The Problem with Fixed Units:</b>
     <div style="background-color: #ffe6e6; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            /* WRONG - looks tiny on mobile, huge on desktop */<br/>
-            h1 {<br/>
-            &nbsp;&nbsp;font-size: 48px;&nbsp;&nbsp;/* Too big for mobile! */<br/>
-            }<br/>
-            p {<br/>
-            &nbsp;&nbsp;font-size: 16px;&nbsp;&nbsp;/* Too small for desktop! */<br/>
+            /* WRONG - looks tiny on mobile, huge on desktop */ 
+            h1 {    
+                font-size: 48px;    /* Too big for mobile! */   
+            }   
+            p { 
+                font-size: 16px;    /* Too small for desktop! */    
             }
         </pre>
     </div>
@@ -2485,19 +2485,19 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <b>Solution 1: Media Queries for Typography</b>
     <div style="background-color: #e8f5e8; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            /* Mobile-first typography */<br/>
-            h1 {<br/>
-            &nbsp;&nbsp;font-size: 2rem;&nbsp;&nbsp;/* 32px if root is 16px */<br/>
-            }<br/><br/>
-            @media (min-width: 768px) {<br/>
-            &nbsp;&nbsp;h1 {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;font-size: 2.5rem;&nbsp;&nbsp;/* 40px */<br/>
-            &nbsp;&nbsp;}<br/>
-            }<br/><br/>
-            @media (min-width: 1200px) {<br/>
-            &nbsp;&nbsp;h1 {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;font-size: 3rem;&nbsp;&nbsp;/* 48px */<br/>
-            &nbsp;&nbsp;}<br/>
+            /* Mobile-first typography */   
+            h1 {    
+                font-size: 2rem;    /* 32px if root is 16px */  
+            }     
+            @media (min-width: 768px) { 
+                h1 {    
+                    font-size: 2.5rem;  /* 40px */  
+                }   
+            }     
+            @media (min-width: 1200px) {    
+                h1 {    
+                    font-size: 3rem;    /* 48px */  
+                }   
             }
         </pre>
     </div>
@@ -2505,18 +2505,18 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <b>Solution 2: Fluid Typography with calc()</b>
     <div style="background-color: #e8f5e8; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            /* Fluid typography - scales smoothly */<br/>
-            h1 {<br/>
-            &nbsp;&nbsp;font-size: calc(1.5rem + 2vw);&nbsp;&nbsp;/* Scales with viewport */<br/>
-            &nbsp;&nbsp;/* At 320px: ~1.5rem + 6.4px = ~30.4px */<br/>
-            &nbsp;&nbsp;/* At 1200px: ~1.5rem + 24px = ~48px */<br/>
-            }<br/><br/>
-            /* Even better with clamp() */<br/>
-            h1 {<br/>
-            &nbsp;&nbsp;font-size: clamp(1.5rem, 4vw, 3rem);<br/>
-            &nbsp;&nbsp;/* Minimum: 1.5rem (24px) */<br/>
-            &nbsp;&nbsp;/* Preferred: 4vw (scales with viewport) */<br/>
-            &nbsp;&nbsp;/* Maximum: 3rem (48px) */<br/>
+            /* Fluid typography - scales smoothly */    
+            h1 {    
+                font-size: calc(1.5rem + 2vw);  /* Scales with viewport */    
+                /* At 320px: ~1.5rem + 6.4px = ~30.4px */   
+                /* At 1200px: ~1.5rem + 24px = ~48px */ 
+            }     
+            /* Even better with clamp() */  
+            h1 {    
+                font-size: clamp(1.5rem, 4vw, 3rem);    
+                /* Minimum: 1.5rem (24px) */    
+                /* Preferred: 4vw (scales with viewport) */ 
+                /* Maximum: 3rem (48px) */  
             }
         </pre>
     </div>
@@ -2524,21 +2524,21 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <b>Responsive Spacing:</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            /* Base spacing for mobile */<br/>
-            .container {<br/>
-            &nbsp;&nbsp;padding: 1rem;<br/>
-            &nbsp;&nbsp;margin-bottom: 1.5rem;<br/>
-            }<br/><br/>
-            /* Increase spacing on larger screens */<br/>
-            @media (min-width: 768px) {<br/>
-            &nbsp;&nbsp;.container {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;padding: 2rem;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;margin-bottom: 3rem;<br/>
-            &nbsp;&nbsp;}<br/>
-            }<br/><br/>
-            /* Fluid spacing with viewport units */<br/>
-            .hero {<br/>
-            &nbsp;&nbsp;padding: 5vh 5vw;&nbsp;&nbsp;/* Scales with viewport size */<br/>
+            /* Base spacing for mobile */   
+            .container {    
+                padding: 1rem;  
+                margin-bottom: 1.5rem;  
+            }     
+            /* Increase spacing on larger screens */    
+            @media (min-width: 768px) { 
+                .container {    
+                    padding: 2rem;  
+                    margin-bottom: 3rem;    
+                }   
+            }     
+            /* Fluid spacing with viewport units */ 
+            .hero { 
+                padding: 5vh 5vw;   /* Scales with viewport size */    
             }
         </pre>
     </div>
@@ -2549,30 +2549,30 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     
     <b>Viewport Units Recap:</b>
     <div style="background-color: #f0f8ff; padding: 15px; margin: 10px 0; border-radius: 5px;">
-        <pre>vw</pre> - 1% of viewport width<br/>
-        <pre>vh</pre> - 1% of viewport height<br/>
-        <pre>vmin</pre> - 1% of viewport's smaller dimension<br/>
-        <pre>vmax</pre> - 1% of viewport's larger dimension
+            vw   - 1% of viewport width<br/>
+            vh   - 1% of viewport height<br/>
+            vmin     - 1% of viewport's smaller dimension<br/>
+            vmax     - 1% of viewport's larger dimension
     </div>
     
     <b>Fluid Layout Examples:</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            /* Full viewport hero section */<br/>
-            .hero {<br/>
-            &nbsp;&nbsp;width: 100vw;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* Full width */<br/>
-            &nbsp;&nbsp;height: 100vh;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* Full height */<br/>
-            &nbsp;&nbsp;padding: 5vh 5vw;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* Proportional padding */<br/>
-            }<br/><br/>
-            /* Fluid container with max-width */<br/>
-            .container {<br/>
-            &nbsp;&nbsp;width: 90vw;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* 90% of viewport */<br/>
-            &nbsp;&nbsp;max-width: 1200px;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* But never more than 1200px */<br/>
-            &nbsp;&nbsp;margin: 0 auto;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* Center it */<br/>
-            }<br/><br/>
-            /* Responsive font with vw */<br/>
-            h1 {<br/>
-            &nbsp;&nbsp;font-size: calc(24px + 2vw);&nbsp;&nbsp;/* Scales with width */<br/>
+            /* Full viewport hero section */    
+            .hero { 
+                width: 100vw;                        /* Full width */   
+                height: 100vh;                       /* Full height */ 
+                padding: 5vh 5vw;                    /* Proportional padding */ 
+            }     
+            /* Fluid container with max-width */    
+            .container {    
+                width: 90vw;                          /* 90% of viewport */ 
+                max-width: 1200px;                   /* But never more than 1200px */  
+                margin: 0 auto;                      /* Center it */  
+            }     
+            /* Responsive font with vw */   
+            h1 {    
+                font-size: calc(24px + 2vw);        /* Scales with width */ 
             }
         </pre>
     </div>
@@ -2580,16 +2580,16 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <b>The Problem with 100vh on Mobile:</b>
     <div style="background-color: #ffe6e6; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            /* PROBLEM - includes browser UI on mobile */<br/>
-            .hero {<br/>
-            &nbsp;&nbsp;height: 100vh;&nbsp;&nbsp;/* May cause scrolling on mobile */<br/>
-            }<br/><br/>
-            /* SOLUTION - use min-height or newer units */<br/>
-            .hero {<br/>
-            &nbsp;&nbsp;min-height: 100vh;&nbsp;&nbsp;/* Better */<br/>
-            &nbsp;&nbsp;height: 100dvh;&nbsp;&nbsp;&nbsp;&nbsp;/* Dynamic viewport height (new) */<br/>
-            &nbsp;&nbsp;height: 100svh;&nbsp;&nbsp;&nbsp;&nbsp;/* Small viewport height (new) */<br/>
-            &nbsp;&nbsp;height: 100lvh;&nbsp;&nbsp;&nbsp;&nbsp;/* Large viewport height (new) */<br/>
+            /* PROBLEM - includes browser UI on mobile */                           
+            .hero { 
+                height: 100vh;                          /* May cause scrolling on mobile */   
+            }     
+            /* SOLUTION - use min-height or newer units */  
+            .hero { 
+                min-height: 100vh;                      /* Better */  
+                height: 100dvh;                         /* Dynamic viewport height (new) */  
+                height: 100svh;                         /* Small viewport height (new) */    
+                height: 100lvh;                         /* Large viewport height (new) */    
             }
         </pre>
     </div>
@@ -2602,42 +2602,42 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <b>Given Desktop-First CSS:</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            /* Desktop styles (default) */<br/>
-            .container {<br/>
-            &nbsp;&nbsp;max-width: 1200px;<br/>
-            &nbsp;&nbsp;margin: 0 auto;<br/>
-            &nbsp;&nbsp;display: grid;<br/>
-            &nbsp;&nbsp;grid-template-columns: 250px 1fr 250px;<br/>
-            &nbsp;&nbsp;gap: 2rem;<br/>
-            }<br/><br/>
-            h1 {<br/>
-            &nbsp;&nbsp;font-size: 3rem;<br/>
-            &nbsp;&nbsp;margin-bottom: 2rem;<br/>
-            }<br/><br/>
-            /* Tablet */<br/>
-            @media (max-width: 1024px) {<br/>
-            &nbsp;&nbsp;.container {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: 200px 1fr;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;gap: 1.5rem;<br/>
-            &nbsp;&nbsp;}<br/>
-            &nbsp;&nbsp;.sidebar-right {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;display: none;<br/>
-            &nbsp;&nbsp;}<br/>
-            }<br/><br/>
-            /* Mobile */<br/>
-            @media (max-width: 768px) {<br/>
-            &nbsp;&nbsp;.container {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: 1fr;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;gap: 1rem;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;padding: 1rem;<br/>
-            &nbsp;&nbsp;}<br/>
-            &nbsp;&nbsp;.sidebar-left {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;display: none;<br/>
-            &nbsp;&nbsp;}<br/>
-            &nbsp;&nbsp;h1 {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;font-size: 2rem;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;margin-bottom: 1rem;<br/>
-            &nbsp;&nbsp;}<br/>
+            /* Desktop styles (default) */
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: 250px 1fr 250px;
+                gap: 2rem;
+            }
+            h1 {
+                font-size: 3rem;
+                margin-bottom: 2rem;
+            }
+            /* Tablet */
+            @media (max-width: 1024px) {
+                .container {
+                    grid-template-columns: 200px 1fr;
+                    gap: 1.5rem;
+                }
+                .sidebar-right {
+                    display: none;
+                }
+            }
+            /* Mobile */
+            @media (max-width: 768px) {
+                .container {
+                    grid-template-columns: 1fr;
+                    gap: 1rem;
+                    padding: 1rem;
+                }
+                .sidebar-left {
+                    display: none;
+                }
+                h1 {
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                }
             }
         </pre>
     </div>
@@ -2671,32 +2671,32 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <b>Mistake 1: Too Many Breakpoints</b>
     <div style="background-color: #ffe6e6; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            /* WRONG - breakpoints for every device */<br/>
-            @media (min-width: 320px) { ... }<br/>
-            @media (min-width: 375px) { ... }<br/>
-            @media (min-width: 414px) { ... }<br/>
-            @media (min-width: 480px) { ... }<br/>
-            @media (min-width: 640px) { ... }<br/>
-            /* etc... */<br/><br/>
-            /* RIGHT - breakpoints where layout actually changes */<br/>
-            @media (min-width: 576px) { ... }&nbsp;&nbsp;/* Small tablets */<br/>
-            @media (min-width: 768px) { ... }&nbsp;&nbsp;/* Tablets */<br/>
-            @media (min-width: 992px) { ... }&nbsp;&nbsp;/* Small desktops */<br/>
-            @media (min-width: 1200px) { ... }&nbsp;&nbsp;/* Large desktops */
+            /* WRONG - breakpoints for every device */  
+            @media (min-width: 320px) { ... }   
+            @media (min-width: 375px) { ... }   
+            @media (min-width: 414px) { ... }   
+            @media (min-width: 480px) { ... }   
+            @media (min-width: 640px) { ... }   
+            /* etc... */       
+            /* RIGHT - breakpoints where layout actually changes */ 
+            @media (min-width: 576px) { ... }           /* Small tablets */    
+            @media (min-width: 768px) { ... }           /* Tablets */  
+            @media (min-width: 992px) { ... }           /* Small desktops */   
+            @media (min-width: 1200px) { ... }          /* Large desktops */
         </pre>
     </div>
     
     <b>Mistake 2: Hiding Content on Mobile</b>
     <div style="background-color: #ffe6e6; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            /* WRONG - hiding important content */<br/>
-            .important-info {<br/>
-            &nbsp;&nbsp;display: none;&nbsp;&nbsp;/* Users miss important info! */<br/>
-            }<br/><br/>
-            /* BETTER - reorganize or condense */<br/>
-            .important-info {<br/>
-            &nbsp;&nbsp;font-size: 0.875rem;&nbsp;&nbsp;/* Smaller but visible */<br/>
-            &nbsp;&nbsp;/* OR use accordion, tabs, etc. */<br/>
+            /* WRONG - hiding important content */  
+            .important-info {   
+                display: none;                              /* Users miss important info! */  
+            }     
+            /* BETTER - reorganize or condense */   
+            .important-info {   
+                font-size: 0.875rem;                         /* Smaller but visible */   
+                /* OR use accordion, tabs, etc. */  
             }
         </pre>
     </div>
@@ -2704,14 +2704,14 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <b>Mistake 3: Fixed Width Elements</b>
     <div style="background-color: #ffe6e6; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            /* WRONG - breaks layout on small screens */<br/>
-            .image {<br/>
-            &nbsp;&nbsp;width: 800px;&nbsp;&nbsp;/* Causes horizontal scroll! */<br/>
-            }<br/><br/>
-            /* RIGHT - fluid or max-width */<br/>
-            .image {<br/>
-            &nbsp;&nbsp;max-width: 100%;&nbsp;&nbsp;/* Never exceeds container */<br/>
-            &nbsp;&nbsp;height: auto;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* Maintain aspect ratio */<br/>
+            /* WRONG - breaks layout on small screens */
+            .image {
+                width: 800px;                           /* Causes horizontal scroll! */
+            }
+            /* RIGHT - fluid or max-width */
+            .image {
+                max-width: 100%;                        /* Never exceeds container */
+                height: auto;                           /* Maintain aspect ratio */
             }
         </pre>
     </div>
@@ -6585,42 +6585,42 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         • Perfect for micro-interactions<br/><br/>
         
         <b>Transition Properties:</b><br/>
-        • <pre>transition-property</pre>: Which properties to animate<br/>
-        • <pre>transition-duration</pre>: How long animation takes<br/>
-        • <pre>transition-timing-function</pre>: Speed curve<br/>
-        • <pre>transition-delay</pre>: Wait before starting<br/>
-        • <pre>transition</pre>: Shorthand for all above
+        • transition-property: Which properties to animate<br/>
+        • transition-duration: How long animation takes<br/>
+        • transition-timing-function: Speed curve<br/>
+        • transition-delay: Wait before starting<br/>
+        • transition: Shorthand for all above
     </div>
     
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <b>Basic Transition Example:</b><br/>
         <pre>
-            .button {<br/>
-            &nbsp;&nbsp;background-color: #007bff;<br/>
-            &nbsp;&nbsp;color: white;<br/>
-            &nbsp;&nbsp;padding: 12px 24px;<br/>
-            &nbsp;&nbsp;border: none;<br/>
-            &nbsp;&nbsp;border-radius: 4px;<br/>
-            &nbsp;&nbsp;cursor: pointer;<br/>
-            &nbsp;&nbsp;<br/>
-            &nbsp;&nbsp;/* Transition setup */<br/>
-            &nbsp;&nbsp;transition-property: background-color, transform;<br/>
-            &nbsp;&nbsp;transition-duration: 0.3s;<br/>
-            &nbsp;&nbsp;transition-timing-function: ease-in-out;<br/>
-            &nbsp;&nbsp;transition-delay: 0s;<br/>
-            <br/>
-            &nbsp;&nbsp;/* Shorthand: property duration timing-function delay */<br/>
-            &nbsp;&nbsp;transition: background-color 0.3s ease-in-out 0s,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;transform 0.3s ease-in-out 0s;<br/>
-            }<br/>
-            <br/>
-            .button:hover {<br/>
-            &nbsp;&nbsp;background-color: #0056b3;<br/>
-            &nbsp;&nbsp;transform: translateY(-2px);<br/>
-            }<br/>
-            <br/>
-            .button:active {<br/>
-            &nbsp;&nbsp;transform: translateY(0);<br/>
+            .button {
+                background-color: #007bff;
+                color: white;
+                padding: 12px 24px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+
+                /* Transition setup */
+                transition-property: background-color, transform;
+                transition-duration: 0.3s;
+                transition-timing-function: ease-in-out;
+                transition-delay: 0s;
+            
+                /* Shorthand: property duration timing-function delay */
+                transition: background-color 0.3s ease-in-out 0s,
+                transform 0.3s ease-in-out 0s;
+            }
+            
+            .button:hover {
+                background-color: #0056b3;
+                transform: translateY(-2px);
+            }
+            
+            .button:active {
+                transform: translateY(0);
             }
         </pre>
     </div>
@@ -6646,17 +6646,71 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         
         <div style="background-color: #f0fff0; padding: 15px; border-radius: 5px;">
             <b>Timing Functions (Easing):</b><br/>
-            • <pre>linear</pre>: Constant speed<br/>
-            • <pre>ease</pre>: Slow start, fast middle, slow end (default)<br/>
-            • <pre>ease-in</pre>: Slow start, fast end<br/>
-            • <pre>ease-out</pre>: Fast start, slow end<br/>
-            • <pre>ease-in-out</pre>: Slow start and end<br/>
-            • <pre>cubic-bezier(x1, y1, x2, y2)</pre>: Custom curve<br/>
-            • <pre>steps(n, start|end)</pre>: Discrete steps<br/><br/>
+            • linear: Constant speed<br/>
+            • ease: Slow start, fast middle, slow end (default)<br/>
+            • ease-in: Slow start, fast end<br/>
+            • ease-out: Fast start, slow end<br/>
+            • ease-in-out: Slow start and end<br/>
+            • cubic-bezier(x1, y1, x2, y2): Custom curve<br/>
+            • steps(n, start|end): Discrete steps<br/><br/>
             
-            <b>Visual Guide:</b><br/>
-            <div style="height: 20px; background: linear-gradient(to right, #e0e0e0, #888); margin: 10px 0;"></div>
-            <small>Linear (even) vs Ease (smooth acceleration/deceleration)</small>
+
+
+<b>Visual Guide: Linear vs Easing Timing Functions</b><br/>
+<div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 10px 0; border: 1px solid #e9ecef;">
+    
+    <!-- Explanation -->
+    <div style="margin-bottom: 15px; font-size: 13px; color: #495057;">
+        <b>Linear:</b> Constant speed throughout<br/>
+        <b>Ease (default):</b> Smooth acceleration and deceleration
+    </div>
+    
+    <!-- Linear animation -->
+    <div style="margin-bottom: 25px;">
+        <div style="font-size: 12px; color: #007bff; margin-bottom: 5px;">
+            <b>Linear Timing:</b>
+        </div>
+        <div style="background: #e9ecef; height: 6px; border-radius: 3px; position: relative; overflow: hidden;">
+            <div style="
+                width: 30px;
+                height: 30px;
+                background: #007bff;
+                border-radius: 50%;
+                position: absolute;
+                top: -12px;
+                left: 0;
+                /* Simple inline animation using transform */
+                animation: 
+                    0.4s linear 0s infinite alternate move-right,
+                    4s linear 0s infinite left-progress;
+            "></div>
+        </div>
+    </div>
+    
+    <!-- Ease animation -->
+    <div style="margin-bottom: 15px;">
+        <div style="font-size: 12px; color: #28a745; margin-bottom: 5px;">
+            <b>Ease Timing:</b>
+        </div>
+        <div style="background: #e9ecef; height: 6px; border-radius: 3px; position: relative; overflow: hidden;">
+            <div style="
+                width: 30px;
+                height: 30px;
+                background: #28a745;
+                border-radius: 50%;
+                position: absolute;
+                top: -12px;
+                left: 0;
+                /* Simulated ease with steps */
+                animation: 
+                    0.4s ease-in-out 0s infinite alternate move-right,
+                    4s ease-in-out 0s infinite left-progress;
+            "></div>
+        </div>
+    </div>
+   
+
+
         </div>
     </div>
     
@@ -6667,49 +6721,49 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <b>@keyframes Rule:</b><br/>
         <pre>
-            /* Define the animation */<br/>
-            @keyframes slideIn {<br/>
-            &nbsp;&nbsp;/* Starting state (0%) */<br/>
-            &nbsp;&nbsp;from {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;transform: translateX(-100%);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;opacity: 0;<br/>
-            &nbsp;&nbsp;}<br/>
-            <br/>
-            &nbsp;&nbsp;/* Middle state (50%) - optional */<br/>
-            &nbsp;&nbsp;50% {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;transform: translateX(10%);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;opacity: 0.8;<br/>
-            &nbsp;&nbsp;}<br/>
-            <br/>
-            &nbsp;&nbsp;/* Ending state (100%) */<br/>
-            &nbsp;&nbsp;to {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;transform: translateX(0);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;opacity: 1;<br/>
-            &nbsp;&nbsp;}<br/>
-            }<br/>
-            <br/>
-            /* Alternative percentage syntax */<br/>
-            @keyframes bounce {<br/>
-            &nbsp;&nbsp;0%, 100% {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;transform: translateY(0);<br/>
-            &nbsp;&nbsp;}<br/>
-            &nbsp;&nbsp;50% {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;transform: translateY(-20px);<br/>
-            &nbsp;&nbsp;}<br/>
-            }<br/>
-            <br/>
-            /* Apply the animation */<br/>
-            .element {<br/>
-            &nbsp;&nbsp;animation-name: slideIn;<br/>
-            &nbsp;&nbsp;animation-duration: 0.8s;<br/>
-            &nbsp;&nbsp;animation-timing-function: ease-out;<br/>
-            &nbsp;&nbsp;animation-delay: 0.5s;<br/>
-            &nbsp;&nbsp;animation-iteration-count: 1;<br/>
-            &nbsp;&nbsp;animation-direction: normal;<br/>
-            &nbsp;&nbsp;animation-fill-mode: forwards;<br/>
-            <br/>
-            &nbsp;&nbsp;/* Shorthand */<br/>
-            &nbsp;&nbsp;animation: slideIn 0.8s ease-out 0.5s 1 normal forwards;<br/>
+            /* Define the animation */
+            @keyframes slideIn {
+                /* Starting state (0%) */
+                from {
+                    transform: translateX(-100%);
+                    opacity: 0;
+                }
+            
+                /* Middle state (50%) - optional */
+                50% {
+                    transform: translateX(10%);
+                    opacity: 0.8;
+                }
+            
+                /* Ending state (100%) */
+                to {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+            
+            /* Alternative percentage syntax */
+            @keyframes bounce {
+                0%, 100% {
+                    transform: translateY(0);
+                }
+                50% {
+                    transform: translateY(-20px);
+                }
+            }
+            
+            /* Apply the animation */
+            .element {
+                animation-name: slideIn;
+                animation-duration: 0.8s;
+                animation-timing-function: ease-out;
+                animation-delay: 0.5s;
+                animation-iteration-count: 1;
+                animation-direction: normal;
+                animation-fill-mode: forwards;
+            
+                /* Shorthand */
+                animation: slideIn 0.8s ease-out 0.5s 1 normal forwards;
             }
         </pre>
     </div>
@@ -6777,17 +6831,17 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     
     <div style="background-color: #f0f8ff; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <b>CSS Transform Functions:</b><br/>
-        • <pre>translate(x, y)</pre>: Move element<br/>
-        • <pre>translateX(x)</pre>, <pre>translateY(y)</pre>: Move on one axis<br/>
-        • <pre>scale(x, y)</pre>: Resize element<br/>
-        • <pre>scaleX(x)</pre>, <pre>scaleY(y)</pre>: Scale on one axis<br/>
-        • <pre>rotate(angle)</pre>: Rotate element<br/>
-        • <pre>skew(x-angle, y-angle)</pre>: Skew element<br/>
-        • <pre>skewX(angle)</pre>, <pre>skewY(angle)</pre>: Skew on one axis<br/>
-        • <pre>matrix(a, b, c, d, tx, ty)</pre>: Complex transformations<br/><br/>
+        • translate(x, y): Move element<br/>
+        • translateX(x), translateY(y): Move on one axis<br/>
+        • scale(x, y): Resize element<br/>
+        • scaleX(x), scaleY(y): Scale on one axis<br/>
+        • rotate(angle): Rotate element<br/>
+        • skew(x-angle, y-angle): Skew element<br/>
+        • skewX(angle), skewY(angle): Skew on one axis<br/>
+        • matrix(a, b, c, d, tx, ty): Complex transformations<br/><br/>
         
         <b>Transform Origin:</b><br/>
-        • <pre>transform-origin: x y z;</pre><br/>
+        • transform-origin: x y z;<br/>
         • Controls the point around which transforms occur<br/>
         • Default: center center (50% 50%)
     </div>
@@ -6795,32 +6849,32 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <b>Transform Examples:</b><br/>
         <pre>
-            /* Basic transforms */<br/>
-            .element {<br/>
-            &nbsp;&nbsp;transform: translate(50px, 100px);<br/>
-            }<br/>
-            <br/>
-            /* Multiple transforms (applied in order!) */<br/>
-            .element {<br/>
-            &nbsp;&nbsp;transform: translateX(50px) rotate(45deg) scale(1.2);<br/>
-            }<br/>
-            <br/>
-            /* 3D transforms */<br/>
-            .element {<br/>
-            &nbsp;&nbsp;transform: perspective(500px) rotateY(45deg);<br/>
-            &nbsp;&nbsp;transform-style: preserve-3d;<br/>
-            &nbsp;&nbsp;backface-visibility: hidden;<br/>
-            }<br/>
-            <br/>
-            /* Transform origin examples */<br/>
-            .rotate-top-left {<br/>
-            &nbsp;&nbsp;transform-origin: top left;<br/>
-            &nbsp;&nbsp;transform: rotate(45deg);<br/>
-            }<br/>
-            <br/>
-            .scale-from-center {<br/>
-            &nbsp;&nbsp;transform-origin: center center;<br/>
-            &nbsp;&nbsp;transform: scale(1.5);<br/>
+            /* Basic transforms */
+            .element {
+                transform: translate(50px, 100px);
+            }
+            
+            /* Multiple transforms (applied in order!) */
+            .element {
+                transform: translateX(50px) rotate(45deg) scale(1.2);
+            }
+            
+            /* 3D transforms */
+            .element {
+                transform: perspective(500px) rotateY(45deg);
+                transform-style: preserve-3d;
+                backface-visibility: hidden;
+            }
+            
+            /* Transform origin examples */
+            .rotate-top-left {
+                transform-origin: top left;
+                transform: rotate(45deg);
+            }
+            
+            .scale-from-center {
+                transform-origin: center center;
+                transform: scale(1.5);
             }
         </pre>
     </div>
@@ -6862,27 +6916,27 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <b>Performance Example:</b><br/>
         <pre>
-            /* ❌ BAD - Animates layout properties */<br/>
-            .slow-animation {<br/>
-            &nbsp;&nbsp;transition: width 0.3s ease, height 0.3s ease;<br/>
-            }<br/>
-            .slow-animation:hover {<br/>
-            &nbsp;&nbsp;width: 200px;<br/>
-            &nbsp;&nbsp;height: 200px;<br/>
-            }<br/>
-            <br/>
-            /* ✅ GOOD - Uses transform instead */<br/>
-            .fast-animation {<br/>
-            &nbsp;&nbsp;transition: transform 0.3s ease;<br/>
-            }<br/>
-            .fast-animation:hover {<br/>
-            &nbsp;&nbsp;transform: scale(1.5);<br/>
-            }<br/>
-            <br/>
-            /* ✅ BETTER - Uses will-change hint */<br/>
-            .optimized-animation {<br/>
-            &nbsp;&nbsp;will-change: transform, opacity;<br/>
-            &nbsp;&nbsp;transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);<br/>
+            /* ❌ BAD - Animates layout properties */
+            .slow-animation {
+                ;transition: width 0.3s ease, height 0.3s ease;
+            }
+            .slow-animation:hover {
+                ;width: 200px;
+                ;height: 200px;
+            }
+            
+            /* ✅ GOOD - Uses transform instead */
+            .fast-animation {
+                ;transition: transform 0.3s ease;
+            }
+            .fast-animation:hover {
+                ;transform: scale(1.5);
+            }
+            
+            /* ✅ BETTER - Uses will-change hint */
+            .optimized-animation {
+                ;will-change: transform, opacity;
+                ;transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             }
         </pre>
     </div>
@@ -6905,17 +6959,17 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         
         <b>Code Structure:</b><br/>
         <pre>
-            &lt;div class="spinner" aria-label="Loading"&gt;&lt;/div&gt;<br/>
-            <br/>
-            /* CSS */<br/>
-            @keyframes spin {<br/>
-            &nbsp;&nbsp;from { transform: rotate(0deg); }<br/>
-            &nbsp;&nbsp;to { transform: rotate(360deg); }<br/>
-            }<br/>
-            <br/>
-            @keyframes pulse {<br/>
-            &nbsp;&nbsp;0%, 100% { opacity: 1; }<br/>
-            &nbsp;&nbsp;50% { opacity: 0.5; }<br/>
+            &lt;div class="spinner" aria-label="Loading"&gt;&lt;/div&gt;
+            
+            /* CSS */
+            @keyframes spin {
+                from { transform: rotate(0deg); }
+                to { transform: rotate(360deg); }
+            }
+            
+            @keyframes pulse {
+                0%, 100% { opacity: 1; }
+                50% { opacity: 0.5; }
             }
         </pre>
     </div>
@@ -6968,50 +7022,50 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <div style="background-color: #f5f0ff; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <b>Fade In:</b><br/>
         <pre>
-            @keyframes fadeIn {<br/>
-            &nbsp;&nbsp;from { opacity: 0; }<br/>
-            &nbsp;&nbsp;to { opacity: 1; }<br/>
-            }<br/>
-            .fade-in {<br/>
-            &nbsp;&nbsp;animation: fadeIn 0.5s ease-out;<br/>
+            @keyframes fadeIn {
+                from { opacity: 0; }
+                to { opacity: 1; }
             }
-        </pre><br/><br/>
-        
-        <b>Slide In:</b><br/>
-        <pre>
-            @keyframes slideInLeft {<br/>
-            &nbsp;&nbsp;from {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;transform: translateX(-100%);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;opacity: 0;<br/>
-            &nbsp;&nbsp;}<br/>
-            &nbsp;&nbsp;to {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;transform: translateX(0);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;opacity: 1;<br/>
-            &nbsp;&nbsp;}<br/>
+            .fade-in {
+                animation: fadeIn 0.5s ease-out;
             }
-        </pre><br/><br/>
+        </pre>
         
-        <b>Bounce:</b><br/>
+        <b>Slide In:</b>
         <pre>
-            @keyframes bounce {<br/>
-            &nbsp;&nbsp;0%, 20%, 50%, 80%, 100% {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;transform: translateY(0);<br/>
-            &nbsp;&nbsp;}<br/>
-            &nbsp;&nbsp;40% {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;transform: translateY(-20px);<br/>
-            &nbsp;&nbsp;}<br/>
-            &nbsp;&nbsp;60% {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;transform: translateY(-10px);<br/>
-            &nbsp;&nbsp;}<br/>
+            @keyframes slideInLeft {
+                from {
+                    transform: translateX(-100%);
+                    opacity: 0;
+                }
+                to {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
             }
-        </pre><br/><br/>
+        </pre>
         
-        <b>Pulse:</b><br/>
+        <b>Bounce:</b>
         <pre>
-            @keyframes pulse {<br/>
-            &nbsp;&nbsp;0% { transform: scale(1); }<br/>
-            &nbsp;&nbsp;50% { transform: scale(1.05); }<br/>
-            &nbsp;&nbsp;100% { transform: scale(1); }<br/>
+            @keyframes bounce {
+                0%, 20%, 50%, 80%, 100% {
+                    transform: translateY(0);
+                }
+                40% {
+                    transform: translateY(-20px);
+                }
+                60% {
+                    transform: translateY(-10px);
+                }
+            }
+        </pre>
+        
+        <b>Pulse:</b>
+        <pre>
+            @keyframes pulse {
+                0% { transform: scale(1); }
+                50% { transform: scale(1.05); }
+                100% { transform: scale(1); }
             }
         </pre>
     </div>
@@ -7053,14 +7107,14 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <b>Technical Requirements:</b>
         <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
             <pre>
-                /* Must use these techniques: */<br/>
-                1. CSS Transitions for hover states<br/>
-                2. @keyframes animations for complex effects<br/>
-                3. transform property for smooth movements<br/>
-                4. opacity for fade effects<br/>
-                5. cubic-bezier() for custom timing<br/>
-                6. animation-delay for staggered effects<br/>
-                7. will-change for performance optimization<br/>
+                /* Must use these techniques: */
+                1. CSS Transitions for hover states
+                2. @keyframes animations for complex effects
+                3. transform property for smooth movements
+                4. opacity for fade effects
+                5. cubic-bezier() for custom timing
+                6. animation-delay for staggered effects
+                7. will-change for performance optimization
                 8. prefers-reduced-motion media query
             </pre>
         </div>
@@ -7076,7 +7130,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         
         <b>Bonus Challenges:</b>
         <div style="background-color: #fff0e6; padding: 15px; margin: 10px 0; border-radius: 5px;">
-            <b>Level 1:</b><br/>
+            <b>Level 1:</b><br />
             • Add parallax scrolling effects<br/>
             • Create animated gradients<br/>
             • Implement page transition animations<br/>
@@ -7176,33 +7230,33 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         • Great for icons, illustrations, data visualization<br/><br/>
         
         <b>Animatable SVG Properties:</b><br/>
-        • <pre>fill</pre>, <pre>stroke</pre>, <pre>stroke-width</pre><br/>
-        • <pre>opacity</pre>, <pre>transform</pre><br/>
-        • <pre>cx</pre>, <pre>cy</pre>, <pre>r</pre> (circle)<br/>
-        • <pre>x</pre>, <pre>y</pre>, <pre>width</pre>, <pre>height</pre> (rect)<br/>
-        • <pre>points</pre> (polygon)<br/>
-        • <pre>d</pre> (path - with limitations)<br/>
-        • <pre>stroke-dasharray</pre>, <pre>stroke-dashoffset</pre>
+        • fill, stroke, stroke-width<br/>
+        • opacity, transform<br/>
+        • cx, cy, r (circle)<br/>
+        • x, y, width, height (rect)<br/>
+        • points (polygon)<br/>
+        • d (path - with limitations)<br/>
+        • stroke-dasharray, stroke-dashoffset
     </div>
     
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <b>Basic SVG Structure:</b><br/>
         <pre>
-            &lt;svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"&gt;<br/>
-            &nbsp;&nbsp;&lt;!-- Circle that can be animated --&gt;<br/>
-            &nbsp;&nbsp;&lt;circle id="myCircle" cx="100" cy="100" r="50" fill="#007bff" /&gt;<br/>
-            <br/>
-            &nbsp;&nbsp;&lt;!-- Rectangle that can be animated --&gt;<br/>
-            &nbsp;&nbsp;&lt;rect id="myRect" x="50" y="50" width="100" height="100" fill="#28a745" /&gt;<br/>
-            <br/>
-            &nbsp;&nbsp;&lt;!-- Path that can be animated --&gt;<br/>
-            &nbsp;&nbsp;&lt;path id="myPath" d="M10 80 Q 95 10 180 80" stroke="#dc3545" stroke-width="5" fill="none" /&gt;<br/>
-            <br/>
-            &nbsp;&nbsp;&lt;!-- Group for multiple elements --&gt;<br/>
-            &nbsp;&nbsp;&lt;g id="myGroup"&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;circle cx="50" cy="50" r="20" fill="#ffc107" /&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;circle cx="150" cy="50" r="20" fill="#17a2b8" /&gt;<br/>
-            &nbsp;&nbsp;&lt;/g&gt;<br/>
+            &lt;svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"&gt;
+                &lt;!-- Circle that can be animated --&gt;
+                &lt;circle id="myCircle" cx="100" cy="100" r="50" fill="#007bff" /&gt;
+            
+                &lt;!-- Rectangle that can be animated --&gt;
+                &lt;rect id="myRect" x="50" y="50" width="100" height="100" fill="#28a745" /&gt;
+            
+                &lt;!-- Path that can be animated --&gt;
+                &lt;path id="myPath" d="M10 80 Q 95 10 180 80" stroke="#dc3545" stroke-width="5" fill="none" /&gt;
+            
+                &lt;!-- Group for multiple elements --&gt;
+                &lt;g id="myGroup"&gt;
+                    &lt;circle cx="50" cy="50" r="20" fill="#ffc107" /&gt;
+                    &lt;circle cx="150" cy="50" r="20" fill="#17a2b8" /&gt;
+                &lt;/g&gt;
             &lt;/svg&gt;
         </pre>
     </div>
@@ -7212,49 +7266,49 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <b>b. CSS Animations on SVG</b>
     
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
-        <b>CSS Animation Examples:</b><br/>
+        <b>CSS Animation Examples:</b>
         <pre>
-            /* Animate SVG with CSS */<br/>
-            #myCircle {<br/>
-            &nbsp;&nbsp;/* Regular CSS properties */<br/>
-            &nbsp;&nbsp;fill: #007bff;<br/>
-            &nbsp;&nbsp;stroke: #0056b3;<br/>
-            &nbsp;&nbsp;stroke-width: 2;<br/>
-            <br/>
-            &nbsp;&nbsp;/* CSS transitions */<br/>
-            &nbsp;&nbsp;transition: fill 0.3s ease, transform 0.3s ease;<br/>
-            }<br/>
-            <br/>
-            #myCircle:hover {<br/>
-            &nbsp;&nbsp;fill: #0056b3;<br/>
-            &nbsp;&nbsp;transform: scale(1.1);<br/>
-            }<br/>
-            <br/>
-            /* Keyframe animations */<br/>
-            @keyframes pulse {<br/>
-            &nbsp;&nbsp;0%, 100% {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;r: 50;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;opacity: 1;<br/>
-            &nbsp;&nbsp;}<br/>
-            &nbsp;&nbsp;50% {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;r: 60;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;opacity: 0.7;<br/>
-            &nbsp;&nbsp;}<br/>
-            }<br/>
-            <br/>
-            #myCircle {<br/>
-            &nbsp;&nbsp;animation: pulse 2s infinite;<br/>
-            }<br/>
-            <br/>
-            /* Animate stroke color */<br/>
-            @keyframes strokeColor {<br/>
-            &nbsp;&nbsp;0% { stroke: #007bff; }<br/>
-            &nbsp;&nbsp;50% { stroke: #28a745; }<br/>
-            &nbsp;&nbsp;100% { stroke: #dc3545; }<br/>
-            }<br/>
-            <br/>
-            #myPath {<br/>
-            &nbsp;&nbsp;animation: strokeColor 3s infinite alternate;<br/>
+            /* Animate SVG with CSS */
+            #myCircle {
+                /* Regular CSS properties */
+                fill: #007bff;
+                stroke: #0056b3;
+                stroke-width: 2;
+            
+                /* CSS transitions */
+                transition: fill 0.3s ease, transform 0.3s ease;
+            }
+            
+            #myCircle:hover {
+                fill: #0056b3;
+                transform: scale(1.1);
+            }
+            
+            /* Keyframe animations */
+            @keyframes pulse {
+                0%, 100% {
+                    r: 50;
+                    opacity: 1;
+                }
+                50% {
+                    r: 60;
+                    opacity: 0.7;
+                }
+            }
+            
+            #myCircle {
+                animation: pulse 2s infinite;
+            }
+            
+            /* Animate stroke color */
+            @keyframes strokeColor {
+                0% { stroke: #007bff; }
+                50% { stroke: #28a745; }
+                100% { stroke: #dc3545; }
+            }
+            
+            #myPath {
+                animation: strokeColor 3s infinite alternate;
             }
         </pre>
     </div>
@@ -7282,16 +7336,16 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
             • Default is 0 0 (top-left of SVG)<br/><br/>
             
             <pre>
-                /* Center rotation */<br/>
-                .svg-element {<br/>
-                &nbsp;&nbsp;transform-origin: 50% 50%;<br/>
-                &nbsp;&nbsp;transform: rotate(45deg);<br/>
-                }<br/>
-                <br/>
-                /* Custom origin */<br/>
-                .svg-element {<br/>
-                &nbsp;&nbsp;transform-origin: 100px 100px;<br/>
-                &nbsp;&nbsp;transform: scale(1.5);<br/>
+                /* Center rotation */
+                .svg-element {
+                    transform-origin: 50% 50%;
+                    transform: rotate(45deg);
+                }
+                
+                /* Custom origin */
+                .svg-element {
+                    transform-origin: 100px 100px;
+                    transform: scale(1.5);
                 }
             </pre>
         </div>
@@ -7302,36 +7356,36 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <b>c. Stroke Animation (Drawing Effect)</b>
     
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
-        <b>The Stroke Drawing Technique:</b><br/>
+        <b>The Stroke Drawing Technique:</b>
         <pre>
-            /* Step 1: Get path length (with JavaScript) */<br/>
-            const path = document.querySelector('#myPath');<br/>
-            const length = path.getTotalLength();<br/>
-            console.log('Path length:', length);<br/>
-            <br/>
-            /* Step 2: Setup CSS */<br/>
-            #myPath {<br/>
-            &nbsp;&nbsp;stroke-dasharray: 1000; /* Total length */<br/>
-            &nbsp;&nbsp;stroke-dashoffset: 1000; /* Start fully offset (hidden) */<br/>
-            &nbsp;&nbsp;transition: stroke-dashoffset 2s ease;<br/>
-            }<br/>
-            <br/>
-            /* Step 3: Animate to draw */<br/>
-            #myPath.animate {<br/>
-            &nbsp;&nbsp;stroke-dashoffset: 0; /* End at 0 (fully drawn) */<br/>
-            }<br/>
-            <br/>
-            /* Keyframes version */<br/>
-            @keyframes draw {<br/>
-            &nbsp;&nbsp;to {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;stroke-dashoffset: 0;<br/>
-            &nbsp;&nbsp;}<br/>
-            }<br/>
-            <br/>
-            #myPath {<br/>
-            &nbsp;&nbsp;stroke-dasharray: 1000;<br/>
-            &nbsp;&nbsp;stroke-dashoffset: 1000;<br/>
-            &nbsp;&nbsp;animation: draw 3s ease forwards;<br/>
+            /* Step 1: Get path length (with JavaScript) */
+            const path = document.querySelector('#myPath');
+            const length = path.getTotalLength();
+            console.log('Path length:', length);
+            
+            /* Step 2: Setup CSS */
+            #myPath {
+                stroke-dasharray: 1000; /* Total length */
+                stroke-dashoffset: 1000; /* Start fully offset (hidden) */
+                transition: stroke-dashoffset 2s ease;
+            }
+            
+            /* Step 3: Animate to draw */
+            #myPath.animate {
+                stroke-dashoffset: 0; /* End at 0 (fully drawn) */
+            }
+            
+            /* Keyframes version */
+            @keyframes draw {
+                to {
+                    stroke-dashoffset: 0;
+                }
+            }
+            
+            #myPath {
+                stroke-dasharray: 1000;
+                stroke-dashoffset: 1000;
+                animation: draw 3s ease forwards;
             }
         </pre>
     </div>
@@ -7339,8 +7393,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <div style="background-color: #f0f8ff; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <b>Understanding stroke-dasharray:</b><br/>
         • Creates a dashed stroke pattern<br/>
-        • Format: <pre>stroke-dasharray: dash-length gap-length</pre><br/>
-        • Can have multiple values: <pre>5, 10, 5</pre><br/>
+        • Format: stroke-dasharray: dash-length gap-length<br/>
+        • Can have multiple values: 5, 10, 5<br/>
         • Setting equal dash and gap creates dotted line<br/><br/>
         
         <b>Understanding stroke-dashoffset:</b><br/>
@@ -7362,34 +7416,34 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         • Still useful for complex SVG animations<br/><br/>
         
         <b>SMIL Animation Elements:</b><br/>
-        • <pre>&lt;animate&gt;</pre>: Basic property animation<br/>
-        • <pre>&lt;animateTransform&gt;</pre>: Transform animations<br/>
-        • <pre>&lt;animateMotion&gt;</pre>: Motion along a path<br/>
-        • <pre>&lt;set&gt;</pre>: Discrete property changes
+        • &lt;animate&gt;: Basic property animation<br/>
+        • &lt;animateTransform&gt;: Transform animations<br/>
+        • &lt;animateMotion&gt;: Motion along a path<br/>
+        • &lt;set&gt;: Discrete property changes
     </div>
     
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <b>SMIL Examples:</b><br/>
         <pre>
-            &lt;!-- Animate attribute --&gt;<br/>
-            &lt;circle cx="100" cy="100" r="50" fill="blue"&gt;<br/>
-            &nbsp;&nbsp;&lt;animate attributeName="r" from="50" to="70" dur="2s" repeatCount="indefinite" /&gt;<br/>
-            &lt;/circle&gt;<br/>
-            <br/>
-            &lt;!-- Animate transform --&gt;<br/>
-            &lt;rect x="50" y="50" width="100" height="100" fill="green"&gt;<br/>
-            &nbsp;&nbsp;&lt;animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="3s" repeatCount="indefinite" /&gt;<br/>
-            &lt;/rect&gt;<br/>
-            <br/>
-            &lt;!-- Animate along path --&gt;<br/>
-            &lt;circle r="10" fill="red"&gt;<br/>
-            &nbsp;&nbsp;&lt;animateMotion path="M10 80 Q 95 10 180 80" dur="5s" repeatCount="indefinite" /&gt;<br/>
-            &lt;/circle&gt;<br/>
-            <br/>
-            &lt;!-- Multiple animations --&gt;<br/>
-            &lt;path d="M10 80 Q 95 10 180 80" stroke="purple" fill="none"&gt;<br/>
-            &nbsp;&nbsp;&lt;animate attributeName="stroke-width" from="2" to="10" dur="1s" repeatCount="indefinite" /&gt;<br/>
-            &nbsp;&nbsp;&lt;animate attributeName="opacity" from="1" to="0.3" dur="1s" repeatCount="indefinite" /&gt;<br/>
+            &lt;!-- Animate attribute --&gt;
+            &lt;circle cx="100" cy="100" r="50" fill="blue"&gt;
+                &lt;animate attributeName="r" from="50" to="70" dur="2s" repeatCount="indefinite" /&gt;
+            &lt;/circle&gt;
+            
+            &lt;!-- Animate transform --&gt;
+            &lt;rect x="50" y="50" width="100" height="100" fill="green"&gt;
+                &lt;animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="3s" repeatCount="indefinite" /&gt;
+            &lt;/rect&gt;
+            
+            &lt;!-- Animate along path --&gt;
+            &lt;circle r="10" fill="red"&gt;
+                &lt;animateMotion path="M10 80 Q 95 10 180 80" dur="5s" repeatCount="indefinite" /&gt;
+            &lt;/circle&gt;
+            
+            &lt;!-- Multiple animations --&gt;
+            &lt;path d="M10 80 Q 95 10 180 80" stroke="purple" fill="none"&gt;
+                &lt;animate attributeName="stroke-width" from="2" to="10" dur="1s" repeatCount="indefinite" /&gt;
+                &lt;animate attributeName="opacity" from="1" to="0.3" dur="1s" repeatCount="indefinite" /&gt;
             &lt;/path&gt;
         </pre>
     </div>
@@ -7399,7 +7453,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <b>e. Advanced Hover Effects</b>
     
     <div style="background-color: #e8f5e8; padding: 15px; margin: 10px 0; border-radius: 5px;">
-        <b>Creative Hover Effects with SVG:</b><br/>
+        <b>Creative Hover Effects with SVG:</b>br />
         1. <b>Morphing Icons:</b> Change shape on hover<br/>
         2. <b>Line Drawing:</b> Draw borders/underlines<br/>
         3. <b>Color Transitions:</b> Gradient or multi-color changes<br/>
@@ -7411,33 +7465,33 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <b>Morphing SVG Paths:</b><br/>
         <pre>
-            /* HTML */<br/>
-            &lt;svg viewBox="0 0 100 100"&gt;<br/>
-            &nbsp;&nbsp;&lt;path id="morphPath" d="M20,20 L80,20 L80,80 L20,80 Z" /&gt;<br/>
-            &lt;/svg&gt;<br/>
-            <br/>
-            /* CSS */<br/>
-            #morphPath {<br/>
-            &nbsp;&nbsp;fill: #007bff;<br/>
-            &nbsp;&nbsp;transition: d 0.5s cubic-bezier(0.4, 0, 0.2, 1);<br/>
-            }<br/>
-            <br/>
-            #morphPath:hover {<br/>
-            &nbsp;&nbsp;d: path('M50,10 Q90,50 50,90 Q10,50 50,10');<br/>
-            }<br/>
-            <br/>
-            /* JavaScript for complex morphing */<br/>
-            const path = document.getElementById('morphPath');<br/>
-            const paths = [<br/>
-            &nbsp;&nbsp;'M20,20 L80,20 L80,80 L20,80 Z', // Square<br/>
-            &nbsp;&nbsp;'M50,10 Q90,50 50,90 Q10,50 50,10', // Diamond<br/>
-            &nbsp;&nbsp;'M30,30 Q50,10 70,30 Q90,50 70,70 Q50,90 30,70 Q10,50 30,30' // Circle-ish<br/>
-            ];<br/>
-            <br/>
-            let currentPath = 0;<br/>
-            path.addEventListener('click', () => {<br/>
-            &nbsp;&nbsp;currentPath = (currentPath + 1) % paths.length;<br/>
-            &nbsp;&nbsp;path.setAttribute('d', paths[currentPath]);<br/>
+            /* HTML */
+            &lt;svg viewBox="0 0 100 100"&gt;
+                &lt;path id="morphPath" d="M20,20 L80,20 L80,80 L20,80 Z" /&gt;
+            &lt;/svg&gt;
+            
+            /* CSS */
+            #morphPath {
+                fill: #007bff;
+                transition: d 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            
+            #morphPath:hover {
+                d: path('M50,10 Q90,50 50,90 Q10,50 50,10');
+            }
+            
+            /* JavaScript for complex morphing */
+            const path = document.getElementById('morphPath');
+            const paths = [
+                'M20,20 L80,20 L80,80 L20,80 Z', // Square
+                'M50,10 Q90,50 50,90 Q10,50 50,10', // Diamond
+                'M30,30 Q50,10 70,30 Q90,50 70,70 Q50,90 30,70 Q10,50 30,30' // Circle-ish
+            ];
+            
+            let currentPath = 0;
+            path.addEventListener('click', () => {
+                currentPath = (currentPath + 1) % paths.length;
+                path.setAttribute('d', paths[currentPath]);
             });
         </pre>
     </div>
@@ -7446,26 +7500,26 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <div style="background-color: #f0f8ff; padding: 15px; border-radius: 5px;">
             <b>Line Drawing Menu Items:</b><br/>
             <pre>
-                .menu-item {<br/>
-                &nbsp;&nbsp;position: relative;<br/>
-                &nbsp;&nbsp;padding: 10px 0;<br/>
-                }<br/>
-                <br/>
-                .menu-item::after {<br/>
-                &nbsp;&nbsp;content: '';<br/>
-                &nbsp;&nbsp;position: absolute;<br/>
-                &nbsp;&nbsp;bottom: 0;<br/>
-                &nbsp;&nbsp;left: 0;<br/>
-                &nbsp;&nbsp;width: 100%;<br/>
-                &nbsp;&nbsp;height: 2px;<br/>
-                &nbsp;&nbsp;background: currentColor;<br/>
-                &nbsp;&nbsp;transform: scaleX(0);<br/>
-                &nbsp;&nbsp;transform-origin: left;<br/>
-                &nbsp;&nbsp;transition: transform 0.3s ease;<br/>
-                }<br/>
-                <br/>
-                .menu-item:hover::after {<br/>
-                &nbsp;&nbsp;transform: scaleX(1);<br/>
+                .menu-item {
+                    position: relative;
+                    padding: 10px 0;
+                }
+                
+                .menu-item::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background: currentColor;
+                    transform: scaleX(0);
+                    transform-origin: left;
+                    transition: transform 0.3s ease;
+                }
+                
+                .menu-item:hover::after {
+                    transform: scaleX(1);
                 }
             </pre>
         </div>
@@ -7473,23 +7527,23 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <div style="background-color: #fff0f0; padding: 15px; border-radius: 5px;">
             <b>SVG Filter Effects:</b><br/>
             <pre>
-                /* SVG filter definition */<br/>
-                &lt;svg style="display: none;"&gt;<br/>
-                &nbsp;&nbsp;&lt;filter id="gooey"&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" /&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" /&gt;<br/>
-                &nbsp;&nbsp;&lt;/filter&gt;<br/>
-                &lt;/svg&gt;<br/>
-                <br/>
-                /* Apply filter */<br/>
-                .gooey-element {<br/>
-                &nbsp;&nbsp;filter: url(#gooey);<br/>
-                }<br/>
-                <br/>
-                /* CSS backdrop-filter for modern browsers */<br/>
-                .frosted-glass {<br/>
-                &nbsp;&nbsp;backdrop-filter: blur(10px);<br/>
-                &nbsp;&nbsp;background: rgba(255, 255, 255, 0.2);<br/>
+                /* SVG filter definition */
+                &lt;svg style="display: none;"&gt;
+                    &lt;filter id="gooey"&gt;
+                        &lt;feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" /&gt;
+                        &lt;feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" /&gt;
+                    &lt;/filter&gt;
+                &lt;/svg&gt;
+                
+                /* Apply filter */
+                .gooey-element {
+                    filter: url(#gooey);
+                }
+                
+                /* CSS backdrop-filter for modern browsers */
+                .frosted-glass {
+                    backdrop-filter: blur(10px);
+                    background: rgba(255, 255, 255, 0.2);
                 }
             </pre>
         </div>
@@ -7585,33 +7639,33 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <b>Reduced Motion Implementation:</b><br/>
         <pre>
-            /* CSS */<br/>
-            @media (prefers-reduced-motion: reduce) {<br/>
-            &nbsp;&nbsp;*, *::before, *::after {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;animation-duration: 0.01ms !important;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;animation-iteration-count: 1 !important;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;transition-duration: 0.01ms !important;<br/>
-            &nbsp;&nbsp;}<br/>
-            <br/>
-            &nbsp;&nbsp;/* For SVG specifically */<br/>
-            &nbsp;&nbsp;svg * {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;animation: none !important;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;transition: none !important;<br/>
-            &nbsp;&nbsp;}<br/>
-            }<br/>
-            <br/>
-            /* JavaScript */<br/>
-            const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');<br/>
-            <br/>
-            if (reduceMotion.matches) {<br/>
-            &nbsp;&nbsp;// Disable or simplify animations<br/>
-            &nbsp;&nbsp;document.documentElement.classList.add('reduced-motion');<br/>
-            }<br/>
-            <br/>
-            // Toggle animation controls<br/>
-            const toggle = document.getElementById('animation-toggle');<br/>
-            toggle.addEventListener('change', (e) => {<br/>
-            &nbsp;&nbsp;document.documentElement.classList.toggle('animations-enabled', e.target.checked);<br/>
+            /* CSS */
+            @media (prefers-reduced-motion: reduce) {
+                *, *::before, *::after {
+                    animation-duration: 0.01ms !important;
+                    animation-iteration-count: 1 !important;
+                    transition-duration: 0.01ms !important;
+                }
+            
+                /* For SVG specifically */
+                svg * {
+                    animation: none !important;
+                    transition: none !important;
+                }
+            }
+            
+            /* JavaScript */
+            const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+            
+            if (reduceMotion.matches) {
+                // Disable or simplify animations
+                document.documentElement.classList.add('reduced-motion');
+            }
+            
+            // Toggle animation controls
+            const toggle = document.getElementById('animation-toggle');
+            toggle.addEventListener('change', (e) => {
+                document.documentElement.classList.toggle('animations-enabled', e.target.checked);
             });
         </pre>
     </div>
@@ -7657,14 +7711,14 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <b>Technical Requirements:</b>
         <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
             <pre>
-                /* Must use these SVG animation techniques: */<br/>
-                1. Stroke-dasharray/dashoffset for drawing effects<br/>
-                2. CSS keyframe animations on SVG elements<br/>
-                3. SVG transform animations<br/>
-                4. Morphing paths (with JavaScript)<br/>
-                5. SVG filter effects<br/>
-                6. Interactive hover/click states<br/>
-                7. Reduced motion support<br/>
+                /* Must use these SVG animation techniques: */
+                1. Stroke-dasharray/dashoffset for drawing effects
+                2. CSS keyframe animations on SVG elements
+                3. SVG transform animations
+                4. Morphing paths (with JavaScript)
+                5. SVG filter effects
+                6. Interactive hover/click states
+                7. Reduced motion support
                 8. Responsive SVG scaling
             </pre>
         </div>
@@ -7821,29 +7875,29 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <b>Step-by-Step Background Removal (Photoshop/GIMP):</b><br/>
         <pre>
-            <b>Method 1: Pen Tool (Precision)</b><br/>
-            1. Select Pen Tool (P)<br/>
-            2. Zoom in to 200-300%<br/>
-            3. Click to create anchor points around subject<br/>
-            4. Complete path (connect last point to first)<br/>
-            5. Right-click path → Make Selection (Feather: 0.5-1px)<br/>
-            6. Layer → Layer Mask → Reveal Selection<br/>
-            7. Refine mask edges if needed<br/>
-            <br/>
-            <b>Method 2: Select Subject (AI)</b><br/>
-            1. Select → Subject (Photoshop)<br/>
-            2. Select → Select Subject (GIMP with plugin)<br/>
-            3. Refine selection with Select and Mask tool<br/>
-            4. Adjust edge detection, smoothness, contrast<br/>
-            5. Output to: Layer Mask<br/>
-            6. Clean up mask with brush tool<br/>
-            <br/>
-            <b>Method 3: Quick Selection + Refine Edge</b><br/>
-            1. Select Quick Selection Tool (W)<br/>
-            2. Brush over subject<br/>
-            3. Hold Alt to subtract from selection<br/>
-            4. Select → Select and Mask<br/>
-            5. Use Refine Edge Brush for tricky areas (hair, etc.)<br/>
+            <b>Method 1: Pen Tool (Precision)</b>
+            1. Select Pen Tool (P)
+            2. Zoom in to 200-300%
+            3. Click to create anchor points around subject
+            4. Complete path (connect last point to first)
+            5. Right-click path → Make Selection (Feather: 0.5-1px)
+            6. Layer → Layer Mask → Reveal Selection
+            7. Refine mask edges if needed
+            
+            <b>Method 2: Select Subject (AI)</b>
+            1. Select → Subject (Photoshop)
+            2. Select → Select Subject (GIMP with plugin)
+            3. Refine selection with Select and Mask tool
+            4. Adjust edge detection, smoothness, contrast
+            5. Output to: Layer Mask
+            6. Clean up mask with brush tool
+            
+            <b>Method 3: Quick Selection + Refine Edge</b>
+            1. Select Quick Selection Tool (W)
+            2. Brush over subject
+            3. Hold Alt to subtract from selection
+            4. Select → Select and Mask
+            5. Use Refine Edge Brush for tricky areas (hair, etc.)
             6. Output as New Layer with Layer Mask
         </pre>
     </div>
@@ -7855,37 +7909,37 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <b>Essential Color Adjustments:</b><br/>
         <pre>
-            <b>1. Levels Adjustment</b><br/>
-            • Adjusts shadows, midtones, highlights<br/>
-            • Fixes exposure problems<br/>
-            • Photoshop: Image → Adjustments → Levels<br/>
-            • GIMP: Colors → Levels<br/>
-            <br/>
-            <b>2. Curves Adjustment</b><br/>
-            • More precise than Levels<br/>
-            • Adjust specific tonal ranges<br/>
-            • Create S-curve for contrast<br/>
-            • Photoshop: Image → Adjustments → Curves<br/>
-            <br/>
-            <b>3. Hue/Saturation</b><br/>
-            • Adjust overall or specific color ranges<br/>
-            • Desaturate for black & white<br/>
-            • Boost colors for vibrancy<br/>
-            • Photoshop: Image → Adjustments → Hue/Saturation<br/>
-            <br/>
-            <b>4. Color Balance</b><br/>
-            • Adjust color casts (too blue, yellow, etc.)<br/>
-            • Separate adjustments for shadows/midtones/highlights<br/>
-            • Photoshop: Image → Adjustments → Color Balance<br/>
-            <br/>
-            <b>5. Brightness/Contrast</b><br/>
-            • Simple adjustment<br/>
-            • Use Curves for more control<br/>
-            • Photoshop: Image → Adjustments → Brightness/Contrast<br/>
-            <br/>
-            <b>6. Vibrance vs Saturation</b><br/>
-            • Vibrance: Smart saturation (protects skin tones)<br/>
-            • Saturation: All colors equally<br/>
+            <b>1. Levels Adjustment</b>
+            • Adjusts shadows, midtones, highlights
+            • Fixes exposure problems
+            • Photoshop: Image → Adjustments → Levels
+            • GIMP: Colors → Levels
+            
+            <b>2. Curves Adjustment</b>
+            • More precise than Levels
+            • Adjust specific tonal ranges
+            • Create S-curve for contrast
+            • Photoshop: Image → Adjustments → Curves
+            
+            <b>3. Hue/Saturation</b>
+            • Adjust overall or specific color ranges
+            • Desaturate for black & white
+            • Boost colors for vibrancy
+            • Photoshop: Image → Adjustments → Hue/Saturation
+            
+            <b>4. Color Balance</b>
+            • Adjust color casts (too blue, yellow, etc.)
+            • Separate adjustments for shadows/midtones/highlights
+            • Photoshop: Image → Adjustments → Color Balance
+            
+            <b>5. Brightness/Contrast</b>
+            • Simple adjustment
+            • Use Curves for more control
+            • Photoshop: Image → Adjustments → Brightness/Contrast
+            
+            <b>6. Vibrance vs Saturation</b>
+            • Vibrance: Smart saturation (protects skin tones)
+            • Saturation: All colors equally
             • Photoshop: Image → Adjustments → Vibrance
         </pre>
     </div>
@@ -7937,34 +7991,34 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <div style="background-color: #fff0f0; padding: 15px; border-radius: 5px;">
             <b>CSS Image Filters:</b><br/>
             <pre>
-                /* Basic CSS filters */<br/>
-                .filtered-image {<br/>
-                &nbsp;&nbsp;filter: blur(5px);<br/>
-                &nbsp;&nbsp;filter: brightness(150%);<br/>
-                &nbsp;&nbsp;filter: contrast(200%);<br/>
-                &nbsp;&nbsp;filter: grayscale(100%);<br/>
-                &nbsp;&nbsp;filter: hue-rotate(90deg);<br/>
-                &nbsp;&nbsp;filter: invert(100%);<br/>
-                &nbsp;&nbsp;filter: opacity(50%);<br/>
-                &nbsp;&nbsp;filter: saturate(200%);<br/>
-                &nbsp;&nbsp;filter: sepia(100%);<br/>
-                <br/>
-                &nbsp;&nbsp;/* Multiple filters */<br/>
-                &nbsp;&nbsp;filter: grayscale(50%) blur(2px) brightness(110%);<br/>
-                <br/>
-                &nbsp;&nbsp;/* Drop shadow */<br/>
-                &nbsp;&nbsp;filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));<br/>
-                }<br/>
-                <br/>
-                /* Background blend modes */<br/>
-                .blend-image {<br/>
-                &nbsp;&nbsp;background-image: url('photo.jpg'), linear-gradient(45deg, #ff6b6b, #4ecdc4);<br/>
-                &nbsp;&nbsp;background-blend-mode: multiply;<br/>
-                }<br/>
-                <br/>
-                /* Mix blend mode */<br/>
-                .text-overlay {<br/>
-                &nbsp;&nbsp;mix-blend-mode: overlay;<br/>
+                /* Basic CSS filters */
+                .filtered-image {
+                    filter: blur(5px);
+                    filter: brightness(150%);
+                    filter: contrast(200%);
+                    filter: grayscale(100%);
+                    filter: hue-rotate(90deg);
+                    filter: invert(100%);
+                    filter: opacity(50%);
+                    filter: saturate(200%);
+                    filter: sepia(100%);
+                
+                    /* Multiple filters */
+                    filter: grayscale(50%) blur(2px) brightness(110%);
+                
+                    /* Drop shadow */
+                    filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
+                }
+                
+                /* Background blend modes */
+                .blend-image {
+                    background-image: url('photo.jpg'), linear-gradient(45deg, #ff6b6b, #4ecdc4);
+                    background-blend-mode: multiply;
+                }
+                
+                /* Mix blend mode */
+                .text-overlay {
+                    mix-blend-mode: overlay;
                 }
             </pre>
         </div>
@@ -7973,47 +8027,47 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <b>Creating Common Effects:</b><br/>
         <pre>
-            <b>1. Duotone Effect (CSS)</b><br/>
-            .duotone {<br/>
-            &nbsp;&nbsp;filter: grayscale(100%) contrast(150%) brightness(90%);<br/>
-            &nbsp;&nbsp;background-blend-mode: multiply;<br/>
-            &nbsp;&nbsp;background-image: url('photo.jpg'), linear-gradient(45deg, #ff6b6b, #4ecdc4);<br/>
-            }<br/>
-            <br/>
-            <b>2. Vignette Effect (CSS)</b><br/>
-            .vignette {<br/>
-            &nbsp;&nbsp;position: relative;<br/>
-            }<br/>
-            .vignette::after {<br/>
-            &nbsp;&nbsp;content: '';<br/>
-            &nbsp;&nbsp;position: absolute;<br/>
-            &nbsp;&nbsp;top: 0; left: 0; right: 0; bottom: 0;<br/>
-            &nbsp;&nbsp;background: radial-gradient(circle at center, transparent 40%, rgba(0,0,0,0.5) 100%);<br/>
-            &nbsp;&nbsp;pointer-events: none;<br/>
-            }<br/>
-            <br/>
-            <b>3. Image Overlay (CSS)</b><br/>
-            .image-overlay {<br/>
-            &nbsp;&nbsp;position: relative;<br/>
-            &nbsp;&nbsp;background: linear-gradient(45deg, #ff6b6b, #4ecdc4);<br/>
-            }<br/>
-            .image-overlay img {<br/>
-            &nbsp;&nbsp;mix-blend-mode: multiply;<br/>
-            &nbsp;&nbsp;opacity: 0.8;<br/>
-            }<br/>
-            <br/>
-            <b>4. Glitch Effect (CSS)</b><br/>
-            @keyframes glitch {<br/>
-            &nbsp;&nbsp;0% { transform: translate(0); }<br/>
-            &nbsp;&nbsp;20% { transform: translate(-2px, 2px); }<br/>
-            &nbsp;&nbsp;40% { transform: translate(-2px, -2px); }<br/>
-            &nbsp;&nbsp;60% { transform: translate(2px, 2px); }<br/>
-            &nbsp;&nbsp;80% { transform: translate(2px, -2px); }<br/>
-            &nbsp;&nbsp;100% { transform: translate(0); }<br/>
-            }<br/>
-            .glitch {<br/>
-            &nbsp;&nbsp;animation: glitch 0.5s infinite;<br/>
-            &nbsp;&nbsp;filter: hue-rotate(90deg);<br/>
+            <b>1. Duotone Effect (CSS)</b>
+            .duotone {
+                ;filter: grayscale(100%) contrast(150%) brightness(90%);
+                ;background-blend-mode: multiply;
+                ;background-image: url('photo.jpg'), linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            }
+            
+            <b>2. Vignette Effect (CSS)</b>
+            .vignette {
+                ;position: relative;
+            }
+            .vignette::after {
+                ;content: '';
+                ;position: absolute;
+                ;top: 0; left: 0; right: 0; bottom: 0;
+                ;background: radial-gradient(circle at center, transparent 40%, rgba(0,0,0,0.5) 100%);
+                ;pointer-events: none;
+            }
+            
+            <b>3. Image Overlay (CSS)</b>
+            .image-overlay {
+                ;position: relative;
+                ;background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            }
+            .image-overlay img {
+                ;mix-blend-mode: multiply;
+                ;opacity: 0.8;
+            }
+            
+            <b>4. Glitch Effect (CSS)</b>
+            @keyframes glitch {
+                ;0% { transform: translate(0); }
+                ;20% { transform: translate(-2px, 2px); }
+                ;40% { transform: translate(-2px, -2px); }
+                ;60% { transform: translate(2px, 2px); }
+                ;80% { transform: translate(2px, -2px); }
+                ;100% { transform: translate(0); }
+            }
+            .glitch {
+                ;animation: glitch 0.5s infinite;
+                ;filter: hue-rotate(90deg);
             }
         </pre>
     </div>
@@ -8104,32 +8158,32 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <b>e. Batch Processing & Automation</b>
     
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
-        <b>Photoshop Actions/Batch Processing:</b><br/>
+        <b>Photoshop Actions/Batch Processing:</b>
         <pre>
-            <b>Creating an Action (Save for Web):</b><br/>
-            1. Window → Actions<br/>
-            2. Create New Action, name it "Save for Web"<br/>
-            3. Click Record<br/>
-            4. File → Export → Save for Web (Legacy)<br/>
-            5. Set: JPEG, Quality 80, Progressive, Convert to sRGB<br/>
-            6. Choose destination folder<br/>
-            7. Click Stop recording<br/>
-            <br/>
-            <b>Batch Processing:</b><br/>
-            1. File → Automate → Batch<br/>
-            2. Choose your Action<br/>
-            3. Choose Source Folder (images to process)<br/>
-            4. Choose Destination Folder<br/>
-            5. Set file naming convention<br/>
-            6. Click OK to process all images<br/>
-            <br/>
-            <b>Image Processor (Photoshop):</b><br/>
-            1. File → Scripts → Image Processor<br/>
-            2. Select images to process<br/>
-            3. Choose location to save processed images<br/>
-            4. Select file type (JPEG, PNG, etc.)<br/>
-            5. Set resize options if needed<br/>
-            6. Run action if desired<br/>
+            <b>Creating an Action (Save for Web):</b>
+            1. Window → Actions
+            2. Create New Action, name it "Save for Web"
+            3. Click Record
+            4. File → Export → Save for Web (Legacy)
+            5. Set: JPEG, Quality 80, Progressive, Convert to sRGB
+            6. Choose destination folder
+            7. Click Stop recording
+            
+            <b>Batch Processing:</b>
+            1. File → Automate → Batch
+            2. Choose your Action
+            3. Choose Source Folder (images to process)
+            4. Choose Destination Folder
+            5. Set file naming convention
+            6. Click OK to process all images
+            
+            <b>Image Processor (Photoshop):</b>
+            1. File → Scripts → Image Processor
+            2. Select images to process
+            3. Choose location to save processed images
+            4. Select file type (JPEG, PNG, etc.)
+            5. Set resize options if needed
+            6. Run action if desired
             7. Click Run
         </pre>
     </div>
@@ -8144,19 +8198,19 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         
         <b>Example ImageMagick Commands:</b><br/>
         <pre>
-            # Resize image to 800px width<br/>
-            convert input.jpg -resize 800x output.jpg<br/>
-            <br/>
-            # Convert to WebP with 80% quality<br/>
-            convert input.jpg -quality 80 output.webp<br/>
-            <br/>
-            # Batch convert all JPG to WebP<br/>
-            mogrify -format webp -quality 80 *.jpg<br/>
-            <br/>
-            # Add watermark<br/>
-            convert input.jpg watermark.png -gravity southeast -composite output.jpg<br/>
-            <br/>
-            # Create thumbnail<br/>
+            # Resize image to 800px width
+            convert input.jpg -resize 800x output.jpg
+            
+            # Convert to WebP with 80% quality
+            convert input.jpg -quality 80 output.webp
+            
+            # Batch convert all JPG to WebP
+            mogrify -format webp -quality 80 *.jpg
+            
+            # Add watermark
+            convert input.jpg watermark.png -gravity southeast -composite output.jpg
+            
+            # Create thumbnail
             convert input.jpg -resize 200x200 -gravity center -extent 200x200 thumbnail.jpg
         </pre>
     </div>
@@ -8174,10 +8228,10 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         1. Remove backgrounds (create transparent PNGs)<br/>
         2. Color correct for consistent white balance<br/>
         3. Resize to multiple dimensions:<br/>
-        &nbsp;&nbsp;• Thumbnail: 150x150px<br/>
-        &nbsp;&nbsp;• Catalog: 400x400px<br/>
-        &nbsp;&nbsp;• Product page: 800x800px<br/>
-        &nbsp;&nbsp;• Zoom view: 1200x1200px<br/>
+            • Thumbnail: 150x150px<br/>
+            • Catalog: 400x400px<br/>
+            • Product page: 800x800px<br/>
+            • Zoom view: 1200x1200px<br/>
         4. Create mockups on different backgrounds<br/>
         5. Optimize for web (target sizes)<br/>
         6. Create batch processing workflow<br/><br/>
@@ -8221,16 +8275,16 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <b>Requirements:</b><br/>
         1. Masonry-style gallery layout<br/>
         2. Hover effects on images:<br/>
-        &nbsp;&nbsp;• Zoom effect<br/>
-        &nbsp;&nbsp;• Color overlay<br/>
-        &nbsp;&nbsp;• Title/caption reveal<br/>
-        &nbsp;&nbsp;• Shadow/depth effect<br/>
+            • Zoom effect<br/>
+            • Color overlay<br/>
+            • Title/caption reveal<br/>
+            • Shadow/depth effect<br/>
         3. Filter buttons to apply CSS filters:<br/>
-        &nbsp;&nbsp;• Black & white<br/>
-        &nbsp;&nbsp;• Sepia<br/>
-        &nbsp;&nbsp;• Vintage<br/>
-        &nbsp;&nbsp;• Cool/Warm tones<br/>
-        &nbsp;&nbsp;• Custom duotone<br/>
+            • Black & white<br/>
+            • Sepia<br/>
+            • Vintage<br/>
+            • Cool/Warm tones<br/>
+            • Custom duotone<br/>
         4. Lightbox/modal view with full-size images<br/>
         5. Responsive design<br/>
         6. Performance optimized (lazy loading)<br/><br/>
@@ -8484,32 +8538,32 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <b>Banner Design Psychology:</b><br/>
         <pre>
             <b>1. F-Pattern Reading:</b> Users scan top-left first<br/>
-            &nbsp;&nbsp;• Place logo/brand top-left<br/>
-            &nbsp;&nbsp;• Key message along top<br/>
-            &nbsp;&nbsp;• CTA bottom-right (end of scan)<br/>
+                • Place logo/brand top-left<br/>
+                • Key message along top<br/>
+                • CTA bottom-right (end of scan)<br/>
             <br/>
             <b>2. Color Psychology:</b><br/>
-            &nbsp;&nbsp;• Red: Urgency, excitement<br/>
-            &nbsp;&nbsp;• Blue: Trust, security<br/>
-            &nbsp;&nbsp;• Green: Growth, success<br/>
-            &nbsp;&nbsp;• Orange: Energy, action<br/>
-            &nbsp;&nbsp;• Yellow: Attention, happiness<br/>
+                • Red: Urgency, excitement<br/>
+                • Blue: Trust, security<br/>
+                • Green: Growth, success<br/>
+                • Orange: Energy, action<br/>
+                • Yellow: Attention, happiness<br/>
             <br/>
             <b>3. Visual Hierarchy:</b><br/>
-            &nbsp;&nbsp;• Headline: Largest text<br/>
-            &nbsp;&nbsp;• Subhead: Medium size<br/>
-            &nbsp;&nbsp;• Body: Smallest text<br/>
-            &nbsp;&nbsp;• CTA: Visually distinct (button)<br/>
+                • Headline: Largest text<br/>
+                • Subhead: Medium size<br/>
+                • Body: Smallest text<br/>
+                • CTA: Visually distinct (button)<br/>
             <br/>
             <b>4. Negative Space:</b><br/>
-            &nbsp;&nbsp;• Don't overcrowd<br/>
-            &nbsp;&nbsp;• Give elements room to breathe<br/>
-            &nbsp;&nbsp;• Helps direct attention<br/>
+                • Don't overcrowd<br/>
+                • Give elements room to breathe<br/>
+                • Helps direct attention<br/>
             <br/>
             <b>5. Contrast:</b><br/>
-            &nbsp;&nbsp;• Text readable on background<br/>
-            &nbsp;&nbsp;• CTA stands out<br/>
-            &nbsp;&nbsp;• Important elements highlighted
+                • Text readable on background<br/>
+                • CTA stands out<br/>
+                • Important elements highlighted
         </pre>
     </div>
     
@@ -8540,43 +8594,43 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         </div>
         
         <div style="background-color: #fff0f0; padding: 15px; border-radius: 5px;">
-            <b>CTA Button Design (CSS):</b><br/>
+            <b>CTA Button Design (CSS):</b>
             <pre>
-                .cta-button {<br/>
-                &nbsp;&nbsp;/* Visual */<br/>
-                &nbsp;&nbsp;background: linear-gradient(135deg, #ff6b6b, #ff8e53);<br/>
-                &nbsp;&nbsp;color: white;<br/>
-                &nbsp;&nbsp;border: none;<br/>
-                &nbsp;&nbsp;border-radius: 8px;<br/>
-                &nbsp;&nbsp;padding: 16px 32px;<br/>
-                &nbsp;&nbsp;font-size: 18px;<br/>
-                &nbsp;&nbsp;font-weight: bold;<br/>
-                &nbsp;&nbsp;cursor: pointer;<br/>
-                <br/>
-                &nbsp;&nbsp;/* Layout */<br/>
-                &nbsp;&nbsp;display: inline-block;<br/>
-                &nbsp;&nbsp;text-align: center;<br/>
-                &nbsp;&nbsp;text-decoration: none;<br/>
-                &nbsp;&nbsp;min-width: 200px;<br/>
-                &nbsp;&nbsp;min-height: 44px; /* Touch target */<br/>
-                <br/>
-                &nbsp;&nbsp;/* Animation */<br/>
-                &nbsp;&nbsp;transition: all 0.3s ease;<br/>
-                &nbsp;&nbsp;box-shadow: 0 4px 6px rgba(255, 107, 107, 0.2);<br/>
-                }<br/>
-                <br/>
-                .cta-button:hover {<br/>
-                &nbsp;&nbsp;transform: translateY(-2px);<br/>
-                &nbsp;&nbsp;box-shadow: 0 6px 12px rgba(255, 107, 107, 0.3);<br/>
-                }<br/>
-                <br/>
-                .cta-button:active {<br/>
-                &nbsp;&nbsp;transform: translateY(0);<br/>
-                }<br/>
-                <br/>
-                .cta-button:focus {<br/>
-                &nbsp;&nbsp;outline: 3px solid rgba(255, 107, 107, 0.5);<br/>
-                &nbsp;&nbsp;outline-offset: 2px;<br/>
+                .cta-button {
+                    /* Visual */
+                    background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+                    color: white;
+                    border: none;
+                    border-radius: 8px;
+                    padding: 16px 32px;
+                    font-size: 18px;
+                    font-weight: bold;
+                    cursor: pointer;
+                
+                    /* Layout */
+                    display: inline-block;
+                    text-align: center;
+                    text-decoration: none;
+                    min-width: 200px;
+                    min-height: 44px; /* Touch target */
+                
+                    /* Animation */
+                    transition: all 0.3s ease;
+                    box-shadow: 0 4px 6px rgba(255, 107, 107, 0.2);
+                }
+                
+                .cta-button:hover {
+                    transform: translateY(-2px);
+                    box-shadow: 0 6px 12px rgba(255, 107, 107, 0.3);
+                }
+                
+                .cta-button:active {
+                    transform: translateY(0);
+                }
+                
+                .cta-button:focus {
+                    outline: 3px solid rgba(255, 107, 107, 0.5);
+                    outline-offset: 2px;
                 }
             </pre>
         </div>
@@ -8585,33 +8639,33 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <b>A/B Testing CTAs:</b><br/>
         <pre>
-            &lt;!-- Version A --&gt;<br/>
-            &lt;button class="cta-button" data-test="version-a"&gt;<br/>
-            &nbsp;&nbsp;Start Free Trial<br/>
-            &lt;/button&gt;<br/>
-            <br/>
-            &lt;!-- Version B --&gt;<br/>
-            &lt;button class="cta-button" data-test="version-b"&gt;<br/>
-            &nbsp;&nbsp;Get Started for Free<br/>
-            &lt;/button&gt;<br/>
-            <br/>
-            &lt;!-- Version C --&gt;<br/>
-            &lt;button class="cta-button" style="background: #28a745;" data-test="version-c"&gt;<br/>
-            &nbsp;&nbsp;Try It Free<br/>
-            &lt;/button&gt;<br/>
-            <br/>
-            /* JavaScript for A/B testing */<br/>
-            const ctas = document.querySelectorAll('[data-test]');<br/>
-            const version = Math.floor(Math.random() * ctas.length);<br/>
-            <br/>
-            // Show only one version<br/>
-            ctas.forEach((cta, index) => {<br/>
-            &nbsp;&nbsp;cta.style.display = index === version ? 'inline-block' : 'none';<br/>
-            &nbsp;&nbsp;<br/>
-            &nbsp;&nbsp;// Track clicks<br/>
-            &nbsp;&nbsp;cta.addEventListener('click', () => {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;ga('send', 'event', 'CTA', 'click', cta.dataset.test);<br/>
-            &nbsp;&nbsp;});<br/>
+            &lt;!-- Version A --&gt;
+            &lt;button class="cta-button" data-test="version-a"&gt;
+                Start Free Trial
+            &lt;/button&gt;
+            
+            &lt;!-- Version B --&gt;
+            &lt;button class="cta-button" data-test="version-b"&gt;
+                Get Started for Free
+            &lt;/button&gt;
+            
+            &lt;!-- Version C --&gt;
+            &lt;button class="cta-button" style="background: #28a745;" data-test="version-c"&gt;
+                Try It Free
+            &lt;/button&gt;
+            
+            /* JavaScript for A/B testing */
+            const ctas = document.querySelectorAll('[data-test]');
+            const version = Math.floor(Math.random() * ctas.length);
+            
+            // Show only one version
+            ctas.forEach((cta, index) => {
+                cta.style.display = index === version ? 'inline-block' : 'none';
+                
+                // Track clicks
+                cta.addEventListener('click', () => {
+                    ga('send', 'event', 'CTA', 'click', cta.dataset.test);
+                });
             });
         </pre>
     </div>
@@ -8659,28 +8713,28 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <div style="background-color: #fff0f0; padding: 15px; border-radius: 5px;">
             <b>Icon Grid & Consistency:</b><br/>
             <pre>
-                /* Icon grid in SVG */<br/>
-                &lt;svg width="24" height="24" viewBox="0 0 24 24" fill="none"&gt;<br/>
-                &nbsp;&nbsp;&lt;!-- Always use 24x24 viewBox for consistency --&gt;<br/>
-                &nbsp;&nbsp;&lt;path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/&gt;<br/>
-                &lt;/svg&gt;<br/>
-                <br/>
-                /* CSS for icon consistency */<br/>
-                .icon {<br/>
-                &nbsp;&nbsp;width: 24px;<br/>
-                &nbsp;&nbsp;height: 24px;<br/>
-                &nbsp;&nbsp;fill: none;<br/>
-                &nbsp;&nbsp;stroke: currentColor;<br/>
-                &nbsp;&nbsp;stroke-width: 2;<br/>
-                &nbsp;&nbsp;stroke-linecap: round;<br/>
-                &nbsp;&nbsp;stroke-linejoin: round;<br/>
-                }<br/>
-                <br/>
-                /* Icon sizes */<br/>
-                .icon-sm { width: 16px; height: 16px; }<br/>
-                .icon-md { width: 24px; height: 24px; }<br/>
-                .icon-lg { width: 32px; height: 32px; }<br/>
+                /* Icon grid in SVG */
+                &lt;svg width="24" height="24" viewBox="0 0 24 24" fill="none"&gt;
+                    &lt;!-- Always use 24x24 viewBox for consistency --&gt;
+                    &lt;path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/&gt;
+                &lt;/svg&gt;
+                
+                /* CSS for icon consistency */
+                .icon {
+                    width: 24px;
+                    height: 24px;
+                    fill: none;
+                    stroke: currentColor;
+                    stroke-width: 2;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                }
+                
+                /* Icon sizes */
+                .icon-sm { width: 16px; height: 16px; }
+                .icon-md { width: 24px; height: 24px; }
+                .icon-lg { width: 32px; height: 32px; }
                 .icon-xl { width: 48px; height: 48px; }
             </pre>
         </div>
@@ -8693,58 +8747,58 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <b>SVG Sprite System:</b><br/>
         <pre>
-            &lt;!-- SVG sprite sheet (hidden) --&gt;<br/>
-            &lt;svg xmlns="http://www.w3.org/2000/svg" style="display: none;"&gt;<br/>
-            &nbsp;&nbsp;&lt;defs&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;symbol id="icon-home" viewBox="0 0 24 24"&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/symbol&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;symbol id="icon-search" viewBox="0 0 24 24"&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/symbol&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Add more icons --&gt;<br/>
-            &nbsp;&nbsp;&lt;/defs&gt;<br/>
-            &lt;/svg&gt;<br/>
-            <br/>
-            &lt;!-- Using icons --&gt;<br/>
-            &lt;button aria-label="Home"&gt;<br/>
-            &nbsp;&nbsp;&lt;svg class="icon"&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;use href="#icon-home"&gt;&lt;/use&gt;<br/>
-            &nbsp;&nbsp;&lt;/svg&gt;<br/>
-            &lt;/button&gt;<br/>
-            <br/>
-            &lt;button aria-label="Search"&gt;<br/>
-            &nbsp;&nbsp;&lt;svg class="icon"&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;use href="#icon-search"&gt;&lt;/use&gt;<br/>
-            &nbsp;&nbsp;&lt;/svg&gt;<br/>
-            &lt;/button&gt;<br/>
-            <br/>
-            /* CSS for icon system */<br/>
-            .icon {<br/>
-            &nbsp;&nbsp;width: 24px;<br/>
-            &nbsp;&nbsp;height: 24px;<br/>
-            &nbsp;&nbsp;fill: currentColor; /* Inherits text color */<br/>
-            }<br/>
-            <br/>
-            /* Icon states */<br/>
-            button:hover .icon {<br/>
-            &nbsp;&nbsp;transform: scale(1.1);<br/>
-            &nbsp;&nbsp;transition: transform 0.2s ease;<br/>
-            }<br/>
-            <br/>
-            button:active .icon {<br/>
-            &nbsp;&nbsp;transform: scale(0.95);<br/>
+            &lt;!-- SVG sprite sheet (hidden) --&gt;
+            &lt;svg xmlns="http://www.w3.org/2000/svg" style="display: none;"&gt;
+                &lt;defs&gt;
+                    &lt;symbol id="icon-home" viewBox="0 0 24 24"&gt;
+                        &lt;path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/&gt;
+                    &lt;/symbol&gt;
+                    &lt;symbol id="icon-search" viewBox="0 0 24 24"&gt;
+                        &lt;path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/&gt;
+                    &lt;/symbol&gt;
+                    &lt;!-- Add more icons --&gt;
+                &lt;/defs&gt;
+            &lt;/svg&gt;
+            
+            &lt;!-- Using icons --&gt;
+            &lt;button aria-label="Home"&gt;
+                &lt;svg class="icon"&gt;
+                    &lt;use href="#icon-home"&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+            &lt;/button&gt;
+            
+            &lt;button aria-label="Search"&gt;
+                &lt;svg class="icon"&gt;
+                    &lt;use href="#icon-search"&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+            &lt;/button&gt;
+            
+            /* CSS for icon system */
+            .icon {
+                width: 24px;
+                height: 24px;
+                fill: currentColor; /* Inherits text color */
+            }
+            
+            /* Icon states */
+            button:hover .icon {
+                transform: scale(1.1);
+                transition: transform 0.2s ease;
+            }
+            
+            button:active .icon {
+                transform: scale(0.95);
             }
         </pre>
     </div>
     
     <div style="background-color: #f0f8ff; padding: 15px; margin: 10px 0; border-radius: 5px;">
-        <b>Icon Fonts vs SVG Icons:</b><br/>
+        <b>Icon Fonts vs SVG Icons:</b>
         
-        <b>Icon Fonts (Font Awesome, Material Icons):</b><br/>
-        ✓ Easy to implement<br/>
-        ✓ Color changes with CSS color property<br/>
-        ✗ Limited to single color<br/>
+        <b>Icon Fonts (Font Awesome, Material Icons):</b>
+        ✓ Easy to implement
+        ✓ Color changes with CSS color property
+        ✗ Limited to single color
         ✗ Accessibility issues (screen readers read characters)<br/>
         ✗ Larger file size for many icons<br/><br/>
         
@@ -8764,80 +8818,80 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <b>Animated Banner Example:</b><br/>
         <pre>
-            /* HTML */<br/>
-            &lt;div class="animated-banner" role="banner" aria-label="Special Offer"&gt;<br/>
-            &nbsp;&nbsp;&lt;div class="banner-content"&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;Limited Time Offer&lt;/h2&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Get 50% off all products&lt;/p&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="cta-button"&gt;Shop Now&lt;/button&gt;<br/>
-            &nbsp;&nbsp;&lt;/div&gt;<br/>
-            &lt;/div&gt;<br/>
-            <br/>
-            /* CSS Animation */<br/>
-            @keyframes slideIn {<br/>
-            &nbsp;&nbsp;from {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;transform: translateY(-100%);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;opacity: 0;<br/>
-            &nbsp;&nbsp;}<br/>
-            &nbsp;&nbsp;to {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;transform: translateY(0);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;opacity: 1;<br/>
-            &nbsp;&nbsp;}<br/>
-            }<br/>
-            <br/>
-            @keyframes pulse {<br/>
-            &nbsp;&nbsp;0%, 100% { transform: scale(1); }<br/>
-            &nbsp;&nbsp;50% { transform: scale(1.05); }<br/>
-            }<br/>
-            <br/>
-            .animated-banner {<br/>
-            &nbsp;&nbsp;background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);<br/>
-            &nbsp;&nbsp;color: white;<br/>
-            &nbsp;&nbsp;padding: 20px;<br/>
-            &nbsp;&nbsp;text-align: center;<br/>
-            &nbsp;&nbsp;animation: slideIn 0.5s ease-out;<br/>
-            }<br/>
-            <br/>
-            .cta-button {<br/>
-            &nbsp;&nbsp;animation: pulse 2s infinite;<br/>
-            }<br/>
-            <br/>
-            /* Reduced motion support */<br/>
-            @media (prefers-reduced-motion: reduce) {<br/>
-            &nbsp;&nbsp;.animated-banner, .cta-button {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;animation: none;<br/>
-            &nbsp;&nbsp;}<br/>
+            /* HTML */
+            &lt;div class="animated-banner" role="banner" aria-label="Special Offer"&gt;
+                &lt;div class="banner-content"&gt;
+                    &lt;h2&gt;Limited Time Offer&lt;/h2&gt;
+                    &lt;p&gt;Get 50% off all products&lt;/p&gt;
+                    &lt;button class="cta-button"&gt;Shop Now&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            
+            /* CSS Animation */
+            @keyframes slideIn {
+                from {
+                    transform: translateY(-100%);
+                    opacity: 0;
+                }
+                to {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+            
+            @keyframes pulse {
+                0%, 100% { transform: scale(1); }
+                50% { transform: scale(1.05); }
+            }
+            
+            .animated-banner {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                padding: 20px;
+                text-align: center;
+                animation: slideIn 0.5s ease-out;
+            }
+            
+            .cta-button {
+                animation: pulse 2s infinite;
+            }
+            
+            /* Reduced motion support */
+            @media (prefers-reduced-motion: reduce) {
+                .animated-banner, .cta-button {
+                    animation: none;
+                }
             }
         </pre>
     </div>
     
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0;">
         <div style="background-color: #f0f8ff; padding: 15px; border-radius: 5px;">
-            <b>Animated Icon Examples:</b><br/>
+            <b>Animated Icon Examples:</b>
             <pre>
-                /* Loading spinner */<br/>
-                @keyframes spin {<br/>
-                &nbsp;&nbsp;to { transform: rotate(360deg); }<br/>
-                }<br/>
-                .loading-icon {<br/>
-                &nbsp;&nbsp;animation: spin 1s linear infinite;<br/>
-                }<br/>
-                <br/>
-                /* Hamburger menu animation */<br/>
-                .hamburger {<br/>
-                &nbsp;&nbsp;transition: transform 0.3s ease;<br/>
-                }<br/>
-                .hamburger.active {<br/>
-                &nbsp;&nbsp;transform: rotate(90deg);<br/>
-                }<br/>
-                <br/>
-                /* Notification badge pulse */<br/>
-                @keyframes badgePulse {<br/>
-                &nbsp;&nbsp;0%, 100% { transform: scale(1); }<br/>
-                &nbsp;&nbsp;50% { transform: scale(1.2); }<br/>
-                }<br/>
-                .notification-badge {<br/>
-                &nbsp;&nbsp;animation: badgePulse 2s infinite;<br/>
+                /* Loading spinner */
+                @keyframes spin {
+                    to { transform: rotate(360deg); }
+                }
+                .loading-icon {
+                    animation: spin 1s linear infinite;
+                }
+                
+                /* Hamburger menu animation */
+                .hamburger {
+                    transition: transform 0.3s ease;
+                }
+                .hamburger.active {
+                    transform: rotate(90deg);
+                }
+                
+                /* Notification badge pulse */
+                @keyframes badgePulse {
+                    0%, 100% { transform: scale(1); }
+                    50% { transform: scale(1.2); }
+                }
+                .notification-badge {
+                    animation: badgePulse 2s infinite;
                 }
             </pre>
         </div>
@@ -8845,42 +8899,42 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <div style="background-color: #fff0f0; padding: 15px; border-radius: 5px;">
             <b>Interactive Icon States:</b><br/>
             <pre>
-                /* Icon with tooltip */<br/>
-                .icon-with-tooltip {<br/>
-                &nbsp;&nbsp;position: relative;<br/>
-                }<br/>
-                .icon-with-tooltip::after {<br/>
-                &nbsp;&nbsp;content: attr(aria-label);<br/>
-                &nbsp;&nbsp;position: absolute;<br/>
-                &nbsp;&nbsp;bottom: 100%;<br/>
-                &nbsp;&nbsp;left: 50%;<br/>
-                &nbsp;&nbsp;transform: translateX(-50%);<br/>
-                &nbsp;&nbsp;background: #333;<br/>
-                &nbsp;&nbsp;color: white;<br/>
-                &nbsp;&nbsp;padding: 4px 8px;<br/>
-                &nbsp;&nbsp;border-radius: 4px;<br/>
-                &nbsp;&nbsp;font-size: 12px;<br/>
-                &nbsp;&nbsp;white-space: nowrap;<br/>
-                &nbsp;&nbsp;opacity: 0;<br/>
-                &nbsp;&nbsp;transition: opacity 0.2s ease;<br/>
-                &nbsp;&nbsp;pointer-events: none;<br/>
-                }<br/>
-                .icon-with-tooltip:hover::after {<br/>
-                &nbsp;&nbsp;opacity: 1;<br/>
-                }<br/>
-                <br/>
-                /* Icon color change on state */<br/>
-                .like-icon {<br/>
-                &nbsp;&nbsp;fill: #ccc;<br/>
-                &nbsp;&nbsp;transition: fill 0.3s ease;<br/>
-                }<br/>
-                .like-icon.liked {<br/>
-                &nbsp;&nbsp;fill: #ff4757;<br/>
-                &nbsp;&nbsp;animation: heartBeat 0.5s ease;<br/>
-                }<br/>
-                @keyframes heartBeat {<br/>
-                &nbsp;&nbsp;0%, 100% { transform: scale(1); }<br/>
-                &nbsp;&nbsp;50% { transform: scale(1.3); }<br/>
+                /* Icon with tooltip */
+                .icon-with-tooltip {
+                    position: relative;
+                }
+                .icon-with-tooltip::after {
+                    content: attr(aria-label);
+                    position: absolute;
+                    bottom: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background: #333;
+                    color: white;
+                    padding: 4px 8px;
+                    border-radius: 4px;
+                    font-size: 12px;
+                    white-space: nowrap;
+                    opacity: 0;
+                    transition: opacity 0.2s ease;
+                    pointer-events: none;
+                }
+                .icon-with-tooltip:hover::after {
+                    opacity: 1;
+                }
+                
+                /* Icon color change on state */
+                .like-icon {
+                    fill: #ccc;
+                    transition: fill 0.3s ease;
+                }
+                .like-icon.liked {
+                    fill: #ff4757;
+                    animation: heartBeat 0.5s ease;
+                }
+                @keyframes heartBeat {
+                    0%, 100% { transform: scale(1); }
+                    50% { transform: scale(1.3); }
                 }
             </pre>
         </div>
@@ -8893,13 +8947,13 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <b>Exercise 1: Create a Web Banner Campaign</b>
     
     <div style="background-color: #f0f8ff; padding: 15px; margin: 10px 0; border-radius: 5px;">
-        <b>Task:</b> Design and implement a banner campaign for a product launch.<br/><br/>
+        <b>Task:</b> Design and implement a banner campaign for a product launch.<br />
         
         <b>Requirements:</b><br/>
         1. Create 3 banner sizes:<br/>
-        &nbsp;&nbsp;• Leaderboard (728x90px)<br/>
-        &nbsp;&nbsp;• Medium Rectangle (300x250px)<br/>
-        &nbsp;&nbsp;• Mobile Banner (320x50px)<br/>
+            • Leaderboard (728x90px)<br/>
+            • Medium Rectangle (300x250px)<br/>
+            • Mobile Banner (320x50px)<br/>
         2. Design with consistent branding<br/>
         3. Include clear CTA on each<br/>
         4. Create animated versions (CSS or GIF)<br/>
@@ -9006,16 +9060,16 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <b>Technical Requirements:</b>
         <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
             <pre>
-                /* Must include: */<br/>
-                1. Pure CSS implementations where possible<br/>
-                2. SVG graphics (no bitmap images for icons)<br/>
-                3. Responsive design (mobile-first)<br/>
-                4. Accessibility features (ARIA, keyboard nav)<br/>
-                5. Performance optimizations (lazy loading, etc.)<br/>
-                6. Cross-browser compatibility<br/>
-                7. Reduced motion support<br/>
-                8. Dark mode support<br/>
-                9. Internationalization considerations<br/>
+                /* Must include: */
+                1. Pure CSS implementations where possible
+                2. SVG graphics (no bitmap images for icons)
+                3. Responsive design (mobile-first)
+                4. Accessibility features (ARIA, keyboard nav)
+                5. Performance optimizations (lazy loading, etc.)
+                6. Cross-browser compatibility
+                7. Reduced motion support
+                8. Dark mode support
+                9. Internationalization considerations
                 10. Analytics integration
             </pre>
         </div>
@@ -9268,8 +9322,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
             <br/>
             // Table display for arrays/objects<br/>
             let users = [<br/>
-            &nbsp;&nbsp;{ name: "Alice", age: 25 },<br/>
-            &nbsp;&nbsp;{ name: "Bob", age: 30 }<br/>
+                { name: "Alice", age: 25 },<br/>
+                { name: "Bob", age: 30 }<br/>
             ];<br/>
             console.table(users);
         </pre>
@@ -9285,30 +9339,30 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
             &lt;!DOCTYPE html&gt;<br/>
             &lt;html lang="en"&gt;<br/>
             &lt;head&gt;<br/>
-            &nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br/>
-            &nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br/>
-            &nbsp;&nbsp;&lt;title&gt;My First JavaScript&lt;/title&gt;<br/>
+                &lt;meta charset="UTF-8"&gt;<br/>
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br/>
+                &lt;title&gt;My First JavaScript&lt;/title&gt;<br/>
             &lt;/head&gt;<br/>
             &lt;body&gt;<br/>
-            &nbsp;&nbsp;&lt;h1&gt;JavaScript Basics&lt;/h1&gt;<br/>
+                &lt;h1&gt;JavaScript Basics&lt;/h1&gt;<br/>
             <br/>
-            &nbsp;&nbsp;&lt;script&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;// Your JavaScript code goes here<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;console.log("Script loaded!");<br/>
+                &lt;script&gt;<br/>
+                    // Your JavaScript code goes here<br/>
+                    console.log("Script loaded!");<br/>
             <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;// 1. Variable declaration<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;let message = "Welcome to JavaScript!";<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;const PI = 3.14159;<br/>
+                    // 1. Variable declaration<br/>
+                    let message = "Welcome to JavaScript!";<br/>
+                    const PI = 3.14159;<br/>
             <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;// 2. Console output<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;console.log(message);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;console.log("Value of PI:", PI);<br/>
+                    // 2. Console output<br/>
+                    console.log(message);<br/>
+                    console.log("Value of PI:", PI);<br/>
             <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;// 3. Basic calculations<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;let radius = 5;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;let area = PI * radius * radius;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;console.log(\`Area of circle with radius \${radius}: \${area}\`);<br/>
-            &nbsp;&nbsp;&lt;/script&gt;<br/>
+                    // 3. Basic calculations<br/>
+                    let radius = 5;<br/>
+                    let area = PI * radius * radius;<br/>
+                    console.log(\`Area of circle with radius \${radius}: \${area}\`);<br/>
+                &lt;/script&gt;<br/>
             &lt;/body&gt;<br/>
             &lt;/html&gt;
         </pre>
@@ -9324,11 +9378,11 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <div style="background-color: #f0f8ff; padding: 15px; margin: 10px 0; border-radius: 5px;">
         1. Declare variables for two numbers<br/>
         2. Calculate and display:<br/>
-        &nbsp;&nbsp;- Sum (addition)<br/>
-        &nbsp;&nbsp;- Difference (subtraction)<br/>
-        &nbsp;&nbsp;- Product (multiplication)<br/>
-        &nbsp;&nbsp;- Quotient (division)<br/>
-        &nbsp;&nbsp;- Remainder (modulus)<br/>
+            - Sum (addition)<br/>
+            - Difference (subtraction)<br/>
+            - Product (multiplication)<br/>
+            - Quotient (division)<br/>
+            - Remainder (modulus)<br/>
         3. Use template literals for output<br/>
         4. Format numbers to 2 decimal places where needed
     </div>
@@ -9403,24 +9457,24 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <b>Requirements:</b>
         <div style="background-color: #f0f8ff; padding: 15px; margin: 10px 0; border-radius: 5px;">
             1. Create variables for:<br/>
-            &nbsp;&nbsp;- Temperature in Celsius<br/>
-            &nbsp;&nbsp;- Distance in kilometers<br/>
-            &nbsp;&nbsp;- Weight in kilograms<br/>
+                - Temperature in Celsius<br/>
+                - Distance in kilometers<br/>
+                - Weight in kilograms<br/>
             <br/>
             2. Convert and display:<br/>
-            &nbsp;&nbsp;- Celsius to Fahrenheit: (C × 9/5) + 32<br/>
-            &nbsp;&nbsp;- Kilometers to Miles: km × 0.621371<br/>
-            &nbsp;&nbsp;- Kilograms to Pounds: kg × 2.20462<br/>
+                - Celsius to Fahrenheit: (C × 9/5) + 32<br/>
+                - Kilometers to Miles: km × 0.621371<br/>
+                - Kilograms to Pounds: kg × 2.20462<br/>
             <br/>
             3. Format output nicely:<br/>
-            &nbsp;&nbsp;- Use template literals<br/>
-            &nbsp;&nbsp;- Round to 2 decimal places<br/>
-            &nbsp;&nbsp;- Add unit labels (e.g., "°C", "km", "lbs")<br/>
+                - Use template literals<br/>
+                - Round to 2 decimal places<br/>
+                - Add unit labels (e.g., "°C", "km", "lbs")<br/>
             <br/>
             4. Extra Challenge:<br/>
-            &nbsp;&nbsp;- Add reverse conversion (F to C, etc.)<br/>
-            &nbsp;&nbsp;- Create a simple HTML interface<br/>
-            &nbsp;&nbsp;- Allow user input via prompt()
+                - Add reverse conversion (F to C, etc.)<br/>
+                - Create a simple HTML interface<br/>
+                - Allow user input via prompt()
         </div>
         
         <b>Example Output:</b>
@@ -9458,7 +9512,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
             "7-2": {
                 "icon": "fa-code",
                 "title": "Control Flow Fundamentals",
-                "html": "<h1>Week 7, Day 2: Control Flow Fundamentals</h1>\n<p>Master conditional statements and loops - the building blocks of programming logic and decision-making.</p>\n\n<div class=\"analogy-box\">\n    <b>Analogy: Traffic Control System 🚦</b><br/>\n    <ul style=\"margin-top: 10px;\">\n        <li><b>if/else statements</b> = Traffic lights making decisions</li>\n        <li><b>switch statements</b> = Multi-lane highway exits</li>\n        <li><b>Loops</b> = Circular roundabouts</li>\n        <li><b>Conditions</b> = Road signs and rules</li>\n        <li><b>Logic</b> = Traffic flow patterns</li>\n    </ul>\n</div>\n\n<h3>Key Topics</h3>\n<ul>\n    <li>Conditional Statements (if/else)</li>\n    <li>Switch Statements</li>\n    <li>Comparison & Logical Operators</li>\n    <li>Loops (for, while, do-while)</li>\n</ul>\n\n<h3>Conditional Statements: Making Decisions</h3>\n\n<b>1. Basic if/else Structure</b><br/>\n<div style=\"background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;\">\n    <pre>\n        if (condition) {<br/>\n        &nbsp;&nbsp;// Code runs if condition is true<br/>\n        } else {<br/>\n        &nbsp;&nbsp;// Code runs if condition is false<br/>\n        }\n    </pre>\n</div>\n\n<b>2. Comparison Operators</b>\n<table style=\"width: 100%; border-collapse: collapse; margin: 15px 0;\">\n    <tr style=\"background-color: #f0f0f0;\">\n        <th style=\"padding: 10px; border: 1px solid #ddd;\">Operator</th>\n        <th style=\"padding: 10px; border: 1px solid #ddd;\">Meaning</th>\n        <th style=\"padding: 10px; border: 1px solid #ddd;\">Example</th>\n    </tr>\n    <tr>\n        <td style=\"padding: 10px; border: 1px solid #ddd;\"><pre>===</pre></td>\n        <td style=\"padding: 10px; border: 1px solid #ddd;\">Strict equality</td>\n        <td style=\"padding: 10px; border: 1px solid #ddd;\"><pre>5 === 5</pre> (true)</td>\n    </tr>\n    <tr style=\"background-color: #f9f9f9;\">\n        <td style=\"padding: 10px; border: 1px solid #ddd;\"><pre>!==</pre></td>\n        <td style=\"padding: 10px; border: 1px solid #ddd;\">Strict inequality</td>\n        <td style=\"padding: 10px; border: 1px solid #ddd;\"><pre>5 !== '5'</pre> (true)</td>\n    </tr>\n    <tr>\n        <td style=\"padding: 10px; border: 1px solid #ddd;\"><pre>></pre>, <pre><</pre></td>\n        <td style=\"padding: 10px; border: 1px solid #ddd;\">Greater/Less than</td>\n        <td style=\"padding: 10px; border: 1px solid #ddd;\"><pre>10 > 5</pre> (true)</td>\n    </tr>\n    <tr style=\"background-color: #f9f9f9;\">\n        <td style=\"padding: 10px; border: 1px solid #ddd;\"><pre>>=</pre>, <pre><=</pre></td>\n        <td style=\"padding: 10px; border: 1px solid #ddd;\">Greater/Less or equal</td>\n        <td style=\"padding: 10px; border: 1px solid #ddd;\"><pre>5 >= 5</pre> (true)</td>\n    </tr>\n</table>\n\n<b>3. Logical Operators (AND, OR, NOT)</b>\n<div style=\"background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;\">\n    <pre>\n        // AND (&&) - Both must be true<br/>\n        if (age >= 18 && hasLicense) {<br/>\n        &nbsp;&nbsp;console.log(\"Can drive\");<br/>\n        }<br/><br/>\n        // OR (||) - At least one must be true<br/>\n        if (isMember || hasCoupon) {<br/>\n        &nbsp;&nbsp;console.log(\"Discount applied\");<br/>\n        }<br/><br/>\n        // NOT (!) - Reverses the boolean<br/>\n        if (!isLoggedIn) {<br/>\n        &nbsp;&nbsp;console.log(\"Please log in\");<br/>\n        }\n    </pre>\n</div>\n\n<b>4. Switch Statements (Multiple Conditions)</b>\n<div style=\"background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;\">\n    <pre>\n        let day = \"Monday\";<br/><br/>\n        switch (day) {<br/>\n        &nbsp;&nbsp;case \"Monday\":<br/>\n        &nbsp;&nbsp;&nbsp;&nbsp;console.log(\"Start of work week\");<br/>\n        &nbsp;&nbsp;&nbsp;&nbsp;break;<br/>\n        &nbsp;&nbsp;case \"Friday\":<br/>\n        &nbsp;&nbsp;&nbsp;&nbsp;console.log(\"Weekend is near!\");<br/>\n        &nbsp;&nbsp;&nbsp;&nbsp;break;<br/>\n        &nbsp;&nbsp;default:<br/>\n        &nbsp;&nbsp;&nbsp;&nbsp;console.log(\"Regular day\");<br/>\n        }\n    </pre>\n</div>\n\n<h3>Loops: Repeating Actions</h3>\n\n<b>5. For Loop (Definite Iteration)</b>\n<div style=\"background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;\">\n    <pre>\n        // Basic structure<br/>\n        for (initialization; condition; increment) {<br/>\n        &nbsp;&nbsp;// Code to repeat<br/>\n        }<br/><br/>\n        // Count from 1 to 5<br/>\n        for (let i = 1; i <= 5; i++) {<br/>\n        &nbsp;&nbsp;console.log(\"Count: \" + i);<br/>\n        }<br/><br/>\n        // Output: Count: 1, Count: 2, Count: 3, Count: 4, Count: 5\n    </pre>\n</div>\n\n<b>6. While Loop (Condition-Based)</b>\n<div style=\"background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;\">\n    <pre>\n        // Check condition BEFORE each iteration<br/>\n        let count = 1;<br/><br/>\n        while (count <= 5) {<br/>\n        &nbsp;&nbsp;console.log(\"While count: \" + count);<br/>\n        &nbsp;&nbsp;count++;<br/>\n        }\n    </pre>\n</div>\n\n<b>7. Do-While Loop (Execute at Least Once)</b>\n<div style=\"background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;\">\n    <pre>\n        // Execute FIRST, then check condition<br/>\n        let userInput;<br/><br/>\n        do {<br/>\n        &nbsp;&nbsp;userInput = prompt(\"Enter 'yes' to continue:\");<br/>\n        } while (userInput !== \"yes\");<br/><br/>\n        console.log(\"Thank you!\");\n    </pre>\n</div>\n\n<h3>Practical Examples</h3>\n\n<b>Example 1: User Authentication</b>\n<div style=\"background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;\">\n    <pre>\n        let username = \"admin\";<br/>\n        let password = \"12345\";<br/>\n        let attempts = 3;<br/><br/>\n        while (attempts > 0) {<br/>\n        &nbsp;&nbsp;let inputUser = prompt(\"Username:\");<br/>\n        &nbsp;&nbsp;let inputPass = prompt(\"Password:\");<br/><br/>\n        &nbsp;&nbsp;if (inputUser === username && inputPass === password) {<br/>\n        &nbsp;&nbsp;&nbsp;&nbsp;console.log(\"Login successful!\");<br/>\n        &nbsp;&nbsp;&nbsp;&nbsp;break;<br/>\n        &nbsp;&nbsp;} else {<br/>\n        &nbsp;&nbsp;&nbsp;&nbsp;attempts--;<br/>\n        &nbsp;&nbsp;&nbsp;&nbsp;console.log(`Incorrect. ${attempts} attempts remaining.`);<br/>\n        &nbsp;&nbsp;}<br/>\n        }\n    </pre>\n</div>\n\n<b>Example 2: Number Guessing Game</b>\n<div style=\"background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;\">\n    <pre>\n        let secretNumber = Math.floor(Math.random() * 10) + 1;<br/>\n        let guess;<br/><br/>\n        do {<br/>\n        &nbsp;&nbsp;guess = parseInt(prompt(\"Guess a number between 1-10:\"));<br/><br/>\n        &nbsp;&nbsp;if (guess < secretNumber) {<br/>\n        &nbsp;&nbsp;&nbsp;&nbsp;console.log(\"Too low! Try again.\");<br/>\n        &nbsp;&nbsp;} else if (guess > secretNumber) {<br/>\n        &nbsp;&nbsp;&nbsp;&nbsp;console.log(\"Too high! Try again.\");<br/>\n        &nbsp;&nbsp;}<br/>\n        } while (guess !== secretNumber);<br/><br/>\n        console.log(\"Congratulations! You guessed it!\");\n    </pre>\n</div>\n\n<h3>Common Mistakes</h3>\n\n<b>Mistake 1: Infinite Loops</b>\n<div style=\"background-color: #ffe6e6; padding: 15px; margin: 10px 0; border-radius: 5px;\">\n    <pre>\n        // WRONG - Infinite loop!<br/>\n        let i = 0;<br/>\n        while (i < 5) {<br/>\n        &nbsp;&nbsp;console.log(i);<br/>\n        &nbsp;&nbsp;// Forgot to increment i!<br/>\n        }<br/><br/>\n        // RIGHT<br/>\n        let i = 0;<br/>\n        while (i < 5) {<br/>\n        &nbsp;&nbsp;console.log(i);<br/>\n        &nbsp;&nbsp;i++;&nbsp;&nbsp;// Increment counter\n        }\n    </pre>\n</div>\n\n<b>Mistake 2: Missing Break in Switch</b>\n<div style=\"background-color: #ffe6e6; padding: 15px; margin: 10px 0; border-radius: 5px;\">\n    <pre>\n        // WRONG - Falls through<br/>\n        switch (color) {<br/>\n        &nbsp;&nbsp;case \"red\":<br/>\n        &nbsp;&nbsp;&nbsp;&nbsp;console.log(\"Stop\");<br/>\n        &nbsp;&nbsp;// Missing break!<br/>\n        &nbsp;&nbsp;case \"green\":<br/>\n        &nbsp;&nbsp;&nbsp;&nbsp;console.log(\"Go\");<br/>\n        &nbsp;&nbsp;&nbsp;&nbsp;break;<br/>\n        }<br/><br/>\n        // RIGHT<br/>\n        switch (color) {<br/>\n        &nbsp;&nbsp;case \"red\":<br/>\n        &nbsp;&nbsp;&nbsp;&nbsp;console.log(\"Stop\");<br/>\n        &nbsp;&nbsp;&nbsp;&nbsp;break;&nbsp;&nbsp;// Add break!\n        }\n    </pre>\n</div>\n\n<hr/>\n\n<div class=\"assignment-box\">\n    <h4>Assignment: Shopping Cart Logic</h4>\n    <p>Create a shopping cart system using control flow:</p>\n    \n    <div style=\"background-color: #f0f8ff; padding: 15px; margin: 10px 0; border-radius: 5px;\">\n        <b>Requirements:</b><br/>\n        1. Ask user for item quantity and price<br/>\n        2. Calculate subtotal<br/>\n        3. Apply discounts based on rules:<br/>\n        &nbsp;&nbsp;- 10% off for orders over $100<br/>\n        &nbsp;&nbsp;- 20% off for orders over $200<br/>\n        &nbsp;&nbsp;- Free shipping for orders over $50<br/>\n        4. Use switch statement for payment methods<br/>\n        5. Validate user input (positive numbers only)<br/><br/>\n        \n        <b>Implement with:</b><br/>\n        • if/else for discount logic<br/>\n        • while loop for input validation<br/>\n        • for loop to display cart items<br/>\n        • switch for payment processing\n    </div>\n</div>"
+                "html": "<h1>Week 7, Day 2: Control Flow Fundamentals</h1>\n<p>Master conditional statements and loops - the building blocks of programming logic and decision-making.</p>\n\n<div class=\"analogy-box\">\n    <b>Analogy: Traffic Control System 🚦</b><br/>\n    <ul style=\"margin-top: 10px;\">\n        <li><b>if/else statements</b> = Traffic lights making decisions</li>\n        <li><b>switch statements</b> = Multi-lane highway exits</li>\n        <li><b>Loops</b> = Circular roundabouts</li>\n        <li><b>Conditions</b> = Road signs and rules</li>\n        <li><b>Logic</b> = Traffic flow patterns</li>\n    </ul>\n</div>\n\n<h3>Key Topics</h3>\n<ul>\n    <li>Conditional Statements (if/else)</li>\n    <li>Switch Statements</li>\n    <li>Comparison & Logical Operators</li>\n    <li>Loops (for, while, do-while)</li>\n</ul>\n\n<h3>Conditional Statements: Making Decisions</h3>\n\n<b>1. Basic if/else Structure</b><br/>\n<div style=\"background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;\">\n    <pre>\n        if (condition) {<br/>\n         // Code runs if condition is true<br/>\n        } else {<br/>\n          // Code runs if condition is false<br/>\n        }\n    </pre>\n</div>\n\n<b>2. Comparison Operators</b>\n<table style=\"width: 100%; border-collapse: collapse; margin: 15px 0;\">\n    <tr style=\"background-color: #f0f0f0;\">\n        <th style=\"padding: 10px; border: 1px solid #ddd;\">Operator</th>\n        <th style=\"padding: 10px; border: 1px solid #ddd;\">Meaning</th>\n        <th style=\"padding: 10px; border: 1px solid #ddd;\">Example</th>\n    </tr>\n    <tr>\n        <td style=\"padding: 10px; border: 1px solid #ddd;\"><pre>===</pre></td>\n        <td style=\"padding: 10px; border: 1px solid #ddd;\">Strict equality</td>\n        <td style=\"padding: 10px; border: 1px solid #ddd;\"><pre>5 === 5</pre> (true)</td>\n    </tr>\n    <tr style=\"background-color: #f9f9f9;\">\n        <td style=\"padding: 10px; border: 1px solid #ddd;\"><pre>!==</pre></td>\n        <td style=\"padding: 10px; border: 1px solid #ddd;\">Strict inequality</td>\n        <td style=\"padding: 10px; border: 1px solid #ddd;\"><pre>5 !== '5'</pre> (true)</td>\n    </tr>\n    <tr>\n        <td style=\"padding: 10px; border: 1px solid #ddd;\"><pre>></pre>, <pre><</pre></td>\n        <td style=\"padding: 10px; border: 1px solid #ddd;\">Greater/Less than</td>\n        <td style=\"padding: 10px; border: 1px solid #ddd;\"><pre>10 > 5</pre> (true)</td>\n    </tr>\n    <tr style=\"background-color: #f9f9f9;\">\n        <td style=\"padding: 10px; border: 1px solid #ddd;\"><pre>>=</pre>, <pre><=</pre></td>\n        <td style=\"padding: 10px; border: 1px solid #ddd;\">Greater/Less or equal</td>\n        <td style=\"padding: 10px; border: 1px solid #ddd;\"><pre>5 >= 5</pre> (true)</td>\n    </tr>\n</table>\n\n<b>3. Logical Operators (AND, OR, NOT)</b>\n<div style=\"background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;\">\n    <pre>\n        // AND (&&) - Both must be true<br/>\n        if (age >= 18 && hasLicense) {<br/>\n          console.log(\"Can drive\");<br/>\n        }<br/><br/>\n        // OR (||) - At least one must be true<br/>\n        if (isMember || hasCoupon) {<br/>\n           console.log(\"Discount applied\");<br/>\n        }<br/><br/>\n        // NOT (!) - Reverses the boolean<br/>\n        if (!isLoggedIn) {<br/>\n            console.log(\"Please log in\");<br/>\n        }\n    </pre>\n</div>\n\n<b>4. Switch Statements (Multiple Conditions)</b>\n<div style=\"background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;\">\n    <pre>\n        let day = \"Monday\";<br/><br/>\n        switch (day) {<br/>\n          case \"Monday\":<br/>\n              console.log(\"Start of work week\");<br/>\n                break;<br/>\n           case \"Friday\":<br/>\n                console.log(\"Weekend is near!\");<br/>\n              break;<br/>\n          default:<br/>\n              console.log(\"Regular day\");<br/>\n        }\n    </pre>\n</div>\n\n<h3>Loops: Repeating Actions</h3>\n\n<b>5. For Loop (Definite Iteration)</b>\n<div style=\"background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;\">\n    <pre>\n        // Basic structure<br/>\n        for (initialization; condition; increment) {<br/>\n          // Code to repeat<br/>\n        }<br/><br/>\n        // Count from 1 to 5<br/>\n        for (let i = 1; i <= 5; i++) {<br/>\n         console.log(\"Count: \" + i);<br/>\n        }<br/><br/>\n        // Output: Count: 1, Count: 2, Count: 3, Count: 4, Count: 5\n    </pre>\n</div>\n\n<b>6. While Loop (Condition-Based)</b>\n<div style=\"background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;\">\n    <pre>\n        // Check condition BEFORE each iteration<br/>\n        let count = 1;<br/><br/>\n        while (count <= 5) {<br/>\n           console.log(\"While count: \" + count);<br/>\n         count++;<br/>\n        }\n    </pre>\n</div>\n\n<b>7. Do-While Loop (Execute at Least Once)</b>\n<div style=\"background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;\">\n    <pre>\n        // Execute FIRST, then check condition<br/>\n        let userInput;<br/><br/>\n        do {<br/>\n            userInput = prompt(\"Enter 'yes' to continue:\");<br/>\n        } while (userInput !== \"yes\");<br/><br/>\n        console.log(\"Thank you!\");\n    </pre>\n</div>\n\n<h3>Practical Examples</h3>\n\n<b>Example 1: User Authentication</b>\n<div style=\"background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;\">\n    <pre>\n        let username = \"admin\";<br/>\n        let password = \"12345\";<br/>\n        let attempts = 3;<br/><br/>\n        while (attempts > 0) {<br/>\n          let inputUser = prompt(\"Username:\");<br/>\n        &nbsp;&nbsp;let inputPass = prompt(\"Password:\");<br/><br/>\n        &nbsp;&nbsp;if (inputUser === username && inputPass === password) {<br/>\n        &nbsp;&nbsp;&nbsp;&nbsp;console.log(\"Login successful!\");<br/>\n        &nbsp;&nbsp;&nbsp;&nbsp;break;<br/>\n        &nbsp;&nbsp;} else {<br/>\n        &nbsp;&nbsp;&nbsp;&nbsp;attempts--;<br/>\n        &nbsp;&nbsp;&nbsp;&nbsp;console.log(`Incorrect. ${attempts} attempts remaining.`);<br/>\n        &nbsp;&nbsp;}<br/>\n        }\n    </pre>\n</div>\n\n<b>Example 2: Number Guessing Game</b>\n<div style=\"background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;\">\n    <pre>\n        let secretNumber = Math.floor(Math.random() * 10) + 1;<br/>\n        let guess;<br/><br/>\n        do {<br/>\n        &nbsp;&nbsp;guess = parseInt(prompt(\"Guess a number between 1-10:\"));<br/><br/>\n        &nbsp;&nbsp;if (guess < secretNumber) {<br/>\n        &nbsp;&nbsp;&nbsp;&nbsp;console.log(\"Too low! Try again.\");<br/>\n        &nbsp;&nbsp;} else if (guess > secretNumber) {<br/>\n        &nbsp;&nbsp;&nbsp;&nbsp;console.log(\"Too high! Try again.\");<br/>\n        &nbsp;&nbsp;}<br/>\n        } while (guess !== secretNumber);<br/><br/>\n        console.log(\"Congratulations! You guessed it!\");\n    </pre>\n</div>\n\n<h3>Common Mistakes</h3>\n\n<b>Mistake 1: Infinite Loops</b>\n<div style=\"background-color: #ffe6e6; padding: 15px; margin: 10px 0; border-radius: 5px;\">\n    <pre>\n        // WRONG - Infinite loop!<br/>\n        let i = 0;<br/>\n        while (i < 5) {<br/>\n        &nbsp;&nbsp;console.log(i);<br/>\n        &nbsp;&nbsp;// Forgot to increment i!<br/>\n        }<br/><br/>\n        // RIGHT<br/>\n        let i = 0;<br/>\n        while (i < 5) {<br/>\n        &nbsp;&nbsp;console.log(i);<br/>\n        &nbsp;&nbsp;i++;&nbsp;&nbsp;// Increment counter\n        }\n    </pre>\n</div>\n\n<b>Mistake 2: Missing Break in Switch</b>\n<div style=\"background-color: #ffe6e6; padding: 15px; margin: 10px 0; border-radius: 5px;\">\n    <pre>\n        // WRONG - Falls through<br/>\n        switch (color) {<br/>\n        &nbsp;&nbsp;case \"red\":<br/>\n        &nbsp;&nbsp;&nbsp;&nbsp;console.log(\"Stop\");<br/>\n        &nbsp;&nbsp;// Missing break!<br/>\n        &nbsp;&nbsp;case \"green\":<br/>\n        &nbsp;&nbsp;&nbsp;&nbsp;console.log(\"Go\");<br/>\n        &nbsp;&nbsp;&nbsp;&nbsp;break;<br/>\n        }<br/><br/>\n        // RIGHT<br/>\n        switch (color) {<br/>\n        &nbsp;&nbsp;case \"red\":<br/>\n        &nbsp;&nbsp;&nbsp;&nbsp;console.log(\"Stop\");<br/>\n        &nbsp;&nbsp;&nbsp;&nbsp;break;&nbsp;&nbsp;// Add break!\n        }\n    </pre>\n</div>\n\n<hr/>\n\n<div class=\"assignment-box\">\n    <h4>Assignment: Shopping Cart Logic</h4>\n    <p>Create a shopping cart system using control flow:</p>\n    \n    <div style=\"background-color: #f0f8ff; padding: 15px; margin: 10px 0; border-radius: 5px;\">\n        <b>Requirements:</b><br/>\n        1. Ask user for item quantity and price<br/>\n        2. Calculate subtotal<br/>\n        3. Apply discounts based on rules:<br/>\n        &nbsp;&nbsp;- 10% off for orders over $100<br/>\n        &nbsp;&nbsp;- 20% off for orders over $200<br/>\n        &nbsp;&nbsp;- Free shipping for orders over $50<br/>\n        4. Use switch statement for payment methods<br/>\n        5. Validate user input (positive numbers only)<br/><br/>\n        \n        <b>Implement with:</b><br/>\n        • if/else for discount logic<br/>\n        • while loop for input validation<br/>\n        • for loop to display cart items<br/>\n        • switch for payment processing\n    </div>\n</div>"
             },
             "7-3": {
                 "icon": "fa-shapes",
@@ -33198,37 +33252,37 @@ print_r($explain);
     <b>Define Clear Requirements:</b>
     <div style="background-color: #f0f8ff; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            // Use the SMART criteria<br/>
-            <b>S</b>pecific: Clear, unambiguous requirements<br/>
-            <b>M</b>easurable: Can be tested/verified<br/>
-            <b>A</b>chievable: Realistic with your skills/time<br/>
-            <b>R</b>elevant: Aligns with learning objectives<br/>
-            <b>T</b>ime-bound: Can be completed in timeframe<br/>
-            <br/>
-            <b>Example Requirements Document:</b><br/>
-            1. <b>Core Features (MVP):</b><br/>
-               • User authentication (register/login/logout)<br/>
-               • CRUD operations on main data<br/>
-               • Responsive design (mobile/tablet/desktop)<br/>
-               • Data persistence (database/API)<br/>
-               <br/>
-            2. <b>Technical Requirements:</b><br/>
-               • Use React for frontend<br/>
-               • Use Node.js/Express for backend<br/>
-               • Use MongoDB/PostgreSQL for database<br/>
-               • Deploy to Heroku/Vercel/Netlify<br/>
-               <br/>
-            3. <b>User Stories:</b><br/>
-               • As a user, I want to create an account<br/>
-               • As a user, I want to create/edit/delete items<br/>
-               • As a user, I want to search/filter data<br/>
+            // Use the SMART criteria
+            <b>S</b>pecific: Clear, unambiguous requirements
+            <b>M</b>easurable: Can be tested/verified
+            <b>A</b>chievable: Realistic with your skills/time
+            <b>R</b>elevant: Aligns with learning objectives
+            <b>T</b>ime-bound: Can be completed in timeframe
+            
+            <b>Example Requirements Document:</b>
+            1. <b>Core Features (MVP):</b>
+               • User authentication (register/login/logout)
+               • CRUD operations on main data
+               • Responsive design (mobile/tablet/desktop)
+               • Data persistence (database/API)
+               
+            2. <b>Technical Requirements:</b>
+               • Use React for frontend
+               • Use Node.js/Express for backend
+               • Use MongoDB/PostgreSQL for database
+               • Deploy to Heroku/Vercel/Netlify
+               
+            3. <b>User Stories:</b>
+               • As a user, I want to create an account
+               • As a user, I want to create/edit/delete items
+               • As a user, I want to search/filter data
                • As a user, I want to view my activity history
         </pre>
     </div>
     
     <hr/>
     
-    <b>b. Wireframing and User Flow</b><br/>
+    <b>b. Wireframing and User Flow</b><br />
     
     <b>Create Wireframes:</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
@@ -33250,22 +33304,22 @@ print_r($explain);
     <b>User Flow Diagrams:</b>
     <div style="background-color: #f0f8ff; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            // Example User Flow for E-commerce App<br/>
-            <b>Guest User:</b><br/>
-            Landing Page → Browse Products → View Product → Add to Cart →<br/>
-            Checkout Page → Login/Register → Shipping/Billing → Payment → Confirmation<br/>
-            <br/>
-            <b>Logged-in User:</b><br/>
-            Dashboard → Order History → Profile Settings → Logout<br/>
-            <br/>
-            <b>Admin User:</b><br/>
-            Admin Dashboard → Manage Products → View Orders → Manage Users → Analytics<br/>
-            <br/>
-            <b>Flowchart Elements:</b><br/>
-            ○ Start/End points<br/>
-            □ Process steps<br/>
-            ◇ Decision points (if/else)<br/>
-            → Flow direction<br/>
+            // Example User Flow for E-commerce App
+            <b>Guest User:</b>
+            Landing Page → Browse Products → View Product → Add to Cart →
+            Checkout Page → Login/Register → Shipping/Billing → Payment → Confirmation
+            
+            <b>Logged-in User:</b>
+            Dashboard → Order History → Profile Settings → Logout
+            
+            <b>Admin User:</b>
+            Admin Dashboard → Manage Products → View Orders → Manage Users → Analytics
+            
+            <b>Flowchart Elements:</b>
+            ○ Start/End points
+            □ Process steps
+            ◇ Decision points (if/else)
+            → Flow direction
             ⬤ Database operations
         </pre>
     </div>
@@ -33461,104 +33515,104 @@ print_r($explain);
     <b>File Structure Example:</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            my-app/<br/>
-            ├── frontend/<br/>
-            │   ├── public/<br/>
-            │   │   ├── index.html<br/>
-            │   │   ├── favicon.ico<br/>
-            │   │   └── manifest.json<br/>
-            │   ├── src/<br/>
-            │   │   ├── components/<br/>
-            │   │   │   ├── common/<br/>
-            │   │   │   │   ├── Button.jsx<br/>
-            │   │   │   │   ├── Navbar.jsx<br/>
-            │   │   │   │   └── Card.jsx<br/>
-            │   │   │   ├── auth/<br/>
-            │   │   │   │   ├── Login.jsx<br/>
-            │   │   │   │   └── Register.jsx<br/>
-            │   │   │   └── dashboard/<br/>
-            │   │   │       ├── Dashboard.jsx<br/>
-            │   │   │       └── Widgets/<br/>
-            │   │   ├── pages/<br/>
-            │   │   │   ├── Home.jsx<br/>
-            │   │   │   ├── About.jsx<br/>
-            │   │   │   └── Contact.jsx<br/>
-            │   │   ├── services/<br/>
-            │   │   │   ├── api.js<br/>
-            │   │   │   └── auth.js<br/>
-            │   │   ├── utils/<br/>
-            │   │   │   ├── helpers.js<br/>
-            │   │   │   └── constants.js<br/>
-            │   │   ├── styles/<br/>
-            │   │   │   ├── main.css<br/>
-            │   │   │   └── components.css<br/>
-            │   │   ├── App.jsx<br/>
-            │   │   ├── index.js<br/>
-            │   │   └── routes.js<br/>
-            │   ├── package.json<br/>
-            │   └── README.md<br/>
-            │<br/>
-            ├── backend/<br/>
-            │   ├── src/<br/>
-            │   │   ├── controllers/<br/>
-            │   │   │   ├── authController.js<br/>
-            │   │   │   ├── userController.js<br/>
-            │   │   │   └── productController.js<br/>
-            │   │   ├── models/<br/>
-            │   │   │   ├── User.js<br/>
-            │   │   │   └── Product.js<br/>
-            │   │   ├── routes/<br/>
-            │   │   │   ├── authRoutes.js<br/>
-            │   │   │   ├── userRoutes.js<br/>
-            │   │   │   └── productRoutes.js<br/>
-            │   │   ├── middleware/<br/>
-            │   │   │   ├── auth.js<br/>
-            │   │   │   ├── validation.js<br/>
-            │   │   │   └── errorHandler.js<br/>
-            │   │   ├── config/<br/>
-            │   │   │   ├── database.js<br/>
-            │   │   │   └── constants.js<br/>
-            │   │   ├── utils/<br/>
-            │   │   │   ├── validators.js<br/>
-            │   │   │   └── helpers.js<br/>
-            │   │   ├── app.js<br/>
-            │   │   └── server.js<br/>
-            │   ├── package.json<br/>
-            │   ├── .env<br/>
-            │   └── README.md<br/>
-            │<br/>
-            ├── .gitignore<br/>
-            ├── docker-compose.yml<br/>
+            my-app/
+            ├── frontend/
+            │   ├── public/
+            │   │   ├── index.html
+            │   │   ├── favicon.ico
+            │   │   └── manifest.json
+            │   ├── src/
+            │   │   ├── components/
+            │   │   │   ├── common/
+            │   │   │   │   ├── Button.jsx
+            │   │   │   │   ├── Navbar.jsx
+            │   │   │   │   └── Card.jsx
+            │   │   │   ├── auth/
+            │   │   │   │   ├── Login.jsx
+            │   │   │   │   └── Register.jsx
+            │   │   │   └── dashboard/
+            │   │   │       ├── Dashboard.jsx
+            │   │   │       └── Widgets/
+            │   │   ├── pages/
+            │   │   │   ├── Home.jsx
+            │   │   │   ├── About.jsx
+            │   │   │   └── Contact.jsx
+            │   │   ├── services/
+            │   │   │   ├── api.js
+            │   │   │   └── auth.js
+            │   │   ├── utils/
+            │   │   │   ├── helpers.js
+            │   │   │   └── constants.js
+            │   │   ├── styles/
+            │   │   │   ├── main.css
+            │   │   │   └── components.css
+            │   │   ├── App.jsx
+            │   │   ├── index.js
+            │   │   └── routes.js
+            │   ├── package.json
+            │   └── README.md
+            │
+            ├── backend/
+            │   ├── src/
+            │   │   ├── controllers/
+            │   │   │   ├── authController.js
+            │   │   │   ├── userController.js
+            │   │   │   └── productController.js
+            │   │   ├── models/
+            │   │   │   ├── User.js
+            │   │   │   └── Product.js
+            │   │   ├── routes/
+            │   │   │   ├── authRoutes.js
+            │   │   │   ├── userRoutes.js
+            │   │   │   └── productRoutes.js
+            │   │   ├── middleware/
+            │   │   │   ├── auth.js
+            │   │   │   ├── validation.js
+            │   │   │   └── errorHandler.js
+            │   │   ├── config/
+            │   │   │   ├── database.js
+            │   │   │   └── constants.js
+            │   │   ├── utils/
+            │   │   │   ├── validators.js
+            │   │   │   └── helpers.js
+            │   │   ├── app.js
+            │   │   └── server.js
+            │   ├── package.json
+            │   ├── .env
+            │   └── README.md
+            │
+            ├── .gitignore
+            ├── docker-compose.yml
             └── README.md
         </pre>
     </div>
     
     <hr/>
     
-    <b>e. Development Workflow & Tools</b><br/>
+    <b>e. Development Workflow & Tools</b><br />
     
     <b>Version Control Strategy:</b>
     <div style="background-color: #f0f8ff; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            <b>Git Branch Strategy (Git Flow):</b><br/>
-            main/            # Production-ready code<br/>
-            ├── develop/     # Integration branch<br/>
-            ├── feature/     # New features (feature/login)<br/>
-            ├── release/     # Release preparation (release/v1.0)<br/>
-            └── hotfix/      # Emergency fixes (hotfix/bug-login)<br/>
-            <br/>
-            <b>Commit Convention:</b><br/>
-            feat:     Add new feature<br/>
-            fix:      Fix bug<br/>
-            docs:     Documentation changes<br/>
-            style:    Code formatting<br/>
-            refactor: Code refactoring<br/>
-            test:     Add/update tests<br/>
-            chore:    Build process/tool changes<br/>
-            <br/>
-            <b>Example:</b><br/>
-            git commit -m "feat: add user authentication with JWT"<br/>
-            git commit -m "fix: resolve login form validation error"<br/>
+            <b>Git Branch Strategy (Git Flow):</b>
+            main/            # Production-ready code
+            ├── develop/     # Integration branch
+            ├── feature/     # New features (feature/login)
+            ├── release/     # Release preparation (release/v1.0)
+            └── hotfix/      # Emergency fixes (hotfix/bug-login)
+            
+            <b>Commit Convention:</b>
+            feat:     Add new feature
+            fix:      Fix bug
+            docs:     Documentation changes
+            style:    Code formatting
+            refactor: Code refactoring
+            test:     Add/update tests
+            chore:    Build process/tool changes
+            
+            <b>Example:</b>
+            git commit -m "feat: add user authentication with JWT"
+            git commit -m "fix: resolve login form validation error"
             git commit -m "docs: update API documentation"
         </pre>
     </div>
@@ -33624,34 +33678,34 @@ print_r($explain);
     <b>Task 2: Create Requirements Document</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            # Project Requirements Document<br/>
-            <br/>
-            ## 1. MVP Features (Must Have)<br/>
-            - [ ] User authentication (register/login)<br/>
-            - [ ] CRUD operations for main entity<br/>
-            - [ ] Responsive design<br/>
-            - [ ] Data persistence<br/>
-            - [ ] Basic error handling<br/>
-            <br/>
-            ## 2. Additional Features (Should Have)<br/>
-            - [ ] Search/filter functionality<br/>
-            - [ ] Pagination<br/>
-            - [ ] Form validation<br/>
-            - [ ] Loading states<br/>
-            - [ ] Toast notifications<br/>
-            <br/>
-            ## 3. Nice-to-Have Features<br/>
-            - [ ] File uploads<br/>
-            - [ ] Real-time updates<br/>
-            - [ ] Advanced analytics<br/>
-            - [ ] Export data (PDF/CSV)<br/>
-            - [ ] Dark/light theme<br/>
-            <br/>
-            ## 4. Technical Specifications<br/>
-            - Frontend: [Your choice]<br/>
-            - Backend: [Your choice]<br/>
-            - Database: [Your choice]<br/>
-            - Deployment: [Your choice]<br/>
+            # Project Requirements Document
+            
+            ## 1. MVP Features (Must Have)
+            - [ ] User authentication (register/login)
+            - [ ] CRUD operations for main entity
+            - [ ] Responsive design
+            - [ ] Data persistence
+            - [ ] Basic error handling
+            
+            ## 2. Additional Features (Should Have)
+            - [ ] Search/filter functionality
+            - [ ] Pagination
+            - [ ] Form validation
+            - [ ] Loading states
+            - [ ] Toast notifications
+            
+            ## 3. Nice-to-Have Features
+            - [ ] File uploads
+            - [ ] Real-time updates
+            - [ ] Advanced analytics
+            - [ ] Export data (PDF/CSV)
+            - [ ] Dark/light theme
+            
+            ## 4. Technical Specifications
+            - Frontend: [Your choice]
+            - Backend: [Your choice]
+            - Database: [Your choice]
+            - Deployment: [Your choice]
             - Styling: [CSS Framework/Tailwind]
         </pre>
     </div>
@@ -33682,43 +33736,43 @@ print_r($explain);
     <b>Task 4: Set Up Project Structure</b>
     <div style="background-color: #e8f5e8; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            # Initialize your project<br/>
-            mkdir my-project<br/>
-            cd my-project<br/>
-            <br/>
-            # Initialize Git repository<br/>
-            git init<br/>
-            echo "# My Project" > README.md<br/>
-            <br/>
-            # Create .gitignore<br/>
-            cat > .gitignore << EOF<br/>
-            node_modules/<br/>
-            .env<br/>
-            .DS_Store<br/>
-            dist/<br/>
-            build/<br/>
-            *.log<br/>
-            EOF<br/>
-            <br/>
-            # Set up frontend (example with React)<br/>
-            npx create-react-app frontend<br/>
-            cd frontend<br/>
-            npm install axios react-router-dom<br/>
-            <br/>
-            # Set up backend (example with Node.js)<br/>
-            cd ..<br/>
-            mkdir backend<br/>
-            cd backend<br/>
-            npm init -y<br/>
-            npm install express mongoose cors dotenv bcryptjs jsonwebtoken<br/>
-            npm install -D nodemon<br/>
-            <br/>
-            # Create basic file structure<br/>
-            mkdir -p src/{controllers,models,routes,middleware,config,utils}<br/>
-            touch src/app.js src/server.js<br/>
-            <br/>
-            # Initial commit<br/>
-            git add .<br/>
+            # Initialize your project
+            mkdir my-project
+            cd my-project
+            
+            # Initialize Git repository
+            git init
+            echo "# My Project" > README.md
+            
+            # Create .gitignore
+            cat > .gitignore << EOF
+            node_modules/
+            .env
+            .DS_Store
+            dist/
+            build/
+            *.log
+            EOF
+            
+            # Set up frontend (example with React)
+            npx create-react-app frontend
+            cd frontend
+            npm install axios react-router-dom
+            
+            # Set up backend (example with Node.js)
+            cd ..
+            mkdir backend
+            cd backend
+            npm init -y
+            npm install express mongoose cors dotenv bcryptjs jsonwebtoken
+            npm install -D nodemon
+            
+            # Create basic file structure
+            mkdir -p src/{controllers,models,routes,middleware,config,utils}
+            touch src/app.js src/server.js
+            
+            # Initial commit
+            git add .
             git commit -m "Initial project setup"
         </pre>
     </div>
@@ -33833,42 +33887,42 @@ print_r($explain);
     <div style="background-color: #ffe6e6; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <b>1. Over-engineering from the start</b><br/>
         <pre>
-            // ❌ Planning microservices for a simple todo app<br/>
+            // ❌ Planning microservices for a simple todo app
             // ✅ Start monolithic, refactor later if needed
         </pre>
-        <br/>
+        
         
         <b>2. Scope creep (adding features mid-development)</b><br/>
         <pre>
-            // ❌ "While we're building auth, let's add OAuth, 2FA, and biometrics!"<br/>
+            // ❌ "While we're building auth, let's add OAuth, 2FA, and biometrics!"
             // ✅ Build basic auth first, add features later if time allows
         </pre>
         <br/>
         
         <b>3. Not considering deployment from day 1</b><br/>
         <pre>
-            // ❌ Building app that needs specific server configurations<br/>
+            // ❌ Building app that needs specific server configurations
             // ✅ Use platform-as-a-service (PaaS) for easier deployment
         </pre>
         <br/>
         
         <b>4. Skipping wireframes and jumping to code</b><br/>
         <pre>
-            // ❌ Starting to code without clear design<br/>
+            // ❌ Starting to code without clear design
             // ✅ Create wireframes first, code second
         </pre>
         <br/>
         
         <b>5. Not having a testing strategy</b><br/>
         <pre>
-            // ❌ "I'll test it at the end"<br/>
+            // ❌ "I'll test it at the end"
             // ✅ Plan testing from the beginning
         </pre>
         <br/>
         
         <b>6. Choosing unfamiliar tech for critical project</b><br/>
         <pre>
-            // ❌ Learning new framework while building final project<br/>
+            // ❌ Learning new framework while building final project
             // ✅ Use technologies you're comfortable with
         </pre>
     </div>
@@ -33910,30 +33964,30 @@ print_r($explain);
         <b>Example Submission Format:</b>
         <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
             <pre>
-                # Project: TaskFlow - Project Management App<br/>
-                <br/>
-                ## Proposal<br/>
-                A Trello-like project management tool for small teams...<br/>
-                <br/>
-                ## Tech Stack<br/>
-                - Frontend: React with TypeScript<br/>
-                - Backend: Node.js + Express<br/>
-                - Database: MongoDB<br/>
-                - Deployment: Vercel (frontend) + Railway (backend)<br/>
-                <br/>
-                ## Wireframes<br/>
-                [Link to Figma/Image files]<br/>
-                <br/>
-                ## Database Schema<br/>
-                Users: {_id, email, password, name, avatar}<br/>
-                Projects: {_id, name, description, ownerId, members[]}<br/>
-                Tasks: {_id, title, description, projectId, assigneeId, status}<br/>
-                <br/>
-                ## API Endpoints<br/>
-                POST /api/auth/register<br/>
-                POST /api/auth/login<br/>
-                GET  /api/projects<br/>
-                POST /api/projects<br/>
+                # Project: TaskFlow - Project Management App
+                
+                ## Proposal
+                A Trello-like project management tool for small teams...
+                
+                ## Tech Stack
+                - Frontend: React with TypeScript
+                - Backend: Node.js + Express
+                - Database: MongoDB
+                - Deployment: Vercel (frontend) + Railway (backend)
+                
+                ## Wireframes
+                [Link to Figma/Image files]
+                
+                ## Database Schema
+                Users: {_id, email, password, name, avatar}
+                Projects: {_id, name, description, ownerId, members[]}
+                Tasks: {_id, title, description, projectId, assigneeId, status}
+                
+                ## API Endpoints
+                POST /api/auth/register
+                POST /api/auth/login
+                GET  /api/projects
+                POST /api/projects
                 ...
             </pre>
         </div>
@@ -34005,51 +34059,51 @@ print_r($explain);
     <b>Basic Express Server:</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            // server.js<br/>
-            const express = require('express');<br/>
-            const cors = require('cors');<br/>
-            const dotenv = require('dotenv');<br/>
-            <br/>
-            // Load environment variables<br/>
-            dotenv.config();<br/>
-            <br/>
-            const app = express();<br/>
-            const PORT = process.env.PORT || 5000;<br/>
-            <br/>
-            // Middleware<br/>
-            app.use(cors());<br/>
-            app.use(express.json()); // Parse JSON bodies<br/>
-            app.use(express.urlencoded({ extended: true }));<br/>
-            <br/>
-            // Basic route<br/>
-            app.get('/', (req, res) => {<br/>
-            &nbsp;&nbsp;res.json({ message: 'API is running' });<br/>
-            });<br/>
-            <br/>
-            // Health check route<br/>
-            app.get('/health', (req, res) => {<br/>
-            &nbsp;&nbsp;res.status(200).json({ <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;status: 'OK', <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;timestamp: new Date().toISOString() <br/>
-            &nbsp;&nbsp;});<br/>
-            });<br/>
-            <br/>
-            // Error handling middleware<br/>
-            app.use((err, req, res, next) => {<br/>
-            &nbsp;&nbsp;console.error(err.stack);<br/>
-            &nbsp;&nbsp;res.status(500).json({ <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;error: 'Something went wrong!',<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;message: process.env.NODE_ENV === 'development' ? err.message : undefined<br/>
-            &nbsp;&nbsp;});<br/>
-            });<br/>
-            <br/>
-            // 404 handler<br/>
-            app.use('*', (req, res) => {<br/>
-            &nbsp;&nbsp;res.status(404).json({ error: 'Route not found' });<br/>
-            });<br/>
-            <br/>
-            app.listen(PORT, () => {<br/>
-            &nbsp;&nbsp;console.log(\`Server running on port \${PORT}\`);<br/>
+            // server.js
+            const express = require('express');
+            const cors = require('cors');
+            const dotenv = require('dotenv');
+            
+            // Load environment variables
+            dotenv.config();
+            
+            const app = express();
+            const PORT = process.env.PORT || 5000;
+            
+            // Middleware
+            app.use(cors());
+            app.use(express.json()); // Parse JSON bodies
+            app.use(express.urlencoded({ extended: true }));
+            
+            // Basic route
+            app.get('/', (req, res) => {
+                res.json({ message: 'API is running' });
+            });
+            
+            // Health check route
+            app.get('/health', (req, res) => {
+                res.status(200).json({ 
+                    status: 'OK', 
+                    timestamp: new Date().toISOString() 
+                });
+            });
+            
+            // Error handling middleware
+            app.use((err, req, res, next) => {
+                console.error(err.stack);
+                res.status(500).json({ 
+                    error: 'Something went wrong!',
+                    message: process.env.NODE_ENV === 'development' ? err.message : undefined
+                });
+            });
+            
+            // 404 handler
+            app.use('*', (req, res) => {
+                res.status(404).json({ error: 'Route not found' });
+            });
+            
+            app.listen(PORT, () => {
+                console.log(\`Server running on port \${PORT}\`);
             });
         </pre>
     </div>
@@ -34061,78 +34115,78 @@ print_r($explain);
     <b>MongoDB with Mongoose:</b>
     <div style="background-color: #f0f8ff; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            // config/database.js<br/>
-            const mongoose = require('mongoose');<br/>
-            <br/>
-            const connectDB = async () => {<br/>
-            &nbsp;&nbsp;try {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;const conn = await mongoose.connect(process.env.MONGODB_URI, {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;useNewUrlParser: true,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;useUnifiedTopology: true,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;});<br/>
-            <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;console.log(\`MongoDB Connected: \${conn.connection.host}\`);<br/>
-            &nbsp;&nbsp;} catch (error) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;console.error(\`Error: \${error.message}\`);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;process.exit(1);<br/>
-            &nbsp;&nbsp;}<br/>
-            };<br/>
-            <br/>
-            module.exports = connectDB;<br/>
-            <br/>
-            // models/User.js<br/>
-            const mongoose = require('mongoose');<br/>
-            const bcrypt = require('bcryptjs');<br/>
-            <br/>
-            const userSchema = new mongoose.Schema({<br/>
-            &nbsp;&nbsp;name: {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;type: String,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;required: [true, 'Please add a name'],<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;trim: true,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;maxlength: [50, 'Name cannot be more than 50 characters']<br/>
-            &nbsp;&nbsp;},<br/>
-            &nbsp;&nbsp;email: {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;type: String,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;required: [true, 'Please add an email'],<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;unique: true,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;lowercase: true,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;match: [/^\\S+@\\S+\\.\\S+$/, 'Please add a valid email']<br/>
-            &nbsp;&nbsp;},<br/>
-            &nbsp;&nbsp;password: {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;type: String,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;required: [true, 'Please add a password'],<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;minlength: 6,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;select: false // Don't return password by default<br/>
-            &nbsp;&nbsp;},<br/>
-            &nbsp;&nbsp;role: {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;type: String,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;enum: ['user', 'admin'],<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;default: 'user'<br/>
-            &nbsp;&nbsp;},<br/>
-            &nbsp;&nbsp;createdAt: {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;type: Date,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;default: Date.now<br/>
-            &nbsp;&nbsp;}<br/>
-            }, {<br/>
-            &nbsp;&nbsp;toJSON: { virtuals: true },<br/>
-            &nbsp;&nbsp;toObject: { virtuals: true }<br/>
-            });<br/>
-            <br/>
-            // Encrypt password before saving<br/>
-            userSchema.pre('save', async function(next) {<br/>
-            &nbsp;&nbsp;if (!this.isModified('password')) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;return next();<br/>
-            &nbsp;&nbsp;}<br/>
-            &nbsp;&nbsp;const salt = await bcrypt.genSalt(10);<br/>
-            &nbsp;&nbsp;this.password = await bcrypt.hash(this.password, salt);<br/>
-            &nbsp;&nbsp;next();<br/>
-            });<br/>
-            <br/>
-            // Compare password method<br/>
-            userSchema.methods.comparePassword = async function(candidatePassword) {<br/>
-            &nbsp;&nbsp;return await bcrypt.compare(candidatePassword, this.password);<br/>
-            };<br/>
-            <br/>
+            // config/database.js
+            const mongoose = require('mongoose');
+            
+            const connectDB = async () => {
+                try {
+                    const conn = await mongoose.connect(process.env.MONGODB_URI, {
+                        useNewUrlParser: true,
+                        useUnifiedTopology: true,
+                    });
+            
+                    console.log(\`MongoDB Connected: \${conn.connection.host}\`);
+                } catch (error) {
+                    console.error(\`Error: \${error.message}\`);
+                    process.exit(1);
+                }
+            };
+            
+            module.exports = connectDB;
+            
+            // models/User.js
+            const mongoose = require('mongoose');
+            const bcrypt = require('bcryptjs');
+            
+            const userSchema = new mongoose.Schema({
+                name: {
+                    type: String,
+                    required: [true, 'Please add a name'],
+                    trim: true,
+                    maxlength: [50, 'Name cannot be more than 50 characters']
+                },
+                email: {
+                    type: String,
+                    required: [true, 'Please add an email'],
+                    unique: true,
+                    lowercase: true,
+                    match: [/^\\S+@\\S+\\.\\S+$/, 'Please add a valid email']
+                },
+                password: {
+                    type: String,
+                    required: [true, 'Please add a password'],
+                    minlength: 6,
+                    select: false // Don't return password by default
+                },
+                role: {
+                    type: String,
+                    enum: ['user', 'admin'],
+                    default: 'user'
+                },
+                createdAt: {
+                    type: Date,
+                    default: Date.now
+                }
+            }, {
+                toJSON: { virtuals: true },
+                toObject: { virtuals: true }
+            });
+            
+            // Encrypt password before saving
+            userSchema.pre('save', async function(next) {
+                if (!this.isModified('password')) {
+                    return next();
+                }
+                const salt = await bcrypt.genSalt(10);
+                this.password = await bcrypt.hash(this.password, salt);
+                next();
+            });
+            
+            // Compare password method
+            userSchema.methods.comparePassword = async function(candidatePassword) {
+                return await bcrypt.compare(candidatePassword, this.password);
+            };
+            
             module.exports = mongoose.model('User', userSchema);
         </pre>
     </div>
@@ -34184,52 +34238,52 @@ print_r($explain);
     <b>Controller Example:</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            // controllers/userController.js<br/>
-            const User = require('../models/User');<br/>
-            <br/>
-            // @desc    Get all users<br/>
-            // @route   GET /api/users<br/>
-            // @access  Private/Admin<br/>
-            exports.getUsers = async (req, res) => {<br/>
-            &nbsp;&nbsp;try {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;const users = await User.find().select('-password');<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;res.status(200).json({<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success: true,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count: users.length,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data: users<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;});<br/>
-            &nbsp;&nbsp;} catch (error) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;res.status(500).json({<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success: false,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;error: 'Server Error'<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;});<br/>
-            &nbsp;&nbsp;}<br/>
-            };<br/>
-            <br/>
-            // @desc    Get single user<br/>
-            // @route   GET /api/users/:id<br/>
-            // @access  Private<br/>
-            exports.getUser = async (req, res) => {<br/>
-            &nbsp;&nbsp;try {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;const user = await User.findById(req.params.id).select('-password');<br/>
-            <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;if (!user) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return res.status(404).json({<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success: false,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;error: 'User not found'<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-            <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;res.status(200).json({<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success: true,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data: user<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;});<br/>
-            &nbsp;&nbsp;} catch (error) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;res.status(500).json({<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success: false,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;error: 'Server Error'<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;});<br/>
-            &nbsp;&nbsp;}<br/>
+            // controllers/userController.js
+            const User = require('../models/User');
+            
+            // @desc    Get all users
+            // @route   GET /api/users
+            // @access  Private/Admin
+            exports.getUsers = async (req, res) => {
+                try {
+                    const users = await User.find().select('-password');
+                    res.status(200).json({
+                        success: true,
+                        count: users.length,
+                        data: users
+                    });
+                } catch (error) {
+                    res.status(500).json({
+                        success: false,
+                        error: 'Server Error'
+                    });
+                }
+            };
+            
+            // @desc    Get single user
+            // @route   GET /api/users/:id
+            // @access  Private
+            exports.getUser = async (req, res) => {
+                try {
+                    const user = await User.findById(req.params.id).select('-password');
+            
+                    if (!user) {
+                        return res.status(404).json({
+                            success: false,
+                            error: 'User not found'
+                        });
+                    }
+            
+                    res.status(200).json({
+                        success: true,
+                        data: user
+                    });
+                } catch (error) {
+                    res.status(500).json({
+                        success: false,
+                        error: 'Server Error'
+                    });
+                }
             };
         </pre>
     </div>
@@ -34241,48 +34295,48 @@ print_r($explain);
     <b>Task 1: Set Up Authentication System</b>
     <div style="background-color: #f0f8ff; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            // middleware/auth.js<br/>
-            const jwt = require('jsonwebtoken');<br/>
-            const User = require('../models/User');<br/>
-            <br/>
-            exports.protect = async (req, res, next) => {<br/>
-            &nbsp;&nbsp;let token;<br/>
-            <br/>
-            &nbsp;&nbsp;if (req.headers.authorization && <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;req.headers.authorization.startsWith('Bearer')) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;token = req.headers.authorization.split(' ')[1];<br/>
-            &nbsp;&nbsp;}<br/>
-            <br/>
-            &nbsp;&nbsp;if (!token) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;return res.status(401).json({<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success: false,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;error: 'Not authorized to access this route'<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;});<br/>
-            &nbsp;&nbsp;}<br/>
-            <br/>
-            &nbsp;&nbsp;try {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;const decoded = jwt.verify(token, process.env.JWT_SECRET);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;req.user = await User.findById(decoded.id);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;next();<br/>
-            &nbsp;&nbsp;} catch (error) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;return res.status(401).json({<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success: false,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;error: 'Not authorized to access this route'<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;});<br/>
-            &nbsp;&nbsp;}<br/>
-            };<br/>
-            <br/>
-            // Grant access to specific roles<br/>
-            exports.authorize = (...roles) => {<br/>
-            &nbsp;&nbsp;return (req, res, next) => {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;if (!roles.includes(req.user.role)) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return res.status(403).json({<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success: false,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;error: \`User role \${req.user.role} is not authorized\`<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;next();<br/>
-            &nbsp;&nbsp;};<br/>
+            // middleware/auth.js
+            const jwt = require('jsonwebtoken');
+            const User = require('../models/User');
+            
+            exports.protect = async (req, res, next) => {
+                let token;
+            
+                if (req.headers.authorization && 
+                        req.headers.authorization.startsWith('Bearer')) {
+                    token = req.headers.authorization.split(' ')[1];
+                }
+            
+                if (!token) {
+                    return res.status(401).json({
+                        success: false,
+                        error: 'Not authorized to access this route'
+                    });
+                }
+            
+                try {
+                    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+                    req.user = await User.findById(decoded.id);
+                    next();
+                } catch (error) {
+                    return res.status(401).json({
+                        success: false,
+                        error: 'Not authorized to access this route'
+                    });
+                }
+            };
+            
+            // Grant access to specific roles
+            exports.authorize = (...roles) => {
+                return (req, res, next) => {
+                    if (!roles.includes(req.user.role)) {
+                        return res.status(403).json({
+                            success: false,
+                            error: \`User role \${req.user.role} is not authorized\`
+                        });
+                    }
+                    next();
+                };
             };
         </pre>
     </div>
@@ -34297,68 +34351,68 @@ print_r($explain);
         <br/>
         <b>Example Task Model:</b><br/>
         <pre>
-            // models/Task.js<br/>
-            const taskSchema = new mongoose.Schema({<br/>
-            &nbsp;&nbsp;title: { type: String, required: true },<br/>
-            &nbsp;&nbsp;description: String,<br/>
-            &nbsp;&nbsp;status: { <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;type: String, <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;enum: ['todo', 'in-progress', 'done'], <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;default: 'todo' <br/>
-            &nbsp;&nbsp;},<br/>
-            &nbsp;&nbsp;priority: { <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;type: String, <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;enum: ['low', 'medium', 'high'], <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;default: 'medium' <br/>
-            &nbsp;&nbsp;},<br/>
-            &nbsp;&nbsp;dueDate: Date,<br/>
-            &nbsp;&nbsp;user: { <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;type: mongoose.Schema.Types.ObjectId,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;ref: 'User',<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;required: true<br/>
-            &nbsp;&nbsp;}<br/>
+            // models/Task.js
+            const taskSchema = new mongoose.Schema({
+                title: { type: String, required: true },
+                description: String,
+                status: { 
+                    type: String, 
+                    enum: ['todo', 'in-progress', 'done'], 
+                    default: 'todo' 
+                },
+                priority: { 
+                    type: String, 
+                    enum: ['low', 'medium', 'high'], 
+                    default: 'medium' 
+                },
+                dueDate: Date,
+                user: { 
+                    type: mongoose.Schema.Types.ObjectId,
+                    ref: 'User',
+                    required: true
+                }
             }, { timestamps: true });
         </pre>
     </div>
     
     <b>Task 3: Implement Advanced Features</b>
     <div style="background-color: #fff8e1; padding: 15px; margin: 10px 0; border-radius: 5px;">
-        <b>Pagination:</b><br/>
+        <b>Pagination:</b>
         <pre>
-            // In your controller<br/>
-            exports.getTasks = async (req, res) => {<br/>
-            &nbsp;&nbsp;const page = parseInt(req.query.page, 10) || 1;<br/>
-            &nbsp;&nbsp;const limit = parseInt(req.query.limit, 10) || 10;<br/>
-            &nbsp;&nbsp;const startIndex = (page - 1) * limit;<br/>
-            <br/>
-            &nbsp;&nbsp;const total = await Task.countDocuments();<br/>
-            &nbsp;&nbsp;const tasks = await Task.find()<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;.skip(startIndex)<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;.limit(limit);<br/>
-            <br/>
-            &nbsp;&nbsp;const pagination = {};<br/>
-            &nbsp;&nbsp;if (startIndex > 0) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;pagination.prev = { page: page - 1, limit };<br/>
-            &nbsp;&nbsp;}<br/>
-            &nbsp;&nbsp;if (endIndex < total) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;pagination.next = { page: page + 1, limit };<br/>
-            &nbsp;&nbsp;}<br/>
+            // In your controller
+            exports.getTasks = async (req, res) => {
+                const page = parseInt(req.query.page, 10) || 1;
+                const limit = parseInt(req.query.limit, 10) || 10;
+                const startIndex = (page - 1) * limit;
+            
+                const total = await Task.countDocuments();
+                const tasks = await Task.find()
+                    .skip(startIndex)
+                    .limit(limit);
+            
+                const pagination = {};
+                if (startIndex > 0) {
+                    pagination.prev = { page: page - 1, limit };
+                }
+                if (endIndex < total) {
+                    pagination.next = { page: page + 1, limit };
+                }
             };
         </pre>
         <br/>
         <b>Search & Filter:</b><br/>
         <pre>
-            exports.getTasks = async (req, res) => {<br/>
-            &nbsp;&nbsp;let query;<br/>
-            &nbsp;&nbsp;let queryStr = JSON.stringify(req.query);<br/>
-            <br/>
-            &nbsp;&nbsp;queryStr = queryStr.replace(<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;/\b(gt|gte|lt|lte|in)\b/g,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;match => \`\$\{match\}\`<br/>
-            &nbsp;&nbsp;);<br/>
-            <br/>
-            &nbsp;&nbsp;query = Task.find(JSON.parse(queryStr));<br/>
-            &nbsp;&nbsp;const tasks = await query;<br/>
+            exports.getTasks = async (req, res) => {
+                let query;
+                let queryStr = JSON.stringify(req.query);
+            
+                queryStr = queryStr.replace(
+                    /\b(gt|gte|lt|lte|in)\b/g,
+                    match => \`\$\{match\}\`
+                );
+            
+                query = Task.find(JSON.parse(queryStr));
+                const tasks = await query;
             };
         </pre>
     </div>
@@ -34401,34 +34455,34 @@ print_r($explain);
     <b>Modern React Setup:</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            // Using Create React App with TypeScript<br/>
-            npx create-react-app frontend --template typescript<br/>
-            cd frontend<br/>
-            <br/>
-            // Essential dependencies<br/>
-            npm install axios react-router-dom @reduxjs/toolkit react-redux<br/>
-            npm install @mui/material @emotion/react @emotion/styled<br/>
-            npm install formik yup<br/>
-            npm install react-hot-toast<br/>
-            <br/>
-            // Development dependencies<br/>
-            npm install -D @types/react @types/react-dom<br/>
-            npm install -D prettier eslint<br/>
-            <br/>
-            // Folder structure<br/>
-            src/<br/>
-            ├── components/<br/>
-            │   ├── common/          # Reusable components<br/>
-            │   ├── layout/          # Layout components<br/>
-            │   └── features/        # Feature-specific components<br/>
-            ├── pages/               # Page components<br/>
-            ├── services/            # API services<br/>
-            ├── store/               # Redux store<br/>
-            ├── hooks/               # Custom hooks<br/>
-            ├── utils/               # Utility functions<br/>
-            ├── types/               # TypeScript types<br/>
-            ├── styles/              # Global styles<br/>
-            ├── App.tsx<br/>
+            // Using Create React App with TypeScript
+            npx create-react-app frontend --template typescript
+            cd frontend
+            
+            // Essential dependencies
+            npm install axios react-router-dom @reduxjs/toolkit react-redux
+            npm install @mui/material @emotion/react @emotion/styled
+            npm install formik yup
+            npm install react-hot-toast
+            
+            // Development dependencies
+            npm install -D @types/react @types/react-dom
+            npm install -D prettier eslint
+            
+            // Folder structure
+            src/
+            ├── components/
+            │   ├── common/          # Reusable components
+            │   ├── layout/          # Layout components
+            │   └── features/        # Feature-specific components
+            ├── pages/               # Page components
+            ├── services/            # API services
+            ├── store/               # Redux store
+            ├── hooks/               # Custom hooks
+            ├── utils/               # Utility functions
+            ├── types/               # TypeScript types
+            ├── styles/              # Global styles
+            ├── App.tsx
             └── index.tsx
         </pre>
     </div>
@@ -34440,86 +34494,86 @@ print_r($explain);
     <b>Authentication Context:</b>
     <div style="background-color: #f0f8ff; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            // context/AuthContext.tsx<br/>
-            import React, { createContext, useState, useEffect } from 'react';<br/>
-            import axios from 'axios';<br/>
-            <br/>
-            interface User {<br/>
-            &nbsp;&nbsp;id: string;<br/>
-            &nbsp;&nbsp;name: string;<br/>
-            &nbsp;&nbsp;email: string;<br/>
-            &nbsp;&nbsp;role: string;<br/>
-            }<br/>
-            <br/>
-            interface AuthContextType {<br/>
-            &nbsp;&nbsp;user: User | null;<br/>
-            &nbsp;&nbsp;token: string | null;<br/>
-            &nbsp;&nbsp;loading: boolean;<br/>
-            &nbsp;&nbsp;error: string | null;<br/>
-            &nbsp;&nbsp;login: (email: string, password: string) => Promise<void>;<br/>
-            &nbsp;&nbsp;register: (name: string, email: string, password: string) => Promise<void>;<br/>
-            &nbsp;&nbsp;logout: () => void;<br/>
-            }<br/>
-            <br/>
-            export const AuthContext = createContext<AuthContextType | undefined>(undefined);<br/>
-            <br/>
-            export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {<br/>
-            &nbsp;&nbsp;const [user, setUser] = useState<User | null>(null);<br/>
-            &nbsp;&nbsp;const [token, setToken] = useState<string | null>(localStorage.getItem('token'));<br/>
-            &nbsp;&nbsp;const [loading, setLoading] = useState(true);<br/>
-            &nbsp;&nbsp;const [error, setError] = useState<string | null>(null);<br/>
-            <br/>
-            &nbsp;&nbsp;useEffect(() => {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;if (token) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fetchUser();<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;} else {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLoading(false);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-            &nbsp;&nbsp;}, [token]);<br/>
-            <br/>
-            &nbsp;&nbsp;const fetchUser = async () => {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;try {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const response = await axios.get('/api/auth/me', {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;headers: { Authorization: \`Bearer \${token}\` }<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setUser(response.data.data);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;} catch (error) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;localStorage.removeItem('token');<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setToken(null);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setError('Session expired. Please login again.');<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;} finally {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLoading(false);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-            &nbsp;&nbsp;};<br/>
-            <br/>
-            &nbsp;&nbsp;const login = async (email: string, password: string) => {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;setLoading(true);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;setError(null);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;try {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const response = await axios.post('/api/auth/login', { email, password });<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const { token, user } = response.data.data;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;localStorage.setItem('token', token);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setToken(token);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setUser(user);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;} catch (error: any) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setError(error.response?.data?.error || 'Login failed');<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;} finally {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLoading(false);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-            &nbsp;&nbsp;};<br/>
-            <br/>
-            &nbsp;&nbsp;const logout = () => {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;localStorage.removeItem('token');<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;setToken(null);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;setUser(null);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;setError(null);<br/>
-            &nbsp;&nbsp;};<br/>
-            <br/>
-            &nbsp;&nbsp;return (<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;<AuthContext.Provider value={{ user, token, loading, error, login, register, logout }}><br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{children}<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;</AuthContext.Provider><br/>
-            &nbsp;&nbsp;);<br/>
+            // context/AuthContext.tsx
+            import React, { createContext, useState, useEffect } from 'react';
+            import axios from 'axios';
+            
+            interface User {
+                id: string;
+                name: string;
+                email: string;
+                role: string;
+            }
+            
+            interface AuthContextType {
+                user: User | null;
+                token: string | null;
+                loading: boolean;
+                error: string | null;
+                login: (email: string, password: string) => Promise<void>;
+                register: (name: string, email: string, password: string) => Promise<void>;
+                logout: () => void;
+            }
+            
+            export const AuthContext = createContext<AuthContextType | undefined>(undefined);
+            
+            export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+                const [user, setUser] = useState<User | null>(null);
+                const [token, setToken] = useState<string | null>(localStorage.getItem('token'));
+                const [loading, setLoading] = useState(true);
+                const [error, setError] = useState<string | null>(null);
+            
+                useEffect(() => {
+                    if (token) {
+                        fetchUser();
+                    } else {
+                        setLoading(false);
+                    }
+                }, [token]);
+            
+                const fetchUser = async () => {
+                    try {
+                        const response = await axios.get('/api/auth/me', {
+                            headers: { Authorization: \`Bearer \${token}\` }
+                        });
+                        setUser(response.data.data);
+                    } catch (error) {
+                        localStorage.removeItem('token');
+                        setToken(null);
+                        setError('Session expired. Please login again.');
+                    } finally {
+                        setLoading(false);
+                    }
+                };
+            
+                const login = async (email: string, password: string) => {
+                    setLoading(true);
+                    setError(null);
+                    try {
+                        const response = await axios.post('/api/auth/login', { email, password });
+                        const { token, user } = response.data.data;
+                        localStorage.setItem('token', token);
+                        setToken(token);
+                        setUser(user);
+                    } catch (error: any) {
+                        setError(error.response?.data?.error || 'Login failed');
+                    } finally {
+                        setLoading(false);
+                    }
+                };
+            
+                const logout = () => {
+                    localStorage.removeItem('token');
+                    setToken(null);
+                    setUser(null);
+                    setError(null);
+                };
+            
+                return (
+                    <AuthContext.Provider value={{ user, token, loading, error, login, register, logout }}>
+                        {children}
+                    </AuthContext.Provider>
+                );
             };
         </pre>
     </div>
@@ -34554,52 +34608,52 @@ print_r($explain);
     <b>Task 2: Implement API Services</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            // services/api.ts<br/>
-            import axios from 'axios';<br/>
-            <br/>
-            const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';<br/>
-            <br/>
-            const api = axios.create({<br/>
-            &nbsp;&nbsp;baseURL: API_URL,<br/>
-            &nbsp;&nbsp;headers: {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;'Content-Type': 'application/json',<br/>
-            &nbsp;&nbsp;},<br/>
-            });<br/>
-            <br/>
-            // Request interceptor to add token<br/>
-            api.interceptors.request.use(<br/>
-            &nbsp;&nbsp;(config) => {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;const token = localStorage.getItem('token');<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;if (token) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;config.headers.Authorization = \`Bearer \${token}\`;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;return config;<br/>
-            &nbsp;&nbsp;},<br/>
-            &nbsp;&nbsp;(error) => Promise.reject(error)<br/>
-            );<br/>
-            <br/>
-            // Response interceptor for error handling<br/>
-            api.interceptors.response.use(<br/>
-            &nbsp;&nbsp;(response) => response,<br/>
-            &nbsp;&nbsp;(error) => {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;if (error.response?.status === 401) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Handle unauthorized<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;localStorage.removeItem('token');<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;window.location.href = '/login';<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;return Promise.reject(error);<br/>
-            &nbsp;&nbsp;}<br/>
-            );<br/>
-            <br/>
-            // Task service example<br/>
-            export const taskService = {<br/>
-            &nbsp;&nbsp;getAll: (params?: any) => api.get('/tasks', { params }),<br/>
-            &nbsp;&nbsp;getById: (id: string) => api.get(\`/tasks/\${id}\`),<br/>
-            &nbsp;&nbsp;create: (data: any) => api.post('/tasks', data),<br/>
-            &nbsp;&nbsp;update: (id: string, data: any) => api.put(\`/tasks/\${id}\`, data),<br/>
-            &nbsp;&nbsp;delete: (id: string) => api.delete(\`/tasks/\${id}\`),<br/>
-            &nbsp;&nbsp;updateStatus: (id: string, status: string) => <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;api.patch(\`/tasks/\${id}/status\`, { status }),<br/>
+            // services/api.ts
+            import axios from 'axios';
+            
+            const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+            
+            const api = axios.create({
+                baseURL: API_URL,
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
+            
+            // Request interceptor to add token
+            api.interceptors.request.use(
+                (config) => {
+                    const token = localStorage.getItem('token');
+                    if (token) {
+                        config.headers.Authorization = \`Bearer \${token}\`;
+                    }
+                    return config;
+                },
+                (error) => Promise.reject(error)
+            );
+            
+            // Response interceptor for error handling
+            api.interceptors.response.use(
+                (response) => response,
+                (error) => {
+                    if (error.response?.status === 401) {
+                        // Handle unauthorized
+                        localStorage.removeItem('token');
+                        window.location.href = '/login';
+                    }
+                    return Promise.reject(error);
+                }
+            );
+            
+            // Task service example
+            export const taskService = {
+                getAll: (params?: any) => api.get('/tasks', { params }),
+                getById: (id: string) => api.get(\`/tasks/\${id}\`),
+                create: (data: any) => api.post('/tasks', data),
+                update: (id: string, data: any) => api.put(\`/tasks/\${id}\`, data),
+                delete: (id: string) => api.delete(\`/tasks/\${id}\`),
+                updateStatus: (id: string, status: string) => 
+                    api.patch(\`/tasks/\${id}/status\`, { status }),
             };
         </pre>
     </div>
