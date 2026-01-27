@@ -298,23 +298,23 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <b>Step-by-Step Guide:</b>
         <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
             <pre>
-                // Creating Text Files:<br/>
-                1. Right-click in folder → New → Text Document<br/>
-                2. Name it "Daily_Tasks.txt"<br/>
-                3. Double-click to open<br/>
-                4. Add sample content: "1. Check emails\n2. Attend standup meeting\n3. Work on project"<br/>
-                5. Save and close (Ctrl + S then Alt + F4)<br/>
-                <br/>
-                // Creating Folders:<br/>
-                1. Right-click → New → Folder<br/>
-                2. Name it "Resources"<br/>
-                3. Inside Resources, create subfolders: "Images", "Documents", "References"<br/>
-                <br/>
-                // Changing Folder Icons:<br/>
-                1. Right-click Monday folder → Properties<br/>
-                2. Click "Customize" tab<br/>
-                3. Click "Change Icon" button<br/>
-                4. Browse and select a star icon<br/>
+                // Creating Text Files:
+                1. Right-click in folder → New → Text Document
+                2. Name it "Daily_Tasks.txt"
+                3. Double-click to open
+                4. Add sample content: "1. Check emails\n2. Attend standup meeting\n3. Work on project"
+                5. Save and close (Ctrl + S then Alt + F4)
+                
+                // Creating Folders:
+                1. Right-click → New → Folder
+                2. Name it "Resources"
+                3. Inside Resources, create subfolders: "Images", "Documents", "References"
+                
+                // Changing Folder Icons:
+                1. Right-click Monday folder → Properties
+                2. Click "Customize" tab
+                3. Click "Change Icon" button
+                4. Browse and select a star icon
                 5. Click OK, then Apply
             </pre>
         </div>
@@ -714,7 +714,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <b>Identify these components from the image:</b><br/>
-        <img src="assets/image1.jpeg" style="width: 100%; max-width: 800px; border: 1px solid #ccc; margin: 10px 0;"><br/>
+        <img src="assets/foundation/systemunit2.png" style="width: 100%; max-width: 800px; border: 1px solid #ccc; margin: 10px 0;"><br/>
         <br/>
         <b>Label the components:</b><br/>
         1. _______________ : Main circuit board connecting everything<br/>

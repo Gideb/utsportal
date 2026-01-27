@@ -250,7 +250,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
             </p>
             
             <b>Text Formatting & Semantic Tags</b> <br />
-           <img src='./assets/html-semantic-tags.png' alt='table of html semantic tags' />
+           <img src='./assets/web-dev/html-semantic-tags.png' alt='table of html semantic tags' />
            <br />
           <b> Why not &lt;b&gt; and &lt;i&gt;? </b> <br />
           &lt;b&gt; and &lt;i&gt; are only visual (no semantic meaning). <br />
@@ -384,7 +384,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
             <pre> &lt;img src="cat.jpg" alt="A ginger cat sleeping" width="400" height="300"&gt; </pre> 
 
             - CRITICAL ATTRIBUTES: <br />
-           <img src='./assets/img-attri.png' alt='table of html semantic tags' />
+           <img src='./assets/web-dev/img-attri.png' alt='table of html semantic tags' />
            <br />
 
             <b>b. Figure & FigCaption</b> <br />
@@ -453,7 +453,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
                 
 
                 <b>Semantic Table Tags</b> <br />
-                <img src="./assets/semantic-table-tags.png" alt="semantic table tags" /> <br />
+                <img src="./assets/web-dev/semantic-table-tags.png" alt="semantic table tags" /> <br />
 
 
 
@@ -547,7 +547,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 
              <b>b. Input Types</b> <br />
                     - COMMON INPUT TYPES: <br />
-                    <img src="./assets/input-types.png" alt="table of common input types" /> <br /> 
+                    <img src="./assets/web-dev/input-types.png" alt="table of common input types" /> <br /> 
 
 
                     - EXAMPLES: <br />
@@ -663,7 +663,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
                 <b>e. HTML5 Validation </b> <br />
 
                 - BUILT-IN VALIDATON ATTRIBUTES: <br />
-                <img src="./assets/built-in.png" alt="Built in form validation attributes" /> <br />
+                <img src="./assets/web-dev/built-in.png" alt="Built in form validation attributes" /> <br />
 
                 - VALIDATION EXAMPLE: <br />
                 
@@ -3879,7 +3879,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         4. Name it "My First Wireframe"<br/><br/>
         
         <b>Step 2: Understand the Interface</b><br/>
-        <img src="./assets/figma-interface.png" alt="Figma interface" style="max-width: 100%; border: 1px solid #ccc; margin: 10px 0;"><br/>
+        <img src="./assets/web-dev/figma-interface.png" alt="Figma interface" style="max-width: 100%; border: 1px solid #ccc; margin: 10px 0;"><br/>
         
         <b>Key Areas:</b><br/>
         • <b>Toolbar (Top):</b> Selection, shapes, text, pen, hand tools<br/>
@@ -29882,64 +29882,64 @@ print_r($explain);
     <b>Basic Upload Form:</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            &lt;!DOCTYPE html&gt;<br/>
-            &lt;html&gt;<br/>
-            &lt;head&gt;<br/>
-            &nbsp;&nbsp;&lt;title&gt;File Upload&lt;/title&gt;<br/>
-            &lt;/head&gt;<br/>
-            &lt;body&gt;<br/>
-            &nbsp;&nbsp;&lt;form action="upload.php" method="POST" enctype="multipart/form-data"&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;Upload a File&lt;/h2&gt;<br/>
-            <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="form-group"&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="file"&gt;Select File:&lt;/label&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="file" id="file" name="userfile" required&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;small class="form-text"&gt;Max file size: 5MB. Allowed types: JPG, PNG, PDF, DOC&lt;/small&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
-            <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="form-group"&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="description"&gt;Description (optional):&lt;/label&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="description" name="description" maxlength="255"&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
-            <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="form-group"&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox" name="terms" required&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I agree to the &lt;a href="terms.php" target="_blank"&gt;terms and conditions&lt;/a&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/label&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
-            <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="submit" name="upload"&gt;Upload File&lt;/button&gt;<br/>
-            &nbsp;&nbsp;&lt;/form&gt;<br/>
-            <br/>
-            &lt;!-- Progress Bar (for AJAX uploads) --&gt;<br/>
-            &lt;div id="progress-container" style="display: none;"&gt;<br/>
-            &nbsp;&nbsp;&lt;div id="progress-bar"&gt;&lt;/div&gt;<br/>
-            &nbsp;&nbsp;&lt;span id="progress-text"&gt;0%&lt;/span&gt;<br/>
-            &lt;/div&gt;<br/>
-            <br/>
-            &lt;script&gt;<br/>
-            // Real-time file validation<br/>
-            document.getElementById('file').addEventListener('change', function(e) {<br/>
-            &nbsp;&nbsp;const file = e.target.files[0];<br/>
-            &nbsp;&nbsp;if (file) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;// Check file size (5MB limit)<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;if (file.size > 5 * 1024 * 1024) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert('File size exceeds 5MB limit');<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.target.value = '';<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-            <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;// Check file extension<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;const allowedExtensions = ['jpg', 'jpeg', 'png', 'pdf', 'doc', 'docx'];<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;const extension = file.name.split('.').pop().toLowerCase();<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;if (!allowedExtensions.includes(extension)) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert('File type not allowed');<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.target.value = '';<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-            &nbsp;&nbsp;}<br/>
-            });<br/>
-            &lt;/script&gt;<br/>
-            &lt;/body&gt;<br/>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+                &lt;title&gt;File Upload&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;form action="upload.php" method="POST" enctype="multipart/form-data"&gt;
+                    &lt;h2&gt;Upload a File&lt;/h2&gt;
+            
+                    &lt;div class="form-group"&gt;
+                        &lt;label for="file"&gt;Select File:&lt;/label&gt;
+                        &lt;input type="file" id="file" name="userfile" required&gt;
+                        &lt;small class="form-text"&gt;Max file size: 5MB. Allowed types: JPG, PNG, PDF, DOC&lt;/small&gt;
+                    &lt;/div&gt;
+            
+                    &lt;div class="form-group"&gt;
+                        &lt;label for="description"&gt;Description (optional):&lt;/label&gt;
+                        &lt;input type="text" id="description" name="description" maxlength="255"&gt;
+                    &lt;/div&gt;
+            
+                    &lt;div class="form-group"&gt;
+                        &lt;label&gt;
+                            &lt;input type="checkbox" name="terms" required&gt;
+                            I agree to the &lt;a href="terms.php" target="_blank"&gt;terms and conditions&lt;/a&gt;
+                        &lt;/label&gt;
+                    &lt;/div&gt;
+            
+                    &lt;button type="submit" name="upload"&gt;Upload File&lt;/button&gt;
+                &lt;/form&gt;
+            
+            &lt;!-- Progress Bar (for AJAX uploads) --&gt;
+            &lt;div id="progress-container" style="display: none;"&gt;
+                &lt;div id="progress-bar"&gt;&lt;/div&gt;
+                &lt;span id="progress-text"&gt;0%&lt;/span&gt;
+            &lt;/div&gt;
+            
+            &lt;script&gt;
+            // Real-time file validation
+            document.getElementById('file').addEventListener('change', function(e) {
+                const file = e.target.files[0];
+                if (file) {
+                    // Check file size (5MB limit)
+                    if (file.size > 5 * 1024 * 1024) {
+                        alert('File size exceeds 5MB limit');
+                        e.target.value = '';
+                    }
+            
+                    // Check file extension
+                    const allowedExtensions = ['jpg', 'jpeg', 'png', 'pdf', 'doc', 'docx'];
+                    const extension = file.name.split('.').pop().toLowerCase();
+                    if (!allowedExtensions.includes(extension)) {
+                        alert('File type not allowed');
+                        e.target.value = '';
+                    }
+                }
+            });
+            &lt;/script&gt;
+            &lt;/body&gt;
             &lt;/html&gt;
         </pre>
     </div>
@@ -29961,16 +29961,16 @@ print_r($explain);
     <b>$_FILES Array Structure:</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            Array<br/>
-            (<br/>
-            &nbsp;&nbsp;[userfile] => Array<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;(<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[name] => "profile.jpg"           // Original filename<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[type] => "image/jpeg"          // MIME type<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[tmp_name] => "/tmp/phpX4C3.tmp" // Temporary storage path<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[error] => 0                    // Upload error code<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[size] => 123456                // File size in bytes<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;)<br/>
+            Array
+            (
+                [userfile] => Array
+                    (
+                        [name] => "profile.jpg"           // Original filename
+                        [type] => "image/jpeg"          // MIME type
+                        [tmp_name] => "/tmp/phpX4C3.tmp" // Temporary storage path
+                        [error] => 0                    // Upload error code
+                        [size] => 123456                // File size in bytes
+                    )
             )
         </pre>
     </div>
@@ -30027,78 +30027,78 @@ print_r($explain);
     <b>Complete Upload Handler (upload.php):</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            &lt;?php<br/>
-            session_start();<br/>
-            require_once 'includes/config.php';<br/>
-            require_once 'includes/functions.php';<br/>
-            <br/>
-            // Check if user is logged in<br/>
-            if (!isset($_SESSION['user_id'])) {<br/>
-            &nbsp;&nbsp;header('Location: login.php');<br/>
-            &nbsp;&nbsp;exit();<br/>
-            }<br/>
-            <br/>
-            // Check CSRF token<br/>
-            if (!isset($_POST['csrf_token']) || $_POST['csrf_token'] !== $_SESSION['csrf_token']) {<br/>
-            &nbsp;&nbsp;die('Invalid CSRF token');<br/>
-            }<br/>
-            <br/>
-            $errors = [];<br/>
-            $success = false;<br/>
-            $uploaded_file_path = '';<br/>
-            <br/>
-            if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['userfile'])) {<br/>
-            &nbsp;&nbsp;$file = $_FILES['userfile'];<br/>
-            <br/>
-            &nbsp;&nbsp;// Check for upload errors<br/>
-            &nbsp;&nbsp;if ($file['error'] !== UPLOAD_ERR_OK) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;$errors[] = getUploadErrorMessage($file['error']);<br/>
-            &nbsp;&nbsp;} else {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;// Validate file<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;$validation_result = validateUploadedFile($file);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;if ($validation_result !== true) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$errors = array_merge($errors, $validation_result);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;} else {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Process the file<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$result = processFileUpload($file, $_SESSION['user_id']);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if ($result['success']) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$success = true;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$uploaded_file_path = $result['file_path'];<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$file_id = $result['file_id'];<br/>
-            <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Log the upload<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logActivity($_SESSION['user_id'], 'file_upload', [<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'file_id' => $file_id,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'filename' => $file['name'],<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'filesize' => $file['size']<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} else {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$errors[] = $result['error'];<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-            &nbsp;&nbsp;}<br/>
-            }<br/>
-            <br/>
-            // Generate new CSRF token for next request<br/>
-            $_SESSION['csrf_token'] = bin2hex(random_bytes(32));<br/>
-            <br/>
-            // Display results<br/>
-            if ($success) {<br/>
-            &nbsp;&nbsp;echo "&lt;div class='success'&gt;File uploaded successfully!&lt;/div&gt;";<br/>
-            &nbsp;&nbsp;echo "&lt;p&gt;File saved as: " . htmlspecialchars(basename($uploaded_file_path)) . "&lt;/p&gt;";<br/>
-            &nbsp;&nbsp;echo "&lt;p&gt;&lt;a href='download.php?id=$file_id'&gt;Download File&lt;/a&gt;&lt;/p&gt;";<br/>
-            &nbsp;&nbsp;echo "&lt;p&gt;&lt;a href='upload.php'&gt;Upload Another File&lt;/a&gt;&lt;/p&gt;";<br/>
-            } else if (!empty($errors)) {<br/>
-            &nbsp;&nbsp;echo "&lt;div class='error'&gt;";<br/>
-            &nbsp;&nbsp;echo "&lt;h3&gt;Upload Failed:&lt;/h3&gt;";<br/>
-            &nbsp;&nbsp;echo "&lt;ul&gt;";<br/>
-            &nbsp;&nbsp;foreach ($errors as $error) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;echo "&lt;li&gt;" . htmlspecialchars($error) . "&lt;/li&gt;";<br/>
-            &nbsp;&nbsp;}<br/>
-            &nbsp;&nbsp;echo "&lt;/ul&gt;";<br/>
-            &nbsp;&nbsp;echo "&lt;/div&gt;";<br/>
-            &nbsp;&nbsp;echo "&lt;p&gt;&lt;a href='upload.php'&gt;Try Again&lt;/a&gt;&lt;/p&gt;";<br/>
-            }<br/>
+            &lt;?php
+            session_start();
+            require_once 'includes/config.php';
+            require_once 'includes/functions.php';
+            
+            // Check if user is logged in
+            if (!isset($_SESSION['user_id'])) {
+                header('Location: login.php');
+                exit();
+            }
+            
+            // Check CSRF token
+            if (!isset($_POST['csrf_token']) || $_POST['csrf_token'] !== $_SESSION['csrf_token']) {
+                die('Invalid CSRF token');
+            }
+            
+            $errors = [];
+            $success = false;
+            $uploaded_file_path = '';
+            
+            if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['userfile'])) {
+                $file = $_FILES['userfile'];
+            
+                // Check for upload errors
+                if ($file['error'] !== UPLOAD_ERR_OK) {
+                    $errors[] = getUploadErrorMessage($file['error']);
+                } else {
+                    // Validate file
+                    $validation_result = validateUploadedFile($file);
+                    if ($validation_result !== true) {
+                        $errors = array_merge($errors, $validation_result);
+                    } else {
+                        // Process the file
+                        $result = processFileUpload($file, $_SESSION['user_id']);
+                        if ($result['success']) {
+                            $success = true;
+                            $uploaded_file_path = $result['file_path'];
+                            $file_id = $result['file_id'];
+            
+                            // Log the upload
+                            logActivity($_SESSION['user_id'], 'file_upload', [
+                                'file_id' => $file_id,
+                                'filename' => $file['name'],
+                                'filesize' => $file['size']
+                            ]);
+                        } else {
+                            $errors[] = $result['error'];
+                        }
+                    }
+                }
+            }
+            
+            // Generate new CSRF token for next request
+            $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+            
+            // Display results
+            if ($success) {
+                echo "&lt;div class='success'&gt;File uploaded successfully!&lt;/div&gt;";
+                echo "&lt;p&gt;File saved as: " . htmlspecialchars(basename($uploaded_file_path)) . "&lt;/p&gt;";
+                echo "&lt;p&gt;&lt;a href='download.php?id=$file_id'&gt;Download File&lt;/a&gt;&lt;/p&gt;";
+                echo "&lt;p&gt;&lt;a href='upload.php'&gt;Upload Another File&lt;/a&gt;&lt;/p&gt;";
+            } else if (!empty($errors)) {
+                echo "&lt;div class='error'&gt;";
+                echo "&lt;h3&gt;Upload Failed:&lt;/h3&gt;";
+                echo "&lt;ul&gt;";
+                foreach ($errors as $error) {
+                    echo "&lt;li&gt;" . htmlspecialchars($error) . "&lt;/li&gt;";
+                }
+                echo "&lt;/ul&gt;";
+                echo "&lt;/div&gt;";
+                echo "&lt;p&gt;&lt;a href='upload.php'&gt;Try Again&lt;/a&gt;&lt;/p&gt;";
+            }
             ?&gt;
         </pre>
     </div>
@@ -30110,260 +30110,260 @@ print_r($explain);
     <b>Comprehensive File Validator:</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            &lt;?php<br/>
-            function validateUploadedFile($file) {<br/>
-            &nbsp;&nbsp;$errors = [];<br/>
-            <br/>
-            &nbsp;&nbsp;// 1. Check if file was uploaded<br/>
-            &nbsp;&nbsp;if (!isset($file) || $file['error'] === UPLOAD_ERR_NO_FILE) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;return ['No file was uploaded.'];<br/>
-            &nbsp;&nbsp;}<br/>
-            <br/>
-            &nbsp;&nbsp;// 2. Check for PHP upload errors<br/>
-            &nbsp;&nbsp;if ($file['error'] !== UPLOAD_ERR_OK) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;return [getUploadErrorMessage($file['error'])];<br/>
-            &nbsp;&nbsp;}<br/>
-            <br/>
-            &nbsp;&nbsp;// 3. Check file size<br/>
-            &nbsp;&nbsp;$max_size = 5 * 1024 * 1024; // 5MB<br/>
-            &nbsp;&nbsp;if ($file['size'] > $max_size) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;$errors[] = 'File size exceeds 5MB limit.';<br/>
-            &nbsp;&nbsp;}<br/>
-            &nbsp;&nbsp;if ($file['size'] == 0) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;$errors[] = 'File is empty.';<br/>
-            &nbsp;&nbsp;}<br/>
-            <br/>
-            &nbsp;&nbsp;// 4. Check file name<br/>
-            &nbsp;&nbsp;$filename = basename($file['name']);<br/>
-            &nbsp;&nbsp;if (strlen($filename) > 255) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;$errors[] = 'File name is too long.';<br/>
-            &nbsp;&nbsp;}<br/>
-            &nbsp;&nbsp;if (!preg_match('/^[a-zA-Z0-9_\-. ]+$/', $filename)) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;$errors[] = 'File name contains invalid characters.';<br/>
-            &nbsp;&nbsp;}<br/>
-            <br/>
-            &nbsp;&nbsp;// 5. Check file extension<br/>
-            &nbsp;&nbsp;$allowed_extensions = ['jpg', 'jpeg', 'png', 'gif', 'pdf', 'doc', 'docx', 'txt'];<br/>
-            &nbsp;&nbsp;$extension = strtolower(pathinfo($filename, PATHINFO_EXTENSION));<br/>
-            &nbsp;&nbsp;if (!in_array($extension, $allowed_extensions)) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;$errors[] = 'File type not allowed.';<br/>
-            &nbsp;&nbsp;}<br/>
-            <br/>
-            &nbsp;&nbsp;// 6. Check MIME type (more reliable than extension)<br/>
-            &nbsp;&nbsp;$allowed_mime_types = [<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;'image/jpeg',<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;'image/png',<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;'image/gif',<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;'application/pdf',<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;'application/msword',<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;'application/vnd.openxmlformats-officedocument.wordprocessingml.document',<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;'text/plain'<br/>
-            &nbsp;&nbsp;];<br/>
-            <br/>
-            &nbsp;&nbsp;// Get real MIME type<br/>
-            &nbsp;&nbsp;$finfo = finfo_open(FILEINFO_MIME_TYPE);<br/>
-            &nbsp;&nbsp;$detected_mime_type = finfo_file($finfo, $file['tmp_name']);<br/>
-            &nbsp;&nbsp;finfo_close($finfo);<br/>
-            <br/>
-            &nbsp;&nbsp;if (!in_array($detected_mime_type, $allowed_mime_types)) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;$errors[] = 'Invalid file type detected.';<br/>
-            &nbsp;&nbsp;}<br/>
-            <br/>
-            &nbsp;&nbsp;// 7. Double extension check (e.g., evil.php.jpg)<br/>
-            &nbsp;&nbsp;if (preg_match('/\.(php|phtml|phar|html|htm|js|exe|bat|cmd|sh)$/i', $filename)) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;$errors[] = 'Potentially dangerous file type.';<br/>
-            &nbsp;&nbsp;}<br/>
-            <br/>
-            &nbsp;&nbsp;// 8. Check for image-specific vulnerabilities<br/>
-            &nbsp;&nbsp;if (strpos($detected_mime_type, 'image/') === 0) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;// Verify it's actually an image<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;$image_info = getimagesize($file['tmp_name']);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;if ($image_info === false) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$errors[] = 'Uploaded file is not a valid image.';<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-            <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;// Check for embedded PHP code in images<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;$file_content = file_get_contents($file['tmp_name']);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;if (strpos($file_content, '&lt;?php') !== false) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$errors[] = 'Image contains potentially malicious code.';<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-            &nbsp;&nbsp;}<br/>
-            <br/>
-            &nbsp;&nbsp;// 9. Check for null bytes in filename (old PHP vulnerability)<br/>
-            &nbsp;&nbsp;if (strpos($filename, "\0") !== false) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;$errors[] = 'Invalid file name.';<br/>
-            &nbsp;&nbsp;}<br/>
-            <br/>
-            &nbsp;&nbsp;return empty($errors) ? true : $errors;<br/>
-            }<br/>
-            <br/>
-            function getUploadErrorMessage($error_code) {<br/>
-            &nbsp;&nbsp;switch ($error_code) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;case UPLOAD_ERR_INI_SIZE:<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'The uploaded file exceeds the upload_max_filesize directive in php.ini.';<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;case UPLOAD_ERR_FORM_SIZE:<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'The uploaded file exceeds the MAX_FILE_SIZE directive in the HTML form.';<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;case UPLOAD_ERR_PARTIAL:<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'The file was only partially uploaded.';<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;case UPLOAD_ERR_NO_FILE:<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'No file was uploaded.';<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;case UPLOAD_ERR_NO_TMP_DIR:<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'Missing a temporary folder.';<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;case UPLOAD_ERR_CANT_WRITE:<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'Failed to write file to disk.';<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;case UPLOAD_ERR_EXTENSION:<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'A PHP extension stopped the file upload.';<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;default:<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'Unknown upload error.';<br/>
-            &nbsp;&nbsp;}<br/>
-            }<br/>
+            &lt;?php
+            function validateUploadedFile($file) {
+                $errors = [];
+            
+                // 1. Check if file was uploaded
+                if (!isset($file) || $file['error'] === UPLOAD_ERR_NO_FILE) {
+                    return ['No file was uploaded.'];
+                }
+            
+                // 2. Check for PHP upload errors
+                if ($file['error'] !== UPLOAD_ERR_OK) {
+                    return [getUploadErrorMessage($file['error'])];
+                }
+            
+                // 3. Check file size
+                $max_size = 5 * 1024 * 1024; // 5MB
+                if ($file['size'] > $max_size) {
+                    $errors[] = 'File size exceeds 5MB limit.';
+                }
+                if ($file['size'] == 0) {
+                    $errors[] = 'File is empty.';
+                }
+            
+                // 4. Check file name
+                $filename = basename($file['name']);
+                if (strlen($filename) > 255) {
+                    $errors[] = 'File name is too long.';
+                }
+                if (!preg_match('/^[a-zA-Z0-9_\-. ]+$/', $filename)) {
+                    $errors[] = 'File name contains invalid characters.';
+                }
+            
+                // 5. Check file extension
+                $allowed_extensions = ['jpg', 'jpeg', 'png', 'gif', 'pdf', 'doc', 'docx', 'txt'];
+                $extension = strtolower(pathinfo($filename, PATHINFO_EXTENSION));
+                if (!in_array($extension, $allowed_extensions)) {
+                    $errors[] = 'File type not allowed.';
+                }
+            
+                // 6. Check MIME type (more reliable than extension)
+                $allowed_mime_types = [
+                    'image/jpeg',
+                    'image/png',
+                    'image/gif',
+                    'application/pdf',
+                    'application/msword',
+                    'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+                    'text/plain'
+                ];
+            
+                // Get real MIME type
+                $finfo = finfo_open(FILEINFO_MIME_TYPE);
+                $detected_mime_type = finfo_file($finfo, $file['tmp_name']);
+                finfo_close($finfo);
+            
+                if (!in_array($detected_mime_type, $allowed_mime_types)) {
+                    $errors[] = 'Invalid file type detected.';
+                }
+            
+                // 7. Double extension check (e.g., evil.php.jpg)
+                if (preg_match('/\.(php|phtml|phar|html|htm|js|exe|bat|cmd|sh)$/i', $filename)) {
+                    $errors[] = 'Potentially dangerous file type.';
+                }
+            
+                // 8. Check for image-specific vulnerabilities
+                if (strpos($detected_mime_type, 'image/') === 0) {
+                    // Verify it's actually an image
+                    $image_info = getimagesize($file['tmp_name']);
+                    if ($image_info === false) {
+                        $errors[] = 'Uploaded file is not a valid image.';
+                    }
+            
+                    // Check for embedded PHP code in images
+                    $file_content = file_get_contents($file['tmp_name']);
+                    if (strpos($file_content, '&lt;?php') !== false) {
+                        $errors[] = 'Image contains potentially malicious code.';
+                    }
+                }
+            
+                // 9. Check for null bytes in filename (old PHP vulnerability)
+                if (strpos($filename, "\0") !== false) {
+                    $errors[] = 'Invalid file name.';
+                }
+            
+                return empty($errors) ? true : $errors;
+            }
+            
+            function getUploadErrorMessage($error_code) {
+                switch ($error_code) {
+                    case UPLOAD_ERR_INI_SIZE:
+                        return 'The uploaded file exceeds the upload_max_filesize directive in php.ini.';
+                    case UPLOAD_ERR_FORM_SIZE:
+                        return 'The uploaded file exceeds the MAX_FILE_SIZE directive in the HTML form.';
+                    case UPLOAD_ERR_PARTIAL:
+                        return 'The file was only partially uploaded.';
+                    case UPLOAD_ERR_NO_FILE:
+                        return 'No file was uploaded.';
+                    case UPLOAD_ERR_NO_TMP_DIR:
+                        return 'Missing a temporary folder.';
+                    case UPLOAD_ERR_CANT_WRITE:
+                        return 'Failed to write file to disk.';
+                    case UPLOAD_ERR_EXTENSION:
+                        return 'A PHP extension stopped the file upload.';
+                    default:
+                        return 'Unknown upload error.';
+                }
+            }
             ?&gt;
         </pre>
     </div>
     
     <hr/>
     
-    <b>d. Secure File Processing and Storage</b><br/>
+    <b>d. Secure File Processing and Storage</b> <br />
     
     <b>File Processing Function:</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            &lt;?php<br/>
-            function processFileUpload($file, $user_id) {<br/>
-            &nbsp;&nbsp;global $pdo;<br/>
-            <br/>
-            &nbsp;&nbsp;// 1. Generate secure filename<br/>
-            &nbsp;&nbsp;$original_name = basename($file['name']);<br/>
-            &nbsp;&nbsp;$extension = strtolower(pathinfo($original_name, PATHINFO_EXTENSION));<br/>
-            &nbsp;&nbsp;$unique_name = generateSecureFilename($extension);<br/>
-            <br/>
-            &nbsp;&nbsp;// 2. Create upload directory structure<br/>
-            &nbsp;&nbsp;// Organized by date for better management<br/>
-            &nbsp;&nbsp;$upload_dir = 'uploads/' . date('Y/m/d') . '/';<br/>
-            if (!file_exists($upload_dir)) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;mkdir($upload_dir, 0755, true);<br/>
-            &nbsp;&nbsp;}<br/>
-            <br/>
-            &nbsp;&nbsp;// 3. Set full path<br/>
-            &nbsp;&nbsp;$destination = $upload_dir . $unique_name;<br/>
-            <br/>
-            &nbsp;&nbsp;// 4. Move uploaded file (security check built-in)<br/>
-            &nbsp;&nbsp;if (!move_uploaded_file($file['tmp_name'], $destination)) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;return [<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'success' => false,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'error' => 'Failed to move uploaded file.'<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;];<br/>
-            &nbsp;&nbsp;}<br/>
-            <br/>
-            &nbsp;&nbsp;// 5. Set secure file permissions (readable by web server, not executable)<br/>
-            &nbsp;&nbsp;chmod($destination, 0644);<br/>
-            <br/>
-            &nbsp;&nbsp;// 6. If it's an image, create thumbnail<br/>
-            &nbsp;&nbsp;if (strpos($file['type'], 'image/') === 0) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;createThumbnail($destination, $upload_dir . 'thumbs/' . $unique_name, 200, 200);<br/>
-            &nbsp;&nbsp;}<br/>
-            <br/>
-            &nbsp;&nbsp;// 7. Scan for viruses (if ClamAV is available)<br/>
-            &nbsp;&nbsp;if (function_exists('clamav_scan')) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;$scan_result = clamav_scan($destination);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;if ($scan_result !== true) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unlink($destination); // Delete infected file<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return [<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'success' => false,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'error' => 'File contains a virus: ' . $scan_result<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;];<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-            &nbsp;&nbsp;}<br/>
-            <br/>
-            &nbsp;&nbsp;// 8. Store file info in database<br/>
-            &nbsp;&nbsp;$stmt = $pdo->prepare("INSERT INTO uploaded_files (user_id, original_name, stored_name, file_path, file_size, mime_type, extension, upload_date) VALUES (?, ?, ?, ?, ?, ?, ?, NOW())");<br/>
-            &nbsp;&nbsp;$stmt->execute([<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;$user_id,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;$original_name,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;$unique_name,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;$destination,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;$file['size'],<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;$file['type'],<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;$extension<br/>
-            &nbsp;&nbsp;]);<br/>
-            <br/>
-            &nbsp;&nbsp;$file_id = $pdo->lastInsertId();<br/>
-            <br/>
-            &nbsp;&nbsp;return [<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;'success' => true,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;'file_id' => $file_id,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;'file_path' => $destination,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;'unique_name' => $unique_name<br/>
-            &nbsp;&nbsp;];<br/>
-            }<br/>
-            <br/>
-            function generateSecureFilename($extension) {<br/>
-            &nbsp;&nbsp;// Use cryptographically secure random bytes<br/>
-            &nbsp;&nbsp;$random_bytes = random_bytes(16);<br/>
-            &nbsp;&nbsp;$hash = hash('sha256', $random_bytes . microtime());<br/>
-            &nbsp;&nbsp;return substr($hash, 0, 32) . '.' . $extension;<br/>
-            }<br/>
-            <br/>
-            function createThumbnail($source_path, $dest_path, $max_width, $max_height) {<br/>
-            &nbsp;&nbsp;list($orig_width, $orig_height, $type) = getimagesize($source_path);<br/>
-            <br/>
-            &nbsp;&nbsp;// Calculate thumbnail dimensions<br/>
-            &nbsp;&nbsp;$ratio = $orig_width / $orig_height;<br/>
-            &nbsp;&nbsp;if ($max_width / $max_height > $ratio) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;$new_width = $max_height * $ratio;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;$new_height = $max_height;<br/>
-            &nbsp;&nbsp;} else {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;$new_width = $max_width;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;$new_height = $max_width / $ratio;<br/>
-            &nbsp;&nbsp;}<br/>
-            <br/>
-            &nbsp;&nbsp;// Create image resource based on type<br/>
-            &nbsp;&nbsp;switch ($type) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;case IMAGETYPE_JPEG:<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$source = imagecreatefromjpeg($source_path);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;case IMAGETYPE_PNG:<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$source = imagecreatefrompng($source_path);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;case IMAGETYPE_GIF:<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$source = imagecreatefromgif($source_path);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;default:<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return false;<br/>
-            &nbsp;&nbsp;}<br/>
-            <br/>
-            &nbsp;&nbsp;// Create thumbnail<br/>
-            &nbsp;&nbsp;$thumbnail = imagecreatetruecolor($new_width, $new_height);<br/>
-            <br/>
-            &nbsp;&nbsp;// Preserve transparency for PNG and GIF<br/>
-            &nbsp;&nbsp;if ($type == IMAGETYPE_PNG || $type == IMAGETYPE_GIF) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;imagecolortransparent($thumbnail, imagecolorallocatealpha($thumbnail, 0, 0, 0, 127));<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;imagealphablending($thumbnail, false);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;imagesavealpha($thumbnail, true);<br/>
-            &nbsp;&nbsp;}<br/>
-            <br/>
-            &nbsp;&nbsp;// Resize image<br/>
-            &nbsp;&nbsp;imagecopyresampled($thumbnail, $source, 0, 0, 0, 0, $new_width, $new_height, $orig_width, $orig_height);<br/>
-            <br/>
-            &nbsp;&nbsp;// Save thumbnail<br/>
-            &nbsp;&nbsp;switch ($type) {<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;case IMAGETYPE_JPEG:<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;imagejpeg($thumbnail, $dest_path, 85);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;case IMAGETYPE_PNG:<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;imagepng($thumbnail, $dest_path, 8);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;case IMAGETYPE_GIF:<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;imagegif($thumbnail, $dest_path);<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>
-            &nbsp;&nbsp;}<br/>
-            <br/>
-            &nbsp;&nbsp;// Clean up<br/>
-            &nbsp;&nbsp;imagedestroy($source);<br/>
-            &nbsp;&nbsp;imagedestroy($thumbnail);<br/>
-            <br/>
-            &nbsp;&nbsp;return true;<br/>
-            }<br/>
+            &lt;?php
+            function processFileUpload($file, $user_id) {
+                global $pdo;
+            
+                // 1. Generate secure filename
+                $original_name = basename($file['name']);
+                $extension = strtolower(pathinfo($original_name, PATHINFO_EXTENSION));
+                $unique_name = generateSecureFilename($extension);
+            
+                // 2. Create upload directory structure
+                // Organized by date for better management
+                $upload_dir = 'uploads/' . date('Y/m/d') . '/';
+            if (!file_exists($upload_dir)) {
+                    mkdir($upload_dir, 0755, true);
+                }
+            
+                // 3. Set full path
+                $destination = $upload_dir . $unique_name;
+            
+                // 4. Move uploaded file (security check built-in)
+                if (!move_uploaded_file($file['tmp_name'], $destination)) {
+                    return [
+                        'success' => false,
+                        'error' => 'Failed to move uploaded file.'
+                    ];
+                }
+            
+                // 5. Set secure file permissions (readable by web server, not executable)
+                chmod($destination, 0644);
+            
+                // 6. If it's an image, create thumbnail
+                if (strpos($file['type'], 'image/') === 0) {
+                    createThumbnail($destination, $upload_dir . 'thumbs/' . $unique_name, 200, 200);
+                }
+            
+                // 7. Scan for viruses (if ClamAV is available)
+                if (function_exists('clamav_scan')) {
+                    $scan_result = clamav_scan($destination);
+                    if ($scan_result !== true) {
+                        unlink($destination); // Delete infected file
+                        return [
+                            'success' => false,
+                            'error' => 'File contains a virus: ' . $scan_result
+                        ];
+                    }
+                }
+            
+                // 8. Store file info in database
+                $stmt = $pdo->prepare("INSERT INTO uploaded_files (user_id, original_name, stored_name, file_path, file_size, mime_type, extension, upload_date) VALUES (?, ?, ?, ?, ?, ?, ?, NOW())");
+                $stmt->execute([
+                    $user_id,
+                    $original_name,
+                    $unique_name,
+                    $destination,
+                    $file['size'],
+                    $file['type'],
+                    $extension
+                ]);
+            
+                $file_id = $pdo->lastInsertId();
+            
+                return [
+                    'success' => true,
+                    'file_id' => $file_id,
+                    'file_path' => $destination,
+                    'unique_name' => $unique_name
+                ];
+            }
+            
+            function generateSecureFilename($extension) {
+                // Use cryptographically secure random bytes
+                $random_bytes = random_bytes(16);
+                $hash = hash('sha256', $random_bytes . microtime());
+                return substr($hash, 0, 32) . '.' . $extension;
+            }
+            
+            function createThumbnail($source_path, $dest_path, $max_width, $max_height) {
+                list($orig_width, $orig_height, $type) = getimagesize($source_path);
+            
+                // Calculate thumbnail dimensions
+                $ratio = $orig_width / $orig_height;
+                if ($max_width / $max_height > $ratio) {
+                    $new_width = $max_height * $ratio;
+                    $new_height = $max_height;
+                } else {
+                    $new_width = $max_width;
+                    $new_height = $max_width / $ratio;
+                }
+            
+                // Create image resource based on type
+                switch ($type) {
+                    case IMAGETYPE_JPEG:
+                        $source = imagecreatefromjpeg($source_path);
+                        break;
+                    case IMAGETYPE_PNG:
+                        $source = imagecreatefrompng($source_path);
+                        break;
+                    case IMAGETYPE_GIF:
+                        $source = imagecreatefromgif($source_path);
+                        break;
+                    default:
+                        return false;
+                }
+            
+                // Create thumbnail
+                $thumbnail = imagecreatetruecolor($new_width, $new_height);
+            
+                // Preserve transparency for PNG and GIF
+                if ($type == IMAGETYPE_PNG || $type == IMAGETYPE_GIF) {
+                    imagecolortransparent($thumbnail, imagecolorallocatealpha($thumbnail, 0, 0, 0, 127));
+                    imagealphablending($thumbnail, false);
+                    imagesavealpha($thumbnail, true);
+                }
+            
+                // Resize image
+                imagecopyresampled($thumbnail, $source, 0, 0, 0, 0, $new_width, $new_height, $orig_width, $orig_height);
+            
+                // Save thumbnail
+                switch ($type) {
+                    case IMAGETYPE_JPEG:
+                        imagejpeg($thumbnail, $dest_path, 85);
+                        break;
+                    case IMAGETYPE_PNG:
+                        imagepng($thumbnail, $dest_path, 8);
+                        break;
+                    case IMAGETYPE_GIF:
+                        imagegif($thumbnail, $dest_path);
+                        break;
+                }
+            
+                // Clean up
+                imagedestroy($source);
+                imagedestroy($thumbnail);
+            
+                return true;
+            }
             ?&gt;
         </pre>
     </div>
@@ -30402,54 +30402,54 @@ print_r($explain);
     <b>Database Schema:</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            -- Files table<br/>
-            CREATE TABLE files (<br/>
-            &nbsp;&nbsp;id INT PRIMARY KEY AUTO_INCREMENT,<br/>
-            &nbsp;&nbsp;user_id INT NOT NULL,<br/>
-            &nbsp;&nbsp;original_filename VARCHAR(255) NOT NULL,<br/>
-            &nbsp;&nbsp;stored_filename VARCHAR(255) NOT NULL UNIQUE,<br/>
-            &nbsp;&nbsp;file_path VARCHAR(500) NOT NULL,<br/>
-            &nbsp;&nbsp;file_size BIGINT NOT NULL,<br/>
-            &nbsp;&nbsp;mime_type VARCHAR(100) NOT NULL,<br/>
-            &nbsp;&nbsp;extension VARCHAR(10) NOT NULL,<br/>
-            &nbsp;&nbsp;upload_date DATETIME DEFAULT CURRENT_TIMESTAMP,<br/>
-            &nbsp;&nbsp;is_public BOOLEAN DEFAULT FALSE,<br/>
-            &nbsp;&nbsp;download_count INT DEFAULT 0,<br/>
-            &nbsp;&nbsp;last_download DATETIME,<br/>
-            &nbsp;&nbsp;FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,<br/>
-            &nbsp;&nbsp;INDEX idx_user_id (user_id),<br/>
-            &nbsp;&nbsp;INDEX idx_upload_date (upload_date)<br/>
-            );<br/>
-            <br/>
-            -- Shared links table<br/>
-            CREATE TABLE file_shares (<br/>
-            &nbsp;&nbsp;id INT PRIMARY KEY AUTO_INCREMENT,<br/>
-            &nbsp;&nbsp;file_id INT NOT NULL,<br/>
-            &nbsp;&nbsp;share_token VARCHAR(64) NOT NULL UNIQUE,<br/>
-            &nbsp;&nbsp;password_hash VARCHAR(255),<br/>
-            &nbsp;&nbsp;expires_at DATETIME,<br/>
-            &nbsp;&nbsp;max_downloads INT,<br/>
-            &nbsp;&nbsp;download_count INT DEFAULT 0,<br/>
-            &nbsp;&nbsp;created_at DATETIME DEFAULT CURRENT_TIMESTAMP,<br/>
-            &nbsp;&nbsp;created_by INT NOT NULL,<br/>
-            &nbsp;&nbsp;FOREIGN KEY (file_id) REFERENCES files(id) ON DELETE CASCADE,<br/>
-            &nbsp;&nbsp;FOREIGN KEY (created_by) REFERENCES users(id),<br/>
-            &nbsp;&nbsp;INDEX idx_share_token (share_token),<br/>
-            &nbsp;&nbsp;INDEX idx_expires (expires_at)<br/>
-            );<br/>
-            <br/>
-            -- File download logs<br/>
-            CREATE TABLE download_logs (<br/>
-            &nbsp;&nbsp;id INT PRIMARY KEY AUTO_INCREMENT,<br/>
-            &nbsp;&nbsp;file_id INT NOT NULL,<br/>
-            &nbsp;&nbsp;user_id INT,<br/>
-            &nbsp;&nbsp;share_token VARCHAR(64),<br/>
-            &nbsp;&nbsp;ip_address VARCHAR(45),<br/>
-            &nbsp;&nbsp;user_agent TEXT,<br/>
-            &nbsp;&nbsp;download_date DATETIME DEFAULT CURRENT_TIMESTAMP,<br/>
-            &nbsp;&nbsp;FOREIGN KEY (file_id) REFERENCES files(id) ON DELETE CASCADE,<br/>
-            &nbsp;&nbsp;INDEX idx_file_id (file_id),<br/>
-            &nbsp;&nbsp;INDEX idx_download_date (download_date)<br/>
+            -- Files table
+            CREATE TABLE files (
+                id INT PRIMARY KEY AUTO_INCREMENT,
+                user_id INT NOT NULL,
+                original_filename VARCHAR(255) NOT NULL,
+                stored_filename VARCHAR(255) NOT NULL UNIQUE,
+                file_path VARCHAR(500) NOT NULL,
+                file_size BIGINT NOT NULL,
+                mime_type VARCHAR(100) NOT NULL,
+                extension VARCHAR(10) NOT NULL,
+                upload_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+                is_public BOOLEAN DEFAULT FALSE,
+                download_count INT DEFAULT 0,
+                last_download DATETIME,
+                FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+                INDEX idx_user_id (user_id),
+                INDEX idx_upload_date (upload_date)
+            );
+            
+            -- Shared links table
+            CREATE TABLE file_shares (
+                id INT PRIMARY KEY AUTO_INCREMENT,
+                file_id INT NOT NULL,
+                share_token VARCHAR(64) NOT NULL UNIQUE,
+                password_hash VARCHAR(255),
+                expires_at DATETIME,
+                max_downloads INT,
+                download_count INT DEFAULT 0,
+                created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+                created_by INT NOT NULL,
+                FOREIGN KEY (file_id) REFERENCES files(id) ON DELETE CASCADE,
+                FOREIGN KEY (created_by) REFERENCES users(id),
+                INDEX idx_share_token (share_token),
+                INDEX idx_expires (expires_at)
+            );
+            
+            -- File download logs
+            CREATE TABLE download_logs (
+                id INT PRIMARY KEY AUTO_INCREMENT,
+                file_id INT NOT NULL,
+                user_id INT,
+                share_token VARCHAR(64),
+                ip_address VARCHAR(45),
+                user_agent TEXT,
+                download_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+                FOREIGN KEY (file_id) REFERENCES files(id) ON DELETE CASCADE,
+                INDEX idx_file_id (file_id),
+                INDEX idx_download_date (download_date)
             );
         </pre>
     </div>
@@ -30623,33 +30623,33 @@ print_r($explain);
     <b>Anatomy of a Domain Name:</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            https://www.example.com<br/>
-            |         |       |    |<br/>
-            Protocol  |    Domain  TLD<br/>
-                      |<br/>
-                    Subdomain<br/>
-            <br/>
-            Full breakdown:<br/>
-            <br/>
-            Protocol: https:// (HyperText Transfer Protocol Secure)<br/>
-            Subdomain: www (World Wide Web - traditional but optional)<br/>
-            Second-Level Domain (SLD): example (your chosen name)<br/>
-            Top-Level Domain (TLD): .com (Commercial)<br/>
-            <br/>
-            Other common TLDs:<br/>
-            • .com - Commercial<br/>
-            • .org - Organizations<br/>
-            • .net - Network<br/>
-            • .edu - Education<br/>
-            • .gov - Government<br/>
-            • Country codes: .us, .uk, .ca, .au, etc.<br/>
-            • New gTLDs: .app, .blog, .shop, .dev, etc.<br/>
-            <br/>
-            Subdomain examples:<br/>
-            • blog.example.com<br/>
-            • shop.example.com<br/>
-            • api.example.com<br/>
-            • mail.example.com<br/>
+            https://www.example.com
+            |         |       |    |
+            Protocol  |    Domain  TLD
+                      |
+                    Subdomain
+            
+            Full breakdown:
+            
+            Protocol: https:// (HyperText Transfer Protocol Secure)
+            Subdomain: www (World Wide Web - traditional but optional)
+            Second-Level Domain (SLD): example (your chosen name)
+            Top-Level Domain (TLD): .com (Commercial)
+            
+            Other common TLDs:
+            • .com - Commercial
+            • .org - Organizations
+            • .net - Network
+            • .edu - Education
+            • .gov - Government
+            • Country codes: .us, .uk, .ca, .au, etc.
+            • New gTLDs: .app, .blog, .shop, .dev, etc.
+            
+            Subdomain examples:
+            • blog.example.com
+            • shop.example.com
+            • api.example.com
+            • mail.example.com
             • test.example.com
         </pre>
     </div>
@@ -30675,46 +30675,46 @@ print_r($explain);
     <b>DNS Resolution Process:</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            User types "www.example.com" in browser:<br/>
-            <br/>
-            1. <b>Browser Cache Check</b><br/>
-            &nbsp;&nbsp;• Browser checks its own cache for the DNS record<br/>
-            &nbsp;&nbsp;• If found, skip to step 8<br/>
-            <br/>
-            2. <b>Operating System Cache Check</b><br/>
-            &nbsp;&nbsp;• Browser asks OS (Windows/Mac/Linux) for DNS record<br/>
-            &nbsp;&nbsp;• OS checks its DNS resolver cache<br/>
-            &nbsp;&nbsp;• If found, skip to step 8<br/>
-            <br/>
-            3. <b>Router Cache Check</b><br/>
-            &nbsp;&nbsp;• Request goes to local router<br/>
-            &nbsp;&nbsp;• Router checks its cache<br/>
-            &nbsp;&nbsp;• If found, skip to step 8<br/>
-            <br/>
-            4. <b>ISP DNS Resolver</b><br/>
-            &nbsp;&nbsp;• Request reaches ISP's DNS servers<br/>
-            &nbsp;&nbsp;• ISP checks its cache<br/>
-            &nbsp;&nbsp;• If not found, begins recursive query<br/>
-            <br/>
-            5. <b>Root Nameservers</b> (13 globally distributed)<br/>
-            &nbsp;&nbsp;• ISP asks root server: "Where is .com?"<br/>
-            &nbsp;&nbsp;• Root responds: "Ask these TLD nameservers"<br/>
-            <br/>
-            6. <b>TLD Nameservers</b><br/>
-            &nbsp;&nbsp;• ISP asks .com nameserver: "Where is example.com?"<br/>
-            &nbsp;&nbsp;• TLD responds: "Ask these authoritative nameservers"<br/>
-            <br/>
-            7. <b>Authoritative Nameservers</b><br/>
-            &nbsp;&nbsp;• ISP asks example.com's nameservers<br/>
-            &nbsp;&nbsp;• Authoritative server responds with IP address: "93.184.216.34"<br/>
-            <br/>
-            8. <b>Response Travels Back</b><br/>
-            &nbsp;&nbsp;• IP address cached at each step (ISP, router, OS, browser)<br/>
-            &nbsp;&nbsp;• Browser receives IP address<br/>
-            <br/>
-            9. <b>HTTP Request</b><br/>
-            &nbsp;&nbsp;• Browser sends HTTP request to IP address 93.184.216.34<br/>
-            &nbsp;&nbsp;• Server responds with website content
+            User types "www.example.com" in browser:
+            
+            1. <b>Browser Cache Check</b>
+                • Browser checks its own cache for the DNS record
+                • If found, skip to step 8
+            
+            2. <b>Operating System Cache Check</b>
+                • Browser asks OS (Windows/Mac/Linux) for DNS record
+                • OS checks its DNS resolver cache
+                • If found, skip to step 8
+            
+            3. <b>Router Cache Check</b>
+                • Request goes to local router
+                • Router checks its cache
+                • If found, skip to step 8
+            
+            4. <b>ISP DNS Resolver</b>
+                • Request reaches ISP's DNS servers
+                • ISP checks its cache
+                • If not found, begins recursive query
+            
+            5. <b>Root Nameservers</b> (13 globally distributed)
+                • ISP asks root server: "Where is .com?"
+                • Root responds: "Ask these TLD nameservers"
+            
+            6. <b>TLD Nameservers</b>
+                • ISP asks .com nameserver: "Where is example.com?"
+                • TLD responds: "Ask these authoritative nameservers"
+            
+            7. <b>Authoritative Nameservers</b>
+                • ISP asks example.com's nameservers
+                • Authoritative server responds with IP address: "93.184.216.34"
+            
+            8. <b>Response Travels Back</b>
+                • IP address cached at each step (ISP, router, OS, browser)
+                • Browser receives IP address
+            
+            9. <b>HTTP Request</b>
+                • Browser sends HTTP request to IP address 93.184.216.34
+                • Server responds with website content
         </pre>
     </div>
     
@@ -30805,39 +30805,39 @@ print_r($explain);
     <b>Example DNS Zone File:</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            ; Zone file for example.com<br/>
-            $TTL 3600       ; Default TTL: 1 hour<br/>
-            <br/>
-            @ IN SOA ns1.example.com. admin.example.com. (<br/>
-            &nbsp;&nbsp;2024011501 ; Serial number (YYYYMMDDNN)<br/>
-            &nbsp;&nbsp;7200       ; Refresh (2 hours)<br/>
-            &nbsp;&nbsp;3600       ; Retry (1 hour)<br/>
-            &nbsp;&nbsp;1209600    ; Expire (2 weeks)<br/>
-            &nbsp;&nbsp;3600       ; Minimum TTL (1 hour)<br/>
-            )<br/>
-            <br/>
-            ; Nameservers<br/>
-            @       IN NS   ns1.example.com.<br/>
-            @       IN NS   ns2.example.com.<br/>
-            <br/>
-            ; A Records (IPv4)<br/>
-            @       IN A    93.184.216.34     ; example.com<br/>
-            www     IN A    93.184.216.34     ; www.example.com<br/>
-            mail    IN A    203.0.113.1       ; mail.example.com<br/>
-            <br/>
-            ; CNAME Records (Aliases)<br/>
-            blog    IN CNAME example.com.     ; blog.example.com<br/>
-            shop    IN CNAME example.com.     ; shop.example.com<br/>
-            <br/>
-            ; MX Records (Mail servers - lower number = higher priority)<br/>
-            @       IN MX 10 mail.example.com.<br/>
-            @       IN MX 20 mail2.example.com.<br/>
-            <br/>
-            ; TXT Records<br/>
-            @       IN TXT "v=spf1 include:_spf.google.com ~all"<br/>
-            @       IN TXT "google-site-verification=abc123"<br/>
-            <br/>
-            ; SRV Records (for specific services)<br/>
+            ; Zone file for example.com
+            $TTL 3600       ; Default TTL: 1 hour
+            
+            @ IN SOA ns1.example.com. admin.example.com. (
+                2024011501 ; Serial number (YYYYMMDDNN)
+                7200       ; Refresh (2 hours)
+                3600       ; Retry (1 hour)
+                1209600    ; Expire (2 weeks)
+                3600       ; Minimum TTL (1 hour)
+            )
+            
+            ; Nameservers
+            @       IN NS   ns1.example.com.
+            @       IN NS   ns2.example.com.
+            
+            ; A Records (IPv4)
+            @       IN A    93.184.216.34     ; example.com
+            www     IN A    93.184.216.34     ; www.example.com
+            mail    IN A    203.0.113.1       ; mail.example.com
+            
+            ; CNAME Records (Aliases)
+            blog    IN CNAME example.com.     ; blog.example.com
+            shop    IN CNAME example.com.     ; shop.example.com
+            
+            ; MX Records (Mail servers - lower number = higher priority)
+            @       IN MX 10 mail.example.com.
+            @       IN MX 20 mail2.example.com.
+            
+            ; TXT Records
+            @       IN TXT "v=spf1 include:_spf.google.com ~all"
+            @       IN TXT "google-site-verification=abc123"
+            
+            ; SRV Records (for specific services)
             _sip._tcp   IN SRV 10 60 5060 sipserver.example.com.
         </pre>
     </div>
@@ -30878,30 +30878,30 @@ print_r($explain);
     <b>Nameserver Configuration Examples:</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            // Cloudflare Nameservers<br/>
-            ns1.cloudflare.com<br/>
-            ns2.cloudflare.com<br/>
-            <br/>
-            // GoDaddy Nameservers<br/>
-            ns1.domaincontrol.com<br/>
-            ns2.domaincontrol.com<br/>
-            <br/>
-            // Amazon Route 53<br/>
-            ns-1.awsdns-00.com<br/>
-            ns-2.awsdns-00.net<br/>
-            ns-3.awsdns-00.org<br/>
-            ns-4.awsdns-00.co.uk<br/>
-            <br/>
-            // Google Domains<br/>
-            ns-cloud1.googledomains.com<br/>
-            ns-cloud2.googledomains.com<br/>
-            ns-cloud3.googledomains.com<br/>
-            ns-cloud4.googledomains.com<br/>
-            <br/>
-            // Typical configuration at registrar:<br/>
-            Primary Nameserver: ns1.yourhosting.com<br/>
-            Secondary Nameserver: ns2.yourhosting.com<br/>
-            Tertiary Nameserver: ns3.yourhosting.com (optional)<br/>
+            // Cloudflare Nameservers
+            ns1.cloudflare.com
+            ns2.cloudflare.com
+            
+            // GoDaddy Nameservers
+            ns1.domaincontrol.com
+            ns2.domaincontrol.com
+            
+            // Amazon Route 53
+            ns-1.awsdns-00.com
+            ns-2.awsdns-00.net
+            ns-3.awsdns-00.org
+            ns-4.awsdns-00.co.uk
+            
+            // Google Domains
+            ns-cloud1.googledomains.com
+            ns-cloud2.googledomains.com
+            ns-cloud3.googledomains.com
+            ns-cloud4.googledomains.com
+            
+            // Typical configuration at registrar:
+            Primary Nameserver: ns1.yourhosting.com
+            Secondary Nameserver: ns2.yourhosting.com
+            Tertiary Nameserver: ns3.yourhosting.com (optional)
             Quaternary Nameserver: ns4.yourhosting.com (optional)
         </pre>
     </div>
@@ -30916,10 +30916,10 @@ print_r($explain);
     <div style="background-color: #f0f8ff; padding: 15px; margin: 10px 0; border-radius: 5px;">
         1. Visit a domain registrar (Namecheap, GoDaddy)<br/>
         2. Search for available domains:<br/>
-        &nbsp;&nbsp;• YourName.com<br/>
-        &nbsp;&nbsp;• YourName.dev<br/>
-        &nbsp;&nbsp;• YourNameTech.com<br/>
-        &nbsp;&nbsp;• YourNameWeb.dev<br/>
+            • YourName.com<br/>
+            • YourName.dev<br/>
+            • YourNameTech.com<br/>
+            • YourNameWeb.dev<br/>
         3. Compare prices for different TLDs<br/>
         4. Check WHOIS information for existing domains<br/>
         5. Note the difference with/without privacy protection
@@ -30928,20 +30928,20 @@ print_r($explain);
     <b>Part 2: DNS Investigation Tools</b>
     <div style="background-color: #f0f8ff; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <b>Using Command Line Tools:</b><br/>
-        1. <pre>nslookup</pre> - Basic DNS lookup<br/>
-        &nbsp;&nbsp;<pre>nslookup google.com</pre><br/>
-        &nbsp;&nbsp;<pre>nslookup -type=mx google.com</pre><br/>
+        1. nslookup - Basic DNS lookup<br/>
+            nslookup google.com<br/>
+            nslookup -type=mx google.com<br/>
         <br/>
-        2. <pre>dig</pre> - More detailed DNS information<br/>
-        &nbsp;&nbsp;<pre>dig google.com</pre><br/>
-        &nbsp;&nbsp;<pre>dig google.com ANY</pre> (all records)<br/>
-        &nbsp;&nbsp;<pre>dig google.com MX</pre> (mail records)<br/>
-        &nbsp;&nbsp;<pre>dig google.com NS</pre> (nameservers)<br/>
-        &nbsp;&nbsp;<pre>dig google.com +trace</pre> (trace DNS path)<br/>
+        2. dig - More detailed DNS information<br/>
+            dig google.com<br/>
+            dig google.com ANY (all records)<br/>
+            dig google.com MX (mail records)<br/>
+            dig google.com NS (nameservers)<br/>
+            dig google.com +trace (trace DNS path)<br/>
         <br/>
-        3. <pre>whois</pre> - Domain registration information<br/>
-        &nbsp;&nbsp;<pre>whois google.com</pre><br/>
-        &nbsp;&nbsp;<pre>whois 8.8.8.8</pre> (IP address whois)<br/>
+        3. whois - Domain registration information<br/>
+            whois google.com<br/>
+            whois 8.8.8.8 (IP address whois)<br/>
         <br/>
         <b>Online Tools:</b><br/>
         1. <a href="https://dnschecker.org" target="_blank">DNS Checker</a> - Global DNS propagation<br/>
@@ -30955,11 +30955,11 @@ print_r($explain);
         1. Sign up for a free Cloudflare account<br/>
         2. Add a test domain (you can use a free .tk or .ml domain)<br/>
         3. Configure these DNS records:<br/>
-        &nbsp;&nbsp;• A record: @ → 192.0.2.1 (test IP)<br/>
-        &nbsp;&nbsp;• CNAME: www → @<br/>
-        &nbsp;&nbsp;• MX: @ → mail.example.com (priority 10)<br/>
-        &nbsp;&nbsp;• TXT: SPF record for email<br/>
-        &nbsp;&nbsp;• TXT: Google site verification (fake code)<br/>
+            • A record: @ → 192.0.2.1 (test IP)<br/>
+            • CNAME: www → @<br/>
+            • MX: @ → mail.example.com (priority 10)<br/>
+            • TXT: SPF record for email<br/>
+            • TXT: Google site verification (fake code)<br/>
         4. Test your configuration using dig and online tools<br/>
         5. Enable Cloudflare proxy (orange cloud) and test again
     </div>
@@ -30975,12 +30975,12 @@ print_r($explain);
             <b>Task 1: Domain Analysis</b><br/>
             1. Choose 5 popular websites (e.g., amazon.com, github.com, netflix.com)<br/>
             2. For each, document:<br/>
-            &nbsp;&nbsp;• Registrar (WHOIS)<br/>
-            &nbsp;&nbsp;• Nameservers<br/>
-            &nbsp;&nbsp;• IP addresses<br/>
-            &nbsp;&nbsp;• MX records for email<br/>
-            &nbsp;&nbsp;• TXT records (SPF, DMARC, etc.)<br/>
-            &nbsp;&nbsp;• TTL values for different records<br/>
+                • Registrar (WHOIS)<br/>
+                • Nameservers<br/>
+                • IP addresses<br/>
+                • MX records for email<br/>
+                • TXT records (SPF, DMARC, etc.)<br/>
+                • TTL values for different records<br/>
             3. Create a comparison table<br/>
             <br/>
             <b>Task 2: DNS Configuration</b><br/>
@@ -31065,7 +31065,8 @@ print_r($explain);
         • <a href="https://www.cloudflare.com/learning/dns/what-is-dns/" target="_blank">Cloudflare DNS Learning Center</a><br/>
         • <a href="https://www.iana.org/domains/root/db" target="_blank">IANA Root Zone Database</a><br/>
         • <a href="https://dns.google/" target="_blank">Google Public DNS</a><br/>
-        • <a href="https://www.isc.org/bind/" target="_blank">BIND DNS Server</a></p>
+        • <a href="https://www.isc.org/bind/" target="_blank">BIND DNS Server</a>
+        </p>
     </div>`
             },
             "13-2": {
@@ -31798,10 +31799,10 @@ print_r($explain);
         <b>Step 3: Initial Setup</b><br/>
         • Launch FileZilla<br/>
         • Configure settings (optional):<br/>
-        &nbsp;&nbsp;- Edit → Settings → Transfers<br/>
-        &nbsp;&nbsp;- Maximum simultaneous transfers: 2-10<br/>
-        &nbsp;&nbsp;- Limit transfer speed if needed<br/>
-        &nbsp;&nbsp;- Configure default transfer type (Binary/Auto)<br/>
+            - Edit → Settings → Transfers<br/>
+            - Maximum simultaneous transfers: 2-10<br/>
+            - Limit transfer speed if needed<br/>
+            - Configure default transfer type (Binary/Auto)<br/>
         <br/>
         <b>Step 4: Interface Overview</b><br/>
         • Top: Connection toolbar (Host, Username, Password, Port, Quickconnect)<br/>
@@ -31813,7 +31814,7 @@ print_r($explain);
     
     <b>FileZilla Interface Guide:</b>
     <div style="background-color: #f0f8ff; padding: 15px; margin: 10px 0; border-radius: 5px;">
-        <img src="https://wiki.filezilla-project.org/images/7/76/Filezilla_3_main_screen.png" alt="FileZilla Interface" style="max-width: 100%; border: 1px solid #ddd;"><br/>
+        <img src="https://filezilla-project.org/images/screenshots/fz3_win_main.png" alt="FileZilla Interface" style="max-width: 100%; border: 1px solid #ddd;"><br/>
         <br/>
         <b>Key Areas:</b><br/>
         1. <b>Toolbar:</b> Quickconnect, Site Manager, disconnect, refresh<br/>
@@ -31831,30 +31832,30 @@ print_r($explain);
     <b>Quick Connect Method:</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            <b>Step 1: Enter Connection Details</b><br/>
-            Host: ftp.yourdomain.com<br/>
-            Username: your_ftp_username<br/>
-            Password: **********<br/>
-            Port: 21 (or 22 for SFTP, leave blank for default)<br/>
-            <br/>
-            <b>Step 2: Choose Protocol</b><br/>
-            Click the dropdown next to "Quickconnect"<br/>
-            • FTP (not recommended)<br/>
-            • FTP over SSL/TLS (FTPS - explicit)<br/>
-            • FTP over TLS (FTPS - explicit)<br/>
-            • SFTP over SSH (recommended)<br/>
-            <br/>
-            <b>Step 3: Connect</b><br/>
-            Click "Quickconnect" button<br/>
-            <br/>
-            <b>Step 4: Handle Certificate Warnings</b><br/>
-            • First time connecting to FTPS/SFTP may show certificate warning<br/>
-            • Check "Always trust this certificate" if it's your server<br/>
-            • Click OK to continue<br/>
-            <br/>
-            <b>Step 5: Verify Connection</b><br/>
-            • Message log shows "Logged in"<br/>
-            • Remote site shows server files<br/>
+            <b>Step 1: Enter Connection Details</b>
+            Host: ftp.yourdomain.com
+            Username: your_ftp_username
+            Password: **********
+            Port: 21 (or 22 for SFTP, leave blank for default)
+            
+            <b>Step 2: Choose Protocol</b>
+            Click the dropdown next to "Quickconnect"
+            • FTP (not recommended)
+            • FTP over SSL/TLS (FTPS - explicit)
+            • FTP over TLS (FTPS - explicit)
+            • SFTP over SSH (recommended)
+            
+            <b>Step 3: Connect</b>
+            Click "Quickconnect" button
+            
+            <b>Step 4: Handle Certificate Warnings</b>
+            • First time connecting to FTPS/SFTP may show certificate warning
+            • Check "Always trust this certificate" if it's your server
+            • Click OK to continue
+            
+            <b>Step 5: Verify Connection</b>
+            • Message log shows "Logged in"
+            • Remote site shows server files
             • Status bar shows connected
         </pre>
     </div>
@@ -31862,38 +31863,38 @@ print_r($explain);
     <b>Site Manager Method (Recommended):</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            <b>Step 1: Open Site Manager</b><br/>
-            File → Site Manager (or Ctrl+S)<br/>
-            <br/>
-            <b>Step 2: Create New Site</b><br/>
-            Click "New Site" button<br/>
-            Name it: "My Website"<br/>
-            <br/>
-            <b>Step 3: Configure Connection</b><br/>
-            <b>General Tab:</b><br/>
-            Host: ftp.yourdomain.com<br/>
-            Protocol: SFTP - SSH File Transfer Protocol<br/>
-            Logon Type: Normal<br/>
-            User: your_username<br/>
-            Password: **********<br/>
-            <br/>
-            <b>Advanced Tab:</b><br/>
-            Default remote directory: /public_html/<br/>
-            Default local directory: C:\Users\You\Website\<br/>
-            <br/>
-            <b>Transfer Settings Tab:</b><br/>
-            Transfer Mode: Passive (recommended for most)<br/>
-            Limit number of simultaneous connections: 2<br/>
-            <br/>
-            <b>Step 4: Save and Connect</b><br/>
-            Click "OK" to save<br/>
-            Select site and click "Connect"<br/>
-            <br/>
-            <b>Benefits of Site Manager:</b><br/>
-            • Save multiple server configurations<br/>
-            • Store passwords (optional)<br/>
-            • Set default directories<br/>
-            • Faster connections<br/>
+            <b>Step 1: Open Site Manager</b>
+            File → Site Manager (or Ctrl+S)
+            
+            <b>Step 2: Create New Site</b>
+            Click "New Site" button
+            Name it: "My Website"
+            
+            <b>Step 3: Configure Connection</b>
+            <b>General Tab:</b>
+            Host: ftp.yourdomain.com
+            Protocol: SFTP - SSH File Transfer Protocol
+            Logon Type: Normal
+            User: your_username
+            Password: **********
+            
+            <b>Advanced Tab:</b>
+            Default remote directory: /public_html/
+            Default local directory: C:\Users\You\Website\
+            
+            <b>Transfer Settings Tab:</b>
+            Transfer Mode: Passive (recommended for most)
+            Limit number of simultaneous connections: 2
+            
+            <b>Step 4: Save and Connect</b>
+            Click "OK" to save
+            Select site and click "Connect"
+            
+            <b>Benefits of Site Manager:</b>
+            • Save multiple server configurations
+            • Store passwords (optional)
+            • Set default directories
+            • Faster connections
             • Organize sites into folders
         </pre>
     </div>
@@ -31905,44 +31906,44 @@ print_r($explain);
     <b>Basic File Operations:</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            <b>Uploading Files:</b><br/>
-            1. Navigate to local folder (left pane)<br/>
-            2. Navigate to remote folder (right pane)<br/>
-            3. Select files/folders in local pane<br/>
-            4. Right-click → "Upload" (or drag to remote pane)<br/>
-            5. Files appear in transfer queue (bottom)<br/>
-            6. Wait for completion<br/>
-            <br/>
-            <b>Downloading Files:</b><br/>
-            1. Select files in remote pane<br/>
-            2. Right-click → "Download" (or drag to local pane)<br/>
-            3. Files download to current local directory<br/>
-            <br/>
-            <b>Creating Directories:</b><br/>
-            1. Right-click in remote pane<br/>
-            2. Select "Create directory"<br/>
-            3. Enter name: "images"<br/>
-            4. Press Enter<br/>
-            <br/>
-            <b>Renaming Files:</b><br/>
-            1. Right-click file in remote pane<br/>
-            2. Select "Rename"<br/>
-            3. Enter new name: "index-new.php"<br/>
-            4. Press Enter<br/>
-            <br/>
-            <b>Deleting Files:</b><br/>
-            1. Select files in remote pane<br/>
-            2. Right-click → "Delete"<br/>
-            3. Confirm deletion<br/>
-            <br/>
-            <b>Setting Permissions (CHMOD):</b><br/>
-            1. Right-click file/folder in remote pane<br/>
-            2. Select "File permissions"<br/>
-            3. Set numeric value or checkboxes:<br/>
-            &nbsp;&nbsp;• 644 for files (rw-r--r--)<br/>
-            &nbsp;&nbsp;• 755 for folders (rwxr-xr-x)<br/>
-            &nbsp;&nbsp;• 777 for writeable folders (not recommended)<br/>
-            4. Check "Recurse into subdirectories" for folders<br/>
+            <b>Uploading Files:</b>
+            1. Navigate to local folder (left pane)
+            2. Navigate to remote folder (right pane)
+            3. Select files/folders in local pane
+            4. Right-click → "Upload" (or drag to remote pane)
+            5. Files appear in transfer queue (bottom)
+            6. Wait for completion
+            
+            <b>Downloading Files:</b>
+            1. Select files in remote pane
+            2. Right-click → "Download" (or drag to local pane)
+            3. Files download to current local directory
+            
+            <b>Creating Directories:</b>
+            1. Right-click in remote pane
+            2. Select "Create directory"
+            3. Enter name: "images"
+            4. Press Enter
+            
+            <b>Renaming Files:</b>
+            1. Right-click file in remote pane
+            2. Select "Rename"
+            3. Enter new name: "index-new.php"
+            4. Press Enter
+            
+            <b>Deleting Files:</b>
+            1. Select files in remote pane
+            2. Right-click → "Delete"
+            3. Confirm deletion
+            
+            <b>Setting Permissions (CHMOD):</b>
+            1. Right-click file/folder in remote pane
+            2. Select "File permissions"
+            3. Set numeric value or checkboxes:
+                • 644 for files (rw-r--r--)
+                • 755 for folders (rwxr-xr-x)
+            &nbsp;&nbsp;• 777 for writeable folders (not recommended)
+            4. Check "Recurse into subdirectories" for folders
             5. Click OK
         </pre>
     </div>
@@ -32034,13 +32035,13 @@ print_r($explain);
     <div style="background-color: #f0f8ff; padding: 15px; margin: 10px 0; border-radius: 5px;">
         1. Create a folder: "my_website"<br/>
         2. Create these files:<br/>
-        &nbsp;&nbsp;<pre>index.html</pre> - Homepage with your name<br/>
-        &nbsp;&nbsp;<pre>style.css</pre> - Basic styling<br/>
-        &nbsp;&nbsp;<pre>about.html</pre> - About page<br/>
-        &nbsp;&nbsp;<pre>contact.html</pre> - Contact page<br/>
+            &nbsp;&nbsp; index.html - Homepage with your name<br/>
+            &nbsp;&nbsp;style.css - Basic styling<br/>
+            &nbsp;&nbsp;about.html - About page<br/>
+            &nbsp;&nbsp;contact.html - Contact page<br/>
         3. Create subfolders:<br/>
-        &nbsp;&nbsp;<pre>images/</pre> - Add some sample images<br/>
-        &nbsp;&nbsp;<pre>js/</pre> - Add a simple JavaScript file<br/>
+        &nbsp;&nbsp;images/ - Add some sample images<br/>
+        &nbsp;&nbsp;js/ - Add a simple JavaScript file<br/>
         4. Test locally by opening index.html in browser
     </div>
     
