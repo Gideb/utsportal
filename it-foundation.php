@@ -1695,22 +1695,22 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <b>CMD Interface Elements:</b>
     <div style="background-color: #f0f8ff; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            Microsoft Windows [Version 10.0.19045.4046]<br/>
-            (c) Microsoft Corporation. All rights reserved.<br/>
-            <br/>
-            C:\Users\YourName><br/>
-            │               │<br/>
-            │               └── Prompt (waiting for command)<br/>
-            └── Current Directory Path<br/>
-            <br/>
-            <b>Prompt Characters:</b><br/>
-            • > : Regular user mode<br/>
-            • # : Sometimes used in scripts<br/>
-            • $ : In some Unix-like systems<br/>
-            • C:\Windows\System32> : Administrator (in System32 folder)<br/>
-            <br/>
-            <b>Cursor:</b> Blinking underscore where you type<br/>
-            <b>Scrollback:</b> Can scroll to see previous commands/output<br/>
+            Microsoft Windows [Version 10.0.19045.4046]
+            (c) Microsoft Corporation. All rights reserved.
+            
+            C:\Users\YourName>
+            │               │
+            │               └── Prompt (waiting for command)
+            └── Current Directory Path
+            
+            <b>Prompt Characters:</b>
+            • > : Regular user mode
+            • # : Sometimes used in scripts
+            • $ : In some Unix-like systems
+            • C:\Windows\System32> : Administrator (in System32 folder)
+            
+            <b>Cursor:</b> Blinking underscore where you type
+            <b>Scrollback:</b> Can scroll to see previous commands/output
             <b>Title Bar:</b> Shows current directory and "Command Prompt"
         </pre>
     </div>
@@ -1720,31 +1720,31 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <b>Command Structure:</b>
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <pre>
-            command [options] [arguments]<br/>
-            │         │         └── Additional information<br/>
-            │         └── Modifiers (flags) that change behavior<br/>
-            └── The action to perform<br/>
-            <br/>
-            <b>Examples:</b><br/>
-            dir /w<br/>
-            │   └── Option: Wide format<br/>
-            └── Command: Directory listing<br/>
-            <br/>
-            copy file1.txt file2.txt<br/>
-            │            │         └── Argument: Destination file<br/>
-            │            └── Argument: Source file<br/>
-            └── Command: Copy file<br/>
-            <br/>
-            ipconfig /all<br/>
-            │         └── Option: Show all information<br/>
-            └── Command: IP configuration<br/>
-            <br/>
-            <b>Common Syntax Elements:</b><br/>
-            • Spaces separate commands, options, and arguments<br/>
-            • Quotes for paths with spaces: cd "C:\Program Files"<br/>
-            • Case insensitive (usually)<br/>
-            • Use / or - for options: dir /w or dir -w<br/>
-            • Tab key for auto-completion<br/>
+            command [options] [arguments]
+            │         │         └── Additional information
+            │         └── Modifiers (flags) that change behavior
+            └── The action to perform
+            
+            <b>Examples:</b>
+            dir /w
+            │   └── Option: Wide format
+            └── Command: Directory listing
+            
+            copy file1.txt file2.txt
+            │            │         └── Argument: Destination file
+            │            └── Argument: Source file
+            └── Command: Copy file
+            
+            ipconfig /all
+            │         └── Option: Show all information
+            └── Command: IP configuration
+            
+            <b>Common Syntax Elements:</b>
+            • Spaces separate commands, options, and arguments
+            • Quotes for paths with spaces: cd "C:\Program Files"
+            • Case insensitive (usually)
+            • Use / or - for options: dir /w or dir -w
+            • Tab key for auto-completion
             • Up/Down arrows for command history
         </pre>
     </div>
@@ -1923,46 +1923,46 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <b>ipconfig - IP Configuration</b><br/>
         <pre>
-            ipconfig                    # Basic info<br/>
-            ipconfig /all               # Detailed info<br/>
-            ipconfig /release           # Release IP address<br/>
-            ipconfig /renew             # Renew IP address<br/>
-            ipconfig /flushdns          # Clear DNS cache<br/>
-            ipconfig /displaydns        # Show DNS cache<br/>
+            ipconfig                    # Basic info
+            ipconfig /all               # Detailed info
+            ipconfig /release           # Release IP address
+            ipconfig /renew             # Renew IP address
+            ipconfig /flushdns          # Clear DNS cache
+            ipconfig /displaydns        # Show DNS cache
         </pre>
-        <br/>
-        <b>ping - Test Connectivity</b><br/>
+        
+        <b>ping - Test Connectivity</b>
         <pre>
-            ping google.com             # Basic ping<br/>
-            ping -t google.com          # Continuous ping (Ctrl+C to stop)<br/>
-            ping -n 10 google.com       # Send 10 packets<br/>
-            ping -l 1000 google.com     # Send 1000 byte packets<br/>
-            ping -4 google.com          # Force IPv4<br/>
-            ping -6 google.com          # Force IPv6<br/>
+            ping google.com             # Basic ping
+            ping -t google.com          # Continuous ping (Ctrl+C to stop)
+            ping -n 10 google.com       # Send 10 packets
+            ping -l 1000 google.com     # Send 1000 byte packets
+            ping -4 google.com          # Force IPv4
+            ping -6 google.com          # Force IPv6
         </pre>
-        <br/>
-        <b>tracert - Trace Route</b><br/>
+        
+        <b>tracert - Trace Route</b>
         <pre>
-            tracert google.com          # Trace route to Google<br/>
-            tracert -d google.com       # Don't resolve addresses to names<br/>
-            tracert -h 30 google.com    # Maximum 30 hops<br/>
-            tracert -w 1000 google.com  # Wait 1000ms per hop<br/>
+            tracert google.com          # Trace route to Google
+            tracert -d google.com       # Don't resolve addresses to names
+            tracert -h 30 google.com    # Maximum 30 hops
+            tracert -w 1000 google.com  # Wait 1000ms per hop
         </pre>
-        <br/>
-        <b>nslookup - DNS Lookup</b><br/>
+        
+        <b>nslookup - DNS Lookup</b>
         <pre>
-            nslookup google.com         # Basic DNS lookup<br/>
-            nslookup -type=mx gmail.com # Look up MX records<br/>
-            nslookup -type=ns google.com # Look up name servers<br/>
+            nslookup google.com         # Basic DNS lookup
+            nslookup -type=mx gmail.com # Look up MX records
+            nslookup -type=ns google.com # Look up name servers
         </pre>
-        <br/>
-        <b>netstat - Network Statistics</b><br/>
+        
+        <b>netstat - Network Statistics</b>
         <pre>
-            netstat                     # Active connections<br/>
-            netstat -a                  # All connections and ports<br/>
-            netstat -b                  # Show executable involved<br/>
-            netstat -n                  # Show addresses numerically<br/>
-            netstat -ano                # Show PID, numeric addresses<br/>
+            netstat                     # Active connections
+            netstat -a                  # All connections and ports
+            netstat -b                  # Show executable involved
+            netstat -n                  # Show addresses numerically
+            netstat -ano                # Show PID, numeric addresses
         </pre>
     </div>
     
@@ -1983,23 +1983,23 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <b>Target Folder Structure:</b>
         <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
             <pre>
-                Final_Exam/<br/>
-                ├── Day_1_Windows/<br/>
-                │   ├── Notes.txt<br/>
-                │   ├── Screenshots/<br/>
-                │   └── Practice_Files/<br/>
-                ├── Day_2_Hardware/<br/>
-                │   ├── Research.doc<br/>
-                │   ├── Specs.txt<br/>
-                │   └── Images/<br/>
-                ├── Day_3_Files/<br/>
-                │   ├── Organized/<br/>
-                │   │   ├── Work/<br/>
-                │   │   ├── Personal/<br/>
-                │   │   └── Archive/<br/>
-                │   └── templates/<br/>
-                └── Day_4_CMD/<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;├── commands_used.txt<br/>
+                Final_Exam/
+                ├── Day_1_Windows/
+                │   ├── Notes.txt
+                │   ├── Screenshots/
+                │   └── Practice_Files/
+                ├── Day_2_Hardware/
+                │   ├── Research.doc
+                │   ├── Specs.txt
+                │   └── Images/
+                ├── Day_3_Files/
+                │   ├── Organized/
+                │   │   ├── Work/
+                │   │   ├── Personal/
+                │   │   └── Archive/
+                │   └── templates/
+                └── Day_4_CMD/
+                &nbsp;&nbsp;&nbsp;&nbsp;├── commands_used.txt
                 &nbsp;&nbsp;&nbsp;&nbsp;└── screenshots/
             </pre>
         </div>
@@ -2048,30 +2048,30 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <div style="background-color: #f0f8ff; padding: 15px; margin: 10px 0; border-radius: 5px;">
             <b>Basic Commands Needed:</b><br/>
             <pre>
-                cd                          # Change directory<br/>
-                mkdir                       # Make directory<br/>
-                rmdir                       # Remove directory<br/>
-                dir                         # List contents<br/>
-                echo                        # Create file with content<br/>
-                copy                        # Copy files<br/>
-                move                        # Move files<br/>
-                ren                         # Rename files<br/>
-                del                         # Delete files<br/>
-                attrib                      # Change file attributes<br/>
-                type                        # View file contents<br/>
-                cls                         # Clear screen<br/>
+                cd                          # Change directory
+                mkdir                       # Make directory
+                rmdir                       # Remove directory
+                dir                         # List contents
+                echo                        # Create file with content
+                copy                        # Copy files
+                move                        # Move files
+                ren                         # Rename files
+                del                         # Delete files
+                attrib                      # Change file attributes
+                type                        # View file contents
+                cls                         # Clear screen
             </pre>
             <br/>
             <b>Example Command Sequence:</b><br/>
             <pre>
-                cd desktop<br/>
-                mkdir Final_Exam<br/>
-                cd Final_Exam<br/>
-                mkdir Day_1_Windows Day_2_Hardware Day_3_Files Day_4_CMD<br/>
-                cd Day_1_Windows<br/>
-                echo Windows Basics Notes > Notes.txt<br/>
-                mkdir Screenshots Practice_Files<br/>
-                cd ..<br/>
+                cd desktop
+                mkdir Final_Exam
+                cd Final_Exam
+                mkdir Day_1_Windows Day_2_Hardware Day_3_Files Day_4_CMD
+                cd Day_1_Windows
+                echo Windows Basics Notes > Notes.txt
+                mkdir Screenshots Practice_Files
+                cd ..
                 # Continue with rest of structure...
             </pre>
         </div>
@@ -2103,43 +2103,43 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
             <pre>
                 @echo off<br/>
-                REM ============================================<br/>
-                REM Project Setup Batch File<br/>
-                REM Creates standard folder structure for projects<br/>
-                REM ============================================<br/>
-                <br/>
-                echo Project Setup Utility<br/>
-                echo --------------------<br/>
-                <br/>
-                REM Ask for project name<br/>
-                set /p project_name=Enter project name: <br/>
-                <br/>
-                REM Create main project folder<br/>
-                mkdir "%project_name%"<br/>
-                if errorlevel 1 (<br/>
-                &nbsp;&nbsp;echo Error creating folder!<br/>
-                &nbsp;&nbsp;pause<br/>
-                &nbsp;&nbsp;exit /b 1<br/>
-                )<br/>
-                <br/>
-                REM Navigate to project folder<br/>
-                cd "%project_name%"<br/>
-                <br/>
-                REM Create standard folder structure<br/>
-                echo Creating folder structure...<br/>
-                mkdir Documentation<br/>
-                mkdir Source<br/>
-                mkdir Tests<br/>
-                mkdir Resources<br/>
-                mkdir Build<br/>
-                mkdir Archive<br/>
-                <br/>
-                REM Create basic files<br/>
-                echo # %project_name% > README.md<br/>
-                echo TODO: Add project description >> README.md<br/>
-                <br/>
-                echo Project setup complete!<br/>
-                dir<br/>
+                REM ============================================
+                REM Project Setup Batch File
+                REM Creates standard folder structure for projects
+                REM ============================================
+                
+                echo Project Setup Utility
+                echo --------------------
+                
+                REM Ask for project name
+                set /p project_name=Enter project name: 
+                
+                REM Create main project folder
+                mkdir "%project_name%"
+                if errorlevel 1 (
+                    echo Error creating folder!
+                    pause
+                    exit /b 1
+                )
+                
+                REM Navigate to project folder
+                cd "%project_name%"
+                
+                REM Create standard folder structure
+                echo Creating folder structure...
+                mkdir Documentation
+                mkdir Source
+                mkdir Tests
+                mkdir Resources
+                mkdir Build
+                mkdir Archive
+                
+                REM Create basic files
+                echo # %project_name% > README.md
+                echo TODO: Add project description >> README.md
+                
+                echo Project setup complete!
+                dir
                 pause
             </pre>
         </div>
@@ -2173,24 +2173,24 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         • Right-click to paste into CMD<br/>
         <br/>
         <b>4. Redirecting Output:</b><br/>
-        • <pre>command > file.txt</pre> : Save output to file (overwrite)<br/>
-        • <pre>command >> file.txt</pre> : Append output to file<br/>
-        • <pre>command | more</pre> : Show output page by page<br/>
+        • command > file.txt : Save output to file (overwrite)<br/>
+        • command >> file.txt : Append output to file<br/>
+        • command | more : Show output page by page<br/>
         <br/>
         <b>5. Running Multiple Commands:</b><br/>
-        • <pre>command1 & command2</pre> : Run both sequentially<br/>
-        • <pre>command1 && command2</pre> : Run second only if first succeeds<br/>
-        • <pre>command1 || command2</pre> : Run second only if first fails<br/>
+        • command1 & command2 : Run both sequentially<br/>
+        • command1 && command2 : Run second only if first succeeds<br/>
+        • command1 || command2 : Run second only if first fails<br/>
         <br/>
         <b>6. Getting Help:</b><br/>
-        • <pre>command /?</pre> : Show help for any command<br/>
-        • <pre>help</pre> : List basic commands<br/>
-        • <pre>help command</pre> : Help for specific command<br/>
+        • command /? : Show help for any command<br/>
+        • help : List basic commands<br/>
+        • help command : Help for specific command<br/>
         <br/>
         <b>7. Wildcards:</b><br/>
-        • <pre>*</pre> : Matches any sequence of characters<br/>
-        • <pre>?</pre> : Matches any single character<br/>
-        • Examples: <pre>dir *.txt</pre>, <pre>del temp*.tmp</pre>, <pre>copy file?.doc</pre>
+        • * : Matches any sequence of characters<br/>
+        • ? : Matches any single character<br/>
+        • Examples: dir *.txt, del temp*.tmp, copy file?.doc
     </div>
     
     <h3>Common CMD Errors and Solutions</h3>
@@ -2239,42 +2239,42 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <b>Problem:</b> User cannot connect to internet<br/>
         <b>CMD Solution:</b><br/>
         <pre>
-            ipconfig /all              # Check network configuration<br/>
-            ping 8.8.8.8               # Test basic connectivity<br/>
-            ping google.com            # Test DNS resolution<br/>
-            ipconfig /flushdns         # Clear DNS cache<br/>
-            netsh winsock reset        # Reset network stack<br/>
-            netsh int ip reset         # Reset IP configuration<br/>
+            ipconfig /all              # Check network configuration
+            ping 8.8.8.8               # Test basic connectivity
+            ping google.com            # Test DNS resolution
+            ipconfig /flushdns         # Clear DNS cache
+            netsh winsock reset        # Reset network stack
+            netsh int ip reset         # Reset IP configuration
         </pre>
         <br/>
         <b>Scenario 2: System Cleanup Script</b><br/>
         <b>Problem:</b> Computer running slow, needs cleanup<br/>
         <b>CMD Solution:</b><br/>
         <pre>
-            cleanmgr /sagerun:1       # Disk Cleanup<br/>
-            defrag C: /U /V           # Defragment drive<br/>
-            del /s /q C:\*.tmp        # Delete temporary files<br/>
-            del /s /q C:\*.log        # Delete log files<br/>
-            ipconfig /flushdns        # Clear DNS cache<br/>
+            cleanmgr /sagerun:1       # Disk Cleanup
+            defrag C: /U /V           # Defragment drive
+            del /s /q C:\*.tmp        # Delete temporary files
+            del /s /q C:\*.log        # Delete log files
+            ipconfig /flushdns        # Clear DNS cache
         </pre>
         <br/>
         <b>Scenario 3: Batch File for Daily Tasks</b><br/>
         <b>Problem:</b> Repetitive daily file organization<br/>
         <b>CMD Solution:</b> Create daily_setup.bat:<br/>
         <pre>
-            @echo off<br/>
-            REM Create dated folder for today<br/>
-            mkdir C:\Work\%date:~10,4%-%date:~4,2%-%date:~7,2%<br/>
-            <br/>
-            REM Copy template files<br/>
-            copy C:\Templates\*.docx C:\Work\<br/>
-            <br/>
-            REM Open frequently used programs<br/>
-            start winword.exe<br/>
-            start excel.exe<br/>
-            start chrome.exe<br/>
-            <br/>
-            echo Daily setup complete!<br/>
+            @echo off
+            REM Create dated folder for today
+            mkdir C:\Work\%date:~10,4%-%date:~4,2%-%date:~7,2%
+            
+            REM Copy template files
+            copy C:\Templates\*.docx C:\Work\
+            
+            REM Open frequently used programs
+            start winword.exe
+            start excel.exe
+            start chrome.exe
+            
+            echo Daily setup complete!
             pause
         </pre>
     </div>
@@ -3071,23 +3071,23 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <br/>
     <b>Example: Convert 13 to binary</b><br/>
     <pre>
-        13 ÷ 2 = 6 remainder 1 ↑<br/>
-        6 ÷ 2 = 3 remainder 0 ↑<br/>
-        3 ÷ 2 = 1 remainder 1 ↑<br/>
-        1 ÷ 2 = 0 remainder 1 ↑<br/>
-        Read bottom to top: 1101<br/>
+        13 ÷ 2 = 6 remainder 1 ↑
+         6 ÷ 2 = 3 remainder 0 ↑
+         3 ÷ 2 = 1 remainder 1 ↑
+         1 ÷ 2 = 0 remainder 1 ↑
+        Read bottom to top: 1101
         So: 13₁₀ = 1101₂
     </pre>
     <br/>
     <b>Example: Convert 42 to binary</b><br/>
     <pre>
-        42 ÷ 2 = 21 remainder 0 ↑<br/>
-        21 ÷ 2 = 10 remainder 1 ↑<br/>
-        10 ÷ 2 = 5 remainder 0 ↑<br/>
-        5 ÷ 2 = 2 remainder 1 ↑<br/>
-        2 ÷ 2 = 1 remainder 0 ↑<br/>
-        1 ÷ 2 = 0 remainder 1 ↑<br/>
-        Read bottom to top: 101010<br/>
+        42 ÷ 2 = 21 remainder 0 ↑
+        21 ÷ 2 = 10 remainder 1 ↑
+        10 ÷ 2 =  5 remainder 0 ↑
+         5 ÷ 2 =  2 remainder 1 ↑
+         2 ÷ 2 =  1 remainder 0 ↑
+         1 ÷ 2 =  0 remainder 1 ↑
+        Read bottom to top: 101010
         So: 42₁₀ = 101010₂
     </pre>
 </div>
@@ -3103,17 +3103,17 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <br/>
     <b>Example: Convert 87 to binary</b><br/>
     <pre>
-        Powers of 2: 128 64 32 16 8 4 2 1<br/>
-        <br/>
-        87 - 64 = 23 (1 in 64 position)<br/>
-        23 - 16 = 7  (1 in 16 position)<br/>
-        7 - 4 = 3    (1 in 4 position)<br/>
-        3 - 2 = 1    (1 in 2 position)<br/>
-        1 - 1 = 0    (1 in 1 position)<br/>
-        <br/>
-        Binary: 0   1   0   1   0   1   1   1<br/>
-        Position: 128 64  32  16  8   4   2   1<br/>
-        <br/>
+        Powers of 2: 128 64 32 16 8 4 2 1
+        
+        87 - 64 = 23 (1 in 64 position)
+        23 - 16 = 7  (1 in 16 position)
+         7 -  4 = 3    (1 in 4 position)
+         3 -  2 = 1    (1 in 2 position)
+         1 -  1 = 0    (1 in 1 position)
+        
+        Binary:   0   1   0   1   0   1   1   1
+        Position: 128 64  32  16  8   4   2   1
+        
         So: 87₁₀ = 01010111₂ (usually written as 1010111)
     </pre>
 </div>
@@ -3130,29 +3130,29 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <br/>
     <b>Example: Convert 1101 to decimal</b><br/>
     <pre>
-        Binary:  1   1   0   1<br/>
-        Position: 3   2   1   0  (from right)<br/>
-        Value:   8   4   2   1  (2³=8, 2²=4, 2¹=2, 2⁰=1)<br/>
-        <br/>
-        Calculation:<br/>
-        (1 × 8) + (1 × 4) + (0 × 2) + (1 × 1)<br/>
-        = 8 + 4 + 0 + 1<br/>
-        = 13<br/>
-        <br/>
+        Binary:   1   1   0   1
+        Position: 3   2   1   0  (from right)
+        Value:    8   4   2   1  (2³=8, 2²=4, 2¹=2, 2⁰=1)
+        
+        Calculation:
+        (1 × 8) + (1 × 4) + (0 × 2) + (1 × 1)
+        = 8 + 4 + 0 + 1
+        = 13
+        
         So: 1101₂ = 13₁₀
     </pre>
     <br/>
     <b>Example: Convert 101010 to decimal</b><br/>
     <pre>
-        Binary:  1   0   1   0   1   0<br/>
-        Position: 5   4   3   2   1   0<br/>
-        Value:   32  16  8   4   2   1<br/>
-        <br/>
-        Calculation:<br/>
-        (1 × 32) + (0 × 16) + (1 × 8) + (0 × 4) + (1 × 2) + (0 × 1)<br/>
-        = 32 + 0 + 8 + 0 + 2 + 0<br/>
-        = 42<br/>
-        <br/>
+        Binary:   1   0   1   0   1   0
+        Position: 5   4   3   2   1   0
+        Value:    32  16  8   4   2   1
+        
+        Calculation:
+        (1 × 32) + (0 × 16) + (1 × 8) + (0 × 4) + (1 × 2) + (0 × 1)
+        = 32 + 0 + 8 + 0 + 2 + 0
+        = 42
+        
         So: 101010₂ = 42₁₀
     </pre>
 </div>
@@ -3334,13 +3334,13 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <br/>
     <b>Example: Add 1011 (11) + 1101 (13)</b><br/>
     <pre>
-            1 1 1    ← carries<br/>
-            1 0 1 1  ← 11<br/>
-        + 1 1 0 1  ← 13<br/>
-        ---------<br/>
-        1 1 0 0 0  ← 24<br/>
-        <br/>
-        Verification: 11 + 13 = 24<br/>
+            1 1 1    ← carries
+            1 0 1 1  ← 11
+          + 1 1 0 1  ← 13
+          ----------------
+          1 1 0 0 0  ← 24
+        
+        Verification: 11 + 13 = 24
         11000₂ = 16 + 8 = 24
     </pre>
     <br/>
@@ -3352,13 +3352,13 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <br/>
     <b>Example: Subtract 1101 (13) - 1011 (11)</b><br/>
     <pre>
-                ← borrows<br/>
-            1 1 0 1  ← 13<br/>
-        - 1 0 1 1  ← 11<br/>
-        ---------<br/>
-            0 0 1 0  ← 2<br/>
-        <br/>
-        Verification: 13 - 11 = 2<br/>
+                ← borrows
+            1 1 0 1  ← 13
+          - 1 0 1 1  ← 11
+            --------------
+            0 0 1 0  ← 2
+        
+        Verification: 13 - 11 = 2
         0010₂ = 2
     </pre>
 </div>
@@ -3486,13 +3486,13 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <b>Solve these binary arithmetic problems:</b><br/>
         1. Addition:<br/>
-        &nbsp;&nbsp;a) 101 + 110 = ________<br/>
-        &nbsp;&nbsp;b) 1111 + 1010 = ________<br/>
+        &nbsp;&nbsp;a)   101 + 110   = ________<br/>
+        &nbsp;&nbsp;b)  1111 + 1010  = ________<br/>
         &nbsp;&nbsp;c) 10011 + 11001 = ________<br/>
         <br/>
         2. Subtraction:<br/>
-        &nbsp;&nbsp;a) 110 - 101 = ________<br/>
-        &nbsp;&nbsp;b) 1000 - 0111 = ________<br/>
+        &nbsp;&nbsp;a)   110 - 101   = ________<br/>
+        &nbsp;&nbsp;b)  1000 - 0111  = ________<br/>
         &nbsp;&nbsp;c) 10101 - 01110 = ________<br/>
         <br/>
         3. Real-world application:<br/>
@@ -3837,23 +3837,23 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 <b>HTML Character Encoding:</b>
 <div style="background-color: #e0e0e0; padding: 15px; margin: 10px 0; border-radius: 5px;">
     <b>HTML Meta Tag (Essential):</b><br/>
-    <pre>&lt;meta charset="UTF-8"&gt;</pre><br/>
+    <code>&lt;meta charset="UTF-8"&gt;</code><br/>
     • Must be in first 1024 bytes of document<br/>
     • Tells browser how to interpret the bytes<br/>
     • Default if omitted: varies by browser/region<br/>
     <br/>
     <b>HTTP Header (More Authoritative):</b><br/>
-    <pre>Content-Type: text/html; charset=utf-8</pre><br/>
+    <code>Content-Type: text/html; charset=utf-8</code><br/>
     • Sent by web server<br/>
     • Overrides meta tag if present<br/>
     <br/>
     <b>HTML Entities for Special Characters:</b><br/>
-    • <pre>&amp;lt;</pre> = &lt; (less than)<br/>
-    • <pre>&amp;gt;</pre> = &gt; (greater than)<br/>
-    • <pre>&amp;amp;</pre> = &amp; (ampersand)<br/>
-    • <pre>&amp;copy;</pre> = © (copyright)<br/>
-    • <pre>&amp;#169;</pre> = © (decimal code)<br/>
-    • <pre>&amp;#xA9;</pre> = © (hexadecimal code)<br/>
+    • <code>&amp;lt;</code>   = &lt; (less than)<br/>
+    • <code>&amp;gt;</code>   = &gt; (greater than)<br/>
+    • <code>&amp;amp;</code>  = &amp; (ampersand)<br/>
+    • <code>&amp;copy;</code> = © (copyright)<br/>
+    • <code>&amp;#169;</code> = © (decimal code)<br/>
+    • <code>&amp;#xA9;</code> = © (hexadecimal code)<br/>
     <br/>
     <b>Common Web Encodings:</b><br/>
     • <b>UTF-8:</b> Standard for modern web (over 97% of websites)<br/>
@@ -3980,14 +3980,14 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <b>Exercise 2: HTML Encoding Test</b><br/>
     1. Create HTML file with:<br/>
     <pre>
-        &lt;!DOCTYPE html&gt;<br/>
-        &lt;html&gt;<br/>
-        &lt;head&gt;<br/>
-        &lt;meta charset="ISO-8859-1"&gt;<br/>
-        &lt;/head&gt;<br/>
-        &lt;body&gt;<br/>
-        Café résumé naïve € £ ¥<br/>
-        &lt;/body&gt;<br/>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;meta charset="ISO-8859-1"&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        Café résumé naïve € £ ¥
+        &lt;/body&gt;
         &lt;/html&gt;
     </pre>
     2. Change charset to UTF-8 and compare<br/>
@@ -3996,9 +3996,9 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <br/>
     <b>Exercise 3: File Size Analysis</b><br/>
     1. Create files with same content in different formats:<br/>
-    &nbsp;&nbsp;• .txt (Notepad)<br/>
+    &nbsp;&nbsp;• .txt  (Notepad)<br/>
     &nbsp;&nbsp;• .docx (Word)<br/>
-    &nbsp;&nbsp;• .pdf (Save as PDF from Word)<br/>
+    &nbsp;&nbsp;• .pdf  (Save as PDF from Word)<br/>
     2. Compare file sizes<br/>
     3. Create ZIP of each, compare compressed sizes<br/>
     4. Calculate compression ratio<br/>
@@ -4006,9 +4006,9 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <b>Exercise 4: Programming Language Test</b><br/>
     1. Create a Python script:<br/>
     <pre>
-        text = "Café 😀"<br/>
-        print("Length:", len(text))<br/>
-        print("Bytes:", len(text.encode('utf-8')))<br/>
+        text = "Café 😀"
+        print("Length:", len(text))
+        print("Bytes:", len(text.encode('utf-8')))
         print("Characters:", sum(1 for c in text))
     </pre>
     2. Run and observe results<br/>
@@ -4162,28 +4162,28 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <div style="background-color: #fff0e6; padding: 15px; margin: 10px 0; border-radius: 5px;">
         <b>Python Encoding Exercises:</b><br/>
         <pre>
-            # Exercise 1: Count characters vs bytes<br/>
-            text = "Hello 🌍 World"<br/>
-            # Count characters: ________<br/>
-            # Count bytes in UTF-8: ________<br/>
-            <br/>
-            # Exercise 2: Encoding conversion<br/>
-            text = "Café"<br/>
-            # Encode to UTF-8 bytes: ________<br/>
-            # Encode to ISO-8859-1 bytes: ________<br/>
-            # What happens if we try ASCII?<br/>
-            <br/>
-            # Exercise 3: Detect encoding<br/>
-            bytes_data = b'Caf\xc3\xa9'<br/>
-            # Try to decode as:<br/>
-            # UTF-8: ________<br/>
-            # Windows-1252: ________<br/>
-            # Which is correct?<br/>
-            <br/>
-            # Exercise 4: String manipulation<br/>
-            text = "résumé naïve café"<br/>
-            # Convert to uppercase: ________<br/>
-            # Does it work correctly?<br/>
+            # Exercise 1: Count characters vs bytes
+            text = "Hello 🌍 World"
+            # Count characters: ________
+            # Count bytes in UTF-8: ________
+            
+            # Exercise 2: Encoding conversion
+            text = "Café"
+            # Encode to UTF-8 bytes: ________
+            # Encode to ISO-8859-1 bytes: ________
+            # What happens if we try ASCII?
+            
+            # Exercise 3: Detect encoding
+            bytes_data = b'Caf\xc3\xa9'
+            # Try to decode as:
+            # UTF-8: ________
+            # Windows-1252: ________
+            # Which is correct?
+            
+            # Exercise 4: String manipulation
+            text = "résumé naïve café"
+            # Convert to uppercase: ________
+            # Does it work correctly?
             # Find position of 'é': ________
         </pre>
         
