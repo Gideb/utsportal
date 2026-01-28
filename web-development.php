@@ -1875,6 +1875,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <p><b>Bonus Challenge:</b> Make the cards responsive - on mobile, stack vertically with adjusted spacing.</p>
     </div>`
             },
+           
             "2-4": {
                 icon: "fa-border-all",
                 title: "Position (Relative, Absolute, Fixed)",
