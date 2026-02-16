@@ -1,6 +1,6 @@
 <?php
 session_start();
-$password = "Tutor2026"; // Your Hardcoded Password
+$password = ""; // Your Hardcoded Password
 
 if (isset($_POST['login'])) {
     if ($_POST['pass'] == $password) {
